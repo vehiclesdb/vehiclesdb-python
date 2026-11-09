@@ -1,0 +1,81 @@
+{
+  "version": "2026.07.6",
+  "edition": "open",
+  "built_at": "2026-07-26T23:56:31Z",
+  "schema_version": 3,
+  "dist_schema_version": 2,
+  "license": "CC-BY-4.0",
+  "homepage": "https://vehiclesdb.com",
+  "kinds": {
+    "car": {
+      "makes": 276,
+      "models": 6224
+    },
+    "motorcycle": {
+      "makes": 250,
+      "models": 5805
+    },
+    "moped": {
+      "makes": 285,
+      "models": 1252
+    },
+    "van": {
+      "makes": 125,
+      "models": 739
+    },
+    "truck": {
+      "makes": 87,
+      "models": 1246
+    },
+    "bus": {
+      "makes": 88,
+      "models": 411
+    }
+  },
+  "countries": [
+    "ar",
+    "ca",
+    "de",
+    "es",
+    "fi",
+    "gb",
+    "ie",
+    "lu",
+    "my",
+    "nl",
+    "nz",
+    "th",
+    "ua",
+    "us"
+  ],
+  "catalog": {
+    "car": {
+      "makes": "catalog/car/makes.json",
+      "models": "catalog/car/models.json"
+    },
+    "motorcycle": {
+      "makes": "catalog/motorcycle/makes.json",
+      "models": "catalog/motorcycle/models.json"
+    },
+    "moped": {
+      "makes": "catalog/moped/makes.json",
+      "models": "catalog/moped/models.json"
+    },
+    "van": {
+      "makes": "catalog/van/makes.json",
+      "models": "catalog/van/models.json"
+    },
+    "truck": {
+      "makes": "catalog/truck/makes.json",
+      "models": "catalog/truck/models.json"
+    },
+    "bus": {
+      "makes": "catalog/bus/makes.json",
+      "models": "catalog/bus/models.json"
+    }
+  },
+  "dist": {
+    "vehicles": "dist/vehicles.json"
+  },
+  "_fixture": "SUBSET of release 2026.07.6, cut by tools/make_fixtures.py for offline SDK tests. Not a release artifact; never publish or serve this."
+}

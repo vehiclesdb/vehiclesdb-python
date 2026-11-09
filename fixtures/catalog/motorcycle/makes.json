@@ -1,0 +1,35 @@
+[
+  {
+    "id": "bmw",
+    "slug": "bmw",
+    "name": "BMW",
+    "aliases": [
+      "Beemer",
+      "Bimmer"
+    ],
+    "kinds": [
+      "motorcycle"
+    ],
+    "countries": [
+      "es",
+      "fi",
+      "gb",
+      "lu",
+      "nl",
+      "nz",
+      "th",
+      "ua"
+    ]
+  },
+  {
+    "id": "renault",
+    "slug": "renault",
+    "name": "Renault",
+    "kinds": [
+      "motorcycle"
+    ],
+    "countries": [
+      "nl"
+    ]
+  }
+]

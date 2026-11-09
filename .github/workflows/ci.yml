@@ -1,0 +1,125 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.head_ref || github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  # The dataset release the conformance job runs against. Bump it when a new
+  # release changes RESOLUTION.md or conformance/resolve.json.
+  DATASET_TAG: v2026.11.1
+
+jobs:
+  test:
+    name: unit (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install pytest
+      # Offline, against fixtures/ only. The full-release and conformance
+      # layers skip loudly here; the conformance job below runs them.
+      - run: python -m pytest
+
+  conformance:
+    name: conformance (full release)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # The released tree the full-release tests read: manifest.json, the
+      # per-kind catalog and the language-neutral conformance suite.
+      - uses: actions/checkout@v4
+        with:
+          repository: vehiclesdb/vehiclesdb
+          ref: ${{ env.DATASET_TAG }}
+          path: .dataset
+          sparse-checkout: |
+            dist/vehicles.json
+            manifest.json
+            catalog
+            conformance
+          sparse-checkout-cone-mode: false
+      - name: Download the release's vehicles.json
+        run: |
+          curl -sSfL -o "$RUNNER_TEMP/vehicles.json" \
+            "https://github.com/vehiclesdb/vehiclesdb/releases/download/${DATASET_TAG}/vehicles.json"
+          cmp "$RUNNER_TEMP/vehicles.json" .dataset/dist/vehicles.json
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: python -m pip install pytest
+      - name: pytest (fixtures + full release + conformance)
+        env:
+          VDB_DATA: ${{ runner.temp }}/vehicles.json
+          VDB_DATA_REPO: ${{ github.workspace }}/.dataset
+          VDB_CONFORMANCE: ${{ github.workspace }}/.dataset/conformance/resolve.json
+        # -rs lists skips; --junitxml lets us assert nothing was skipped.
+        run: |
+          python -m pytest -rs --junitxml="$RUNNER_TEMP/junit.xml"
+          python - "$RUNNER_TEMP/junit.xml" <<'PY'
+          import sys, xml.etree.ElementTree as ET
+          suite = ET.parse(sys.argv[1]).getroot()
+          suite = suite if suite.tag == "testsuite" else suite.find("testsuite")
+          skipped = int(suite.get("skipped", 0))
+          print("tests=%s skipped=%d" % (suite.get("tests"), skipped))
+          sys.exit(1 if skipped else 0)
+          PY
+
+  package:
+    name: build + twine check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - run: python -m pip install build twine
+      - run: python -m build
+      - run: python -m twine check --strict dist/*
+
+  parity:
+    name: parity with vehiclesdb-js
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: vehiclesdb-python
+      - uses: actions/checkout@v4
+        with:
+          repository: vehiclesdb/vehiclesdb-js
+          path: vehiclesdb-js
+      - uses: actions/checkout@v4
+        with:
+          repository: vehiclesdb/vehiclesdb
+          ref: ${{ env.DATASET_TAG }}
+          path: vehiclesdb
+          sparse-checkout: |
+            dist/vehicles.json
+          sparse-checkout-cone-mode: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+      - name: Fixtures are byte-identical across the two SDKs
+        run: diff -r vehiclesdb-python/fixtures vehiclesdb-js/fixtures
+      - name: Parity over fixtures/
+        run: bash vehiclesdb-python/tools/parity_check.sh
+      - name: Parity over the full release
+        run: bash vehiclesdb-python/tools/parity_check.sh vehiclesdb

@@ -1,0 +1,154 @@
+[
+  {
+    "id": "aixam",
+    "slug": "aixam",
+    "name": "Aixam",
+    "kinds": [
+      "van"
+    ],
+    "countries": [
+      "gb"
+    ]
+  },
+  {
+    "id": "citroen",
+    "slug": "citroen",
+    "name": "Citroën",
+    "kinds": [
+      "van"
+    ],
+    "countries": [
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "lu",
+      "nl"
+    ]
+  },
+  {
+    "id": "dacia",
+    "slug": "dacia",
+    "name": "Dacia",
+    "kinds": [
+      "van"
+    ],
+    "countries": [
+      "es",
+      "fi",
+      "gb",
+      "lu",
+      "nl"
+    ]
+  },
+  {
+    "id": "ford",
+    "slug": "ford",
+    "name": "Ford",
+    "kinds": [
+      "van"
+    ],
+    "countries": [
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "lu",
+      "nl",
+      "th"
+    ]
+  },
+  {
+    "id": "mercedes-benz",
+    "slug": "mercedes-benz",
+    "name": "Mercedes-Benz",
+    "aliases": [
+      "Merc",
+      "Benz",
+      "MB"
+    ],
+    "kinds": [
+      "van"
+    ],
+    "countries": [
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "lu",
+      "nl",
+      "th"
+    ]
+  },
+  {
+    "id": "renault",
+    "slug": "renault",
+    "name": "Renault",
+    "kinds": [
+      "van"
+    ],
+    "countries": [
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "lu",
+      "nl"
+    ]
+  },
+  {
+    "id": "seat",
+    "slug": "seat",
+    "name": "SEAT",
+    "kinds": [
+      "van"
+    ],
+    "countries": [
+      "fi",
+      "gb",
+      "lu",
+      "nl"
+    ]
+  },
+  {
+    "id": "toyota",
+    "slug": "toyota",
+    "name": "Toyota",
+    "aliases": [
+      "丰田",
+      "トヨタ"
+    ],
+    "kinds": [
+      "van"
+    ],
+    "countries": [
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "lu",
+      "nl",
+      "th"
+    ]
+  },
+  {
+    "id": "volkswagen",
+    "slug": "volkswagen",
+    "name": "Volkswagen",
+    "aliases": [
+      "VW",
+      "Vdub"
+    ],
+    "kinds": [
+      "van"
+    ],
+    "countries": [
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "lu",
+      "nl"
+    ]
+  }
+]

@@ -1,0 +1,3435 @@
+[
+  {
+    "id": "aixam/mega",
+    "make_id": "aixam",
+    "slug": "mega",
+    "name": "Mega",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "uk_dft"
+    ],
+    "popularity": {
+      "global_decile": 4,
+      "by_country": {
+        "gb": {
+          "rank": 178,
+          "decile": 4,
+          "confidence": "measured"
+        }
+      }
+    }
+  },
+  {
+    "id": "citroen/ak",
+    "make_id": "citroen",
+    "slug": "ak",
+    "name": "Ak",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "CIT15331719",
+        "CIT2633AKAK1709"
+      ]
+    },
+    "popularity": {
+      "global_decile": 6,
+      "by_country": {
+        "fi": {
+          "rank": 538,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 92,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 286,
+          "decile": 4,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/citroen/ak400"
+    ]
+  },
+  {
+    "id": "citroen/berlingo",
+    "make_id": "citroen",
+    "slug": "berlingo",
+    "name": "Berlingo",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "de",
+        "evidence": "registration",
+        "source": "de_kba_fz10"
+      },
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "de_kba_fz10",
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "AU-2687.02.00",
+        "FIN*071114*00037*00",
+        "L 080 NV",
+        "U/00833",
+        "U/01638",
+        "VV-LB-0067-02",
+        "e2*2001/116*0278*00",
+        "e2*2007/46*0002*",
+        "e2*2007/46*0002*04",
+        "e2*2007/46*0002*08",
+        "e2*2007/46*0002*10",
+        "e2*2007/46*0002*14",
+        "e2*2007/46*0002*18",
+        "e2*2007/46*0002*21",
+        "e2*2007/46*0002*25",
+        "e2*2007/46*0002*30",
+        "e2*2007/46*0084*07",
+        "e2*2007/46*0625*04",
+        "e2*2007/46*0625*10",
+        "e2*2007/46*0625*12",
+        "e2*2007/46*0625*18",
+        "e2*2007/46*0625*33",
+        "e2*2007/46*0625*35",
+        "e2*2007/46*0625*36",
+        "e2*98/14*0201*05"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "de": {
+          "rank": 18,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "es": {
+          "rank": 4,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 30,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 2,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 15,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 8,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/citroen/berlingo-1-6hdi-600-55",
+      "van/citroen/berlingo-1-9d-600",
+      "van/citroen/berlingo-2-0hdi-600",
+      "van/citroen/berlingo-600-1-6hdi",
+      "van/citroen/berlingo-600-1-6hdif",
+      "van/citroen/berlingo-crew-cab",
+      "van/citroen/berlingo-talla-m-blueh",
+      "van/citroen/berlingo-van",
+      "van/citroen/berlingo-van-2510",
+      "van/citroen/berlingo-van-talla-m-b"
+    ]
+  },
+  {
+    "id": "citroen/e-berlingo",
+    "make_id": "citroen",
+    "slug": "e-berlingo",
+    "name": "E-Berlingo",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "e2*2007/46*0625*17",
+        "e2*2007/46*0625*22",
+        "e2*2007/46*0625*24",
+        "e2*2007/46*0625*34"
+      ]
+    },
+    "popularity": {
+      "global_decile": 4,
+      "by_country": {
+        "es": {
+          "rank": 183,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 68,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 76,
+          "decile": 5,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 80,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 156,
+          "decile": 4,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/citroen/e-berlingo-van"
+    ]
+  },
+  {
+    "id": "citroen/hy",
+    "make_id": "citroen",
+    "slug": "hy",
+    "name": "HY",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "CIT13330454"
+      ]
+    },
+    "popularity": {
+      "global_decile": 7,
+      "by_country": {
+        "es": {
+          "rank": 187,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 578,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 174,
+          "decile": 10,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 182,
+          "decile": 3,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/citroen/hy-78",
+      "van/citroen/hy78"
+    ]
+  },
+  {
+    "id": "citroen/jumper",
+    "make_id": "citroen",
+    "slug": "jumper",
+    "name": "Jumper",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "FIN*090115*00059*02",
+        "FIN*090401*00059*03",
+        "L 773 NVI",
+        "L773*06",
+        "RTI*2007/46*0046*10",
+        "RTI*2007/46*0046*11",
+        "RTI*2007/46*0046*13",
+        "U/01041",
+        "U/01305",
+        "e2*2007/46*0736*04",
+        "e3*2007/46*0045*06",
+        "e3*2007/46*0046*04",
+        "e3*2007/46*0046*10",
+        "e3*2007/46*0046*13",
+        "e3*2007/46*0046*14",
+        "e3*2007/46*0046*15",
+        "e3*2007/46*0046*19",
+        "e3*2007/46*0046*22",
+        "e3*2007/46*0046*26",
+        "e3*2007/46*0046*28",
+        "e3*2007/46*0046*32",
+        "e3*2007/46*0046*33",
+        "e3*2007/46*0046*35",
+        "e4*2007/46*0421*05",
+        "e6*NIV18/858*T52769"
+      ]
+    },
+    "popularity": {
+      "global_decile": 1,
+      "by_country": {
+        "es": {
+          "rank": 30,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 15,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 11,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 28,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/citroen/cargo-jumper",
+      "van/citroen/jumper-2",
+      "van/citroen/jumper-33lh-2-2hdi-dc",
+      "van/citroen/jumper-multicab",
+      "van/citroen/jumper-oder-relay",
+      "van/citroen/jumper-ou-relay"
+    ]
+  },
+  {
+    "id": "citroen/jumpy",
+    "make_id": "citroen",
+    "slug": "jumpy",
+    "name": "Jumpy",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "de",
+        "evidence": "registration",
+        "source": "de_kba_fz10"
+      },
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "de_kba_fz10",
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "0031-003/2004",
+        "FIN*090401*00181*00",
+        "U/01382",
+        "e2*2007/46*0045*03",
+        "e2*2007/46*0045*08",
+        "e2*2007/46*0045*09",
+        "e2*2007/46*0045*10",
+        "e2*2007/46*0045*15",
+        "e2*2007/46*0531*04",
+        "e2*2007/46*0531*09",
+        "e2*2007/46*0531*10",
+        "e2*2007/46*0531*14",
+        "e2*2007/46*0531*15",
+        "e2*2007/46*0531*16",
+        "e2*2007/46*0531*17",
+        "e2*2007/46*0531*18",
+        "e2*2007/46*0531*19",
+        "e2*2007/46*0531*21",
+        "e2*2007/46*0531*22",
+        "e2*2007/46*0531*24",
+        "e2*2007/46*0531*27",
+        "e2*2007/46*0531*29",
+        "e2*2007/46*0531*31",
+        "e2*2007/46*0531*33",
+        "e2*2007/46*0531*34"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "de": {
+          "rank": 10,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "es": {
+          "rank": 10,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 17,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 22,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 19,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/citroen/jumpy-1000-l1h1-1-6hdi",
+      "van/citroen/jumpy-business-van",
+      "van/citroen/jumpy-furgon-m-diesel",
+      "van/citroen/jumpy-oder-dispatch",
+      "van/citroen/jumpy-spacetourer"
+    ]
+  },
+  {
+    "id": "citroen/nemo",
+    "make_id": "citroen",
+    "slug": "nemo",
+    "name": "Nemo",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "U/01601",
+        "VV-LB-0069-01",
+        "e3*2007/46*0013*01",
+        "e3*2007/46*0013*03",
+        "e3/2007/46*0013*01"
+      ]
+    },
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "es": {
+          "rank": 138,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 240,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 45,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 49,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 49,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/citroen/nemo-1",
+      "van/citroen/nemo-1-4hdi"
+    ]
+  },
+  {
+    "id": "dacia/dokker",
+    "make_id": "dacia",
+    "slug": "dokker",
+    "name": "Dokker",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e2*2007/46*0030*18",
+        "e2*2007/46*0030*21",
+        "e2*2007/46*0030*25",
+        "e2*2007/46*0030*27",
+        "e2*2007/46*0030*29",
+        "e2*2007/46*0030*30",
+        "e2*2007/46*0030*37",
+        "e2*2007/46*0030*40",
+        "e2*2007/46*0030*41",
+        "e2*2007/46*0030*42",
+        "e2*2007/46*0030*44",
+        "e2*2007/46*0030*47",
+        "e2*2007/46*0030*50"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "es": {
+          "rank": 97,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 50,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 37,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 36,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    }
+  },
+  {
+    "id": "ford/f-150",
+    "make_id": "ford",
+    "slug": "f-150",
+    "name": "F-150",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "RTI*95*FOR2633EW1E9460",
+        "RTI*95*FOR2633FX1E8458",
+        "RTI*95*FOR2633W1EF8378",
+        "RTI*95*FOREW1E2637",
+        "RTI95*FOR0133EW1EC54629",
+        "e1*NIV18/858*PT-F519"
+      ]
+    },
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "es": {
+          "rank": 67,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 191,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 43,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 50,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 194,
+          "decile": 5,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/ford/f-150-lariat",
+      "van/ford/f-150-platinum",
+      "van/ford/f-150-raptor",
+      "van/ford/f-150-xlt",
+      "van/ford/f150",
+      "van/ford/f150-lariat",
+      "van/ford/f150-pick-up",
+      "van/ford/f150-ranger",
+      "van/ford/f150-supercab",
+      "van/ford/f150-triton",
+      "van/ford/f150-xlt",
+      "van/ford/f150-xlt-lariat",
+      "van/ford/ranger-f-150",
+      "van/ford/ranger-f150"
+    ]
+  },
+  {
+    "id": "ford/model-t",
+    "make_id": "ford",
+    "slug": "model-t",
+    "name": "Model T",
+    "kind": "van",
+    "aliases": [
+      "Tin Lizzie"
+    ],
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "popularity": {
+      "global_decile": 6,
+      "by_country": {
+        "fi": {
+          "rank": 487,
+          "decile": 7,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 332,
+          "decile": 4,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/ford/t",
+      "van/ford/t-pick-up"
+    ]
+  },
+  {
+    "id": "ford/ranger",
+    "make_id": "ford",
+    "slug": "ranger",
+    "name": "Ranger",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "th",
+        "evidence": "registration",
+        "source": "th_dlt"
+      }
+    ],
+    "regions": [
+      "as",
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "th_dlt",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "4135212304",
+        "FIN*091125*00248*00",
+        "RTI*2007/46*0080*15",
+        "RTI*2007/46*0154*07",
+        "e1*2007/46*0394*01",
+        "e11*2007/46*0154*07",
+        "e5*2007/46*0080*01",
+        "e5*2007/46*0080*04",
+        "e5*2007/46*0080*05",
+        "e5*2007/46*0080*06",
+        "e5*2007/46*0080*07",
+        "e5*2007/46*0080*08",
+        "e5*2007/46*0080*10",
+        "e5*2007/46*0080*11",
+        "e5*2007/46*0080*12",
+        "e5*2007/46*0080*13",
+        "e5*2007/46*0080*14",
+        "e5*2007/46*0080*15",
+        "e5*2007/46*0080*16",
+        "e5*2007/46*1171*01"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "es": {
+          "rank": 7,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 13,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 19,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 32,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "th": {
+          "rank": 5,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 7,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/ford/ranger-double-cab",
+      "van/ford/ranger-pickup",
+      "van/ford/ranger-super-cab",
+      "van/ford/ranger-xlt"
+    ]
+  },
+  {
+    "id": "ford/tourneo",
+    "make_id": "ford",
+    "slug": "tourneo",
+    "name": "Tourneo",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "FOR23331273",
+        "L740*03",
+        "L744*09",
+        "L746*01",
+        "e1*2007/46*0243*02",
+        "e1*2007/46*0243*04",
+        "e1*2007/46*0246*02",
+        "e1*2007/46*0260*02",
+        "e11*2001/116*0283*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "es": {
+          "rank": 74,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 111,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 65,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 48,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 97,
+          "decile": 3,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/ford/transit-tourneo"
+    ]
+  },
+  {
+    "id": "ford/transit",
+    "make_id": "ford",
+    "slug": "transit",
+    "name": "Transit",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "de",
+        "evidence": "registration",
+        "source": "de_kba_fz10"
+      },
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "de_kba_fz10",
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "FIN*080109*00055*00",
+        "L740*",
+        "L740*08",
+        "L742*02",
+        "L743*09",
+        "L744*09",
+        "LT*114*N1*00144*00",
+        "RTI*2007/46*0266*02",
+        "U/00954",
+        "e1*2007/46*0237*03",
+        "e1*2007/46*0243*04",
+        "e1*2007/46*0258*04",
+        "e1*2007/46*0266*02",
+        "e1*2007/46*1096*21",
+        "e1*2007/46*1096*27",
+        "e1*2007/46*1100*10",
+        "e1*2007/46*1100*20",
+        "e1*2007/46*1100*24",
+        "e1*2007/46*1100*26",
+        "e1*2007/46*1100*27",
+        "e12007/46*1100*07",
+        "e13*NIV18/858*LU1012",
+        "e20*2007/46*0028*14",
+        "e20*2007/46*0028*20",
+        "e27*2007/46*00373*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 1,
+      "by_country": {
+        "de": {
+          "rank": 5,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "es": {
+          "rank": 16,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 2,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 21,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 11,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 1,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/ford/transit-100",
+      "van/ford/transit-100-van",
+      "van/ford/transit-100l",
+      "van/ford/transit-100s",
+      "van/ford/transit-120",
+      "van/ford/transit-130",
+      "van/ford/transit-150",
+      "van/ford/transit-150l",
+      "van/ford/transit-190",
+      "van/ford/transit-2",
+      "van/ford/transit-260s-fd-sportvan-140-lr-4-36",
+      "van/ford/transit-260s-fd-van-85-lr-4-23",
+      "van/ford/transit-260s-van-85dpf-lr-4-23",
+      "van/ford/transit-280m",
+      "van/ford/transit-280m-van-lr-115dpf-4-36",
+      "van/ford/transit-300",
+      "van/ford/transit-300-s",
+      "van/ford/transit-300l",
+      "van/ford/transit-300m",
+      "van/ford/transit-300s",
+      "van/ford/transit-330",
+      "van/ford/transit-330m",
+      "van/ford/transit-350",
+      "van/ford/transit-350-m",
+      "van/ford/transit-350e",
+      "van/ford/transit-350l",
+      "van/ford/transit-350l-cdclb-146-5-44",
+      "van/ford/transit-ft-300-l",
+      "van/ford/transit-td",
+      "van/ford/transit-tecnocar",
+      "van/ford/transit-trend",
+      "van/ford/transit-van",
+      "van/ford/transit-van-300m"
+    ]
+  },
+  {
+    "id": "ford/transit-custom",
+    "make_id": "ford",
+    "slug": "transit-custom",
+    "name": "Transit Custom",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "de",
+        "evidence": "registration",
+        "source": "de_kba_fz10"
+      },
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "de_kba_fz10",
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "RTI*2018/858*00192*03",
+        "e1*2007/46*1005*00",
+        "e1*2007/46*1005*01",
+        "e1*2007/46*1005*03",
+        "e1*2007/46*1005*07",
+        "e1*2007/46*1005*14",
+        "e1*2007/46*1005*15",
+        "e1*2007/46*1005*18",
+        "e5*2018/858*00192*00",
+        "e5*2018/858*00192*01",
+        "e5*2018/858*00192*02",
+        "e5*2018/858*00192*03",
+        "e5*2018/858*00192*04",
+        "e5*2018/858*00192*05"
+      ]
+    },
+    "popularity": {
+      "global_decile": 1,
+      "by_country": {
+        "de": {
+          "rank": 3,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "es": {
+          "rank": 12,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 5,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 28,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 4,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 2,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/ford/transit-costum",
+      "van/ford/transit-custom-van"
+    ]
+  },
+  {
+    "id": "mercedes-benz/108-d",
+    "make_id": "mercedes-benz",
+    "slug": "108-d",
+    "name": "108 D",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "fi": {
+          "rank": 139,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 188,
+          "decile": 3,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/mercedes-benz/108d"
+    ]
+  },
+  {
+    "id": "mercedes-benz/110-d",
+    "make_id": "mercedes-benz",
+    "slug": "110-d",
+    "name": "110 D",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "fi": {
+          "rank": 157,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 196,
+          "decile": 3,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/mercedes-benz/110d"
+    ]
+  },
+  {
+    "id": "mercedes-benz/311",
+    "make_id": "mercedes-benz",
+    "slug": "311",
+    "name": "311",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "K 628 NVIII",
+        "L 766",
+        "L 766 NV",
+        "e5*2007/46*1018*02"
+      ]
+    },
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "es": {
+          "rank": 87,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 161,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 63,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 153,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/mercedes-benz/311-cdi",
+      "van/mercedes-benz/311cdi"
+    ]
+  },
+  {
+    "id": "mercedes-benz/313",
+    "make_id": "mercedes-benz",
+    "slug": "313",
+    "name": "313",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "K 624",
+        "L 766 NVI",
+        "MER21330222",
+        "U/01840",
+        "e1*2007/46*0301*09",
+        "e1*98/14*0127"
+      ]
+    },
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "es": {
+          "rank": 64,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 172,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 58,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 146,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/mercedes-benz/313-cdi",
+      "van/mercedes-benz/313cdi"
+    ]
+  },
+  {
+    "id": "mercedes-benz/sprinter",
+    "make_id": "mercedes-benz",
+    "slug": "sprinter",
+    "name": "Sprinter",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "de",
+        "evidence": "registration",
+        "source": "de_kba_fz10"
+      },
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "th",
+        "evidence": "registration",
+        "source": "th_dlt"
+      }
+    ],
+    "regions": [
+      "as",
+      "eu"
+    ],
+    "sources": [
+      "de_kba_fz10",
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "th_dlt",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "4243181102",
+        "E1*2001/116*0354*05",
+        "FIN*080122*00071*00",
+        "FIN*080526*00101*00",
+        "FIN*081111*00154*00",
+        "FIN*090406*00188*00",
+        "FIN*090701*00207*00",
+        "FIN*091020*00154*01",
+        "FIN*091020*00224*00",
+        "FIN*100309*00101*02",
+        "L766*",
+        "L766*02",
+        "L766*04",
+        "L766*06",
+        "L766*07",
+        "VV-LB-0036-02",
+        "e1*2001/116*0127*11",
+        "e1*2001/116*0354*01",
+        "e1*2001/116*0354*05",
+        "e1*2007/46*0279*03",
+        "e1*2007/46*0301*05",
+        "e1*2007/46*0301*07",
+        "e1*2007/46*0301*09",
+        "e1*93/81*0021*00",
+        "e1*98/14*0127*05"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "de": {
+          "rank": 6,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "es": {
+          "rank": 14,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 8,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 8,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 3,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "th": {
+          "rank": 14,
+          "decile": 9,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 5,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "car/mercedes-benz/902-6-ka",
+      "car/mercedes-benz/906",
+      "car/mercedes-benz/906-ac-30",
+      "car/mercedes-benz/906-ac-35",
+      "car/mercedes-benz/906-ka-35",
+      "van/mercedes-benz/902-ka",
+      "van/mercedes-benz/903",
+      "van/mercedes-benz/903-6-308cdi",
+      "van/mercedes-benz/906",
+      "van/mercedes-benz/906-ba-35",
+      "van/mercedes-benz/906-ba35",
+      "van/mercedes-benz/906-ka-30",
+      "van/mercedes-benz/906-ka-30-sprinter-209cdi",
+      "van/mercedes-benz/906-ka-30-sprinter-210cdi",
+      "van/mercedes-benz/906-ka-30-sprinter-211cdi",
+      "van/mercedes-benz/906-ka-35",
+      "van/mercedes-benz/906-ka-35-sprinter-310cdi",
+      "van/mercedes-benz/906-ka-35-sprinter-311cdi",
+      "van/mercedes-benz/906-ka-35-sprinter-313cdi",
+      "van/mercedes-benz/906-ka-35-sprinter-315cdi",
+      "van/mercedes-benz/906-ka-35-sprinter-316cdi",
+      "van/mercedes-benz/906-ka-35-sprinter-318cdi",
+      "van/mercedes-benz/906-ok-30",
+      "van/mercedes-benz/906ba35",
+      "van/mercedes-benz/906ok30",
+      "van/mercedes-benz/spinter",
+      "van/mercedes-benz/spriner",
+      "van/mercedes-benz/srinter"
+    ]
+  },
+  {
+    "id": "renault/kangoo",
+    "make_id": "renault",
+    "slug": "kangoo",
+    "name": "Kangoo",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "de",
+        "evidence": "registration",
+        "source": "de_kba_fz10"
+      },
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "de_kba_fz10",
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "FIN*080424*00069*01",
+        "H984",
+        "U/00864",
+        "U/01569",
+        "e2*2007/46*0006*10",
+        "e2*2007/46*0006*11",
+        "e2*2007/46*0006*16",
+        "e2*2007/46*0006*17",
+        "e2*2007/46*0006*31",
+        "e2*2007/46*0006*33",
+        "e2*2007/46*0006*35",
+        "e2*2007/46*0006*36",
+        "e2*2007/46*0006*37",
+        "e2*2007/46*0006*39",
+        "e2*2007/46*0006*40",
+        "e2*2007/46*0006*42",
+        "e2*2007/46*0006*48",
+        "e2*2007/46*0006*49",
+        "e2*2007/46*0089*03",
+        "e2*2007/46*0089*11",
+        "e2*2018/858*00002*07",
+        "e2*2018/858*00002*09",
+        "e2*2018/858*00002*10",
+        "e2*2018/858*00002*20",
+        "e2x2007/46x0089x03"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "de": {
+          "rank": 14,
+          "decile": 5,
+          "confidence": "measured"
+        },
+        "es": {
+          "rank": 1,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 29,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 3,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 16,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 26,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/renault/fc-kangoo",
+      "van/renault/kango",
+      "van/renault/kangoo-express",
+      "van/renault/kangoo-express-z-e",
+      "van/renault/kangoo-rapid",
+      "van/renault/kangoo-van"
+    ]
+  },
+  {
+    "id": "renault/master",
+    "make_id": "renault",
+    "slug": "master",
+    "name": "Master",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "de",
+        "evidence": "registration",
+        "source": "de_kba_fz10"
+      },
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "de_kba_fz10",
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "99/1481",
+        "FIN*090604*00123*02",
+        "RTI*2007/46*0007*18",
+        "RTI*2007/46*0053*29",
+        "e1*NIV18/858*ET0787",
+        "e2*2007/46*0016*02",
+        "e2*2007/46*0016*20",
+        "e2*2007/46*0016*28",
+        "e2*2007/46*0016*31",
+        "e2*2007/46*0019*07",
+        "e2*2007/46*0019*24",
+        "e2*2007/46*0023*10",
+        "e2*2007/46*0049*32",
+        "e2*2007/46*0051*06",
+        "e2*2007/46*0053*25",
+        "e2*2007/46*0261*01",
+        "e2*2018/858*00074*02",
+        "e2*2018/858*00074*05",
+        "e2*2018/858*00074*06",
+        "e2*2018/858*00075*05",
+        "e2*2018/858*00084*02",
+        "e20*2007/46*0168*03",
+        "e22007/46*0663*05",
+        "e6*NIV18/858*T01868",
+        "e6*NIV18/858*T02052"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "de": {
+          "rank": 22,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "es": {
+          "rank": 5,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 21,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 1,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 8,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 18,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/renault-trucks/master",
+      "van/renault/e-tech-master",
+      "van/renault/fd-master",
+      "van/renault/filovan-master",
+      "van/renault/master-2",
+      "van/renault/master-be-combi-lvc",
+      "van/renault/master-f3500",
+      "van/renault/master-horsebox",
+      "van/renault/master-jpm",
+      "van/renault/master-t-35",
+      "van/renault/master-t35",
+      "van/renault/master-theault",
+      "van/renault/master-ze"
+    ]
+  },
+  {
+    "id": "renault/trafic",
+    "make_id": "renault",
+    "slug": "trafic",
+    "name": "Trafic",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "de",
+        "evidence": "registration",
+        "source": "de_kba_fz10"
+      },
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "de_kba_fz10",
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "E2*98/14*0213*14",
+        "FIN*080424*00098*00",
+        "RTI*2007/46*0014*25",
+        "RTI*2018/858*00027*09",
+        "RTI*2018/858*00027*15",
+        "U/00043",
+        "U/00044",
+        "U/00047",
+        "U/00048",
+        "e2*2007/46*0014*11",
+        "e2*2007/46*0014*20",
+        "e2*2007/46*0014*22",
+        "e2*2007/46*0014*25",
+        "e2*2007/46*0014*27",
+        "e2*2007/46*0014*39",
+        "e2*2007/46*0014*48",
+        "e2*2007/46*0014*55",
+        "e2*2007/46*0014*58",
+        "e2*2007/46*0014*63",
+        "e2*2007/46*0014*64",
+        "e2*2007/46*0014*65",
+        "e2*2007/46*0014*66",
+        "e2*2018/858*00038*01",
+        "e2*2018/858*00038*12",
+        "e2*98/14*0213*20"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "de": {
+          "rank": 19,
+          "decile": 7,
+          "confidence": "measured"
+        },
+        "es": {
+          "rank": 3,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 10,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 4,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 6,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 9,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/renault-trucks/trafic",
+      "van/renault/traffic",
+      "van/renault/trafic-dubbele-cabine",
+      "van/renault/trafic-fourgon"
+    ]
+  },
+  {
+    "id": "seat/inca",
+    "make_id": "seat",
+    "slug": "inca",
+    "name": "Inca",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "e9*93/81*0006*06"
+      ]
+    },
+    "popularity": {
+      "global_decile": 5,
+      "by_country": {
+        "fi": {
+          "rank": 298,
+          "decile": 5,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 446,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 128,
+          "decile": 3,
+          "confidence": "measured"
+        }
+      }
+    }
+  },
+  {
+    "id": "toyota/dyna",
+    "make_id": "toyota",
+    "slug": "dyna",
+    "name": "Dyna",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "FIN*080121*00065*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "fi": {
+          "rank": 82,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 195,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 98,
+          "decile": 3,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/toyota/dyna-100",
+      "van/toyota/dyna-150"
+    ]
+  },
+  {
+    "id": "toyota/hiace",
+    "make_id": "toyota",
+    "slug": "hiace",
+    "name": "Hiace",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "th",
+        "evidence": "registration",
+        "source": "th_dlt"
+      }
+    ],
+    "regions": [
+      "as",
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "th_dlt",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "H185*09",
+        "U/01349",
+        "VV-LB-0033-01",
+        "VV-LB-0033-03",
+        "e6*2001/116*0018*07",
+        "e6*2007/46*0009*00",
+        "e6*2007/46*0009*01"
+      ]
+    },
+    "popularity": {
+      "global_decile": 4,
+      "by_country": {
+        "es": {
+          "rank": 180,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 4,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 105,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 218,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "th": {
+          "rank": 11,
+          "decile": 7,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 43,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/toyota/hi-ace",
+      "van/toyota/hiace-2",
+      "van/toyota/hiace-2-4td",
+      "van/toyota/hiace-van"
+    ]
+  },
+  {
+    "id": "toyota/hilux",
+    "make_id": "toyota",
+    "slug": "hilux",
+    "name": "Hilux",
+    "kind": "van",
+    "aliases": [
+      "ハイラックス"
+    ],
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "th",
+        "evidence": "registration",
+        "source": "th_dlt"
+      }
+    ],
+    "regions": [
+      "as",
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "th_dlt",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "4905065311",
+        "FIN*081024*00152*00",
+        "L642*01",
+        "L643*03",
+        "RTI*2007/46*0148*00",
+        "RTI*2007/46*0148*03",
+        "RTI*2007/46*0148*08",
+        "RTI*2007/46*0337*12",
+        "U/20454",
+        "e11*2007/46*0148*00",
+        "e11*2007/46*0148*02",
+        "e11*2007/46*0149*00",
+        "e11*2007/46*2587*06",
+        "e13*2007/46*1698*17",
+        "e6*2007/46*0337*05",
+        "e6*2007/46*0337*06",
+        "e6*2007/46*0337*07",
+        "e6*2007/46*0337*09",
+        "e6*2007/46*0337*13",
+        "e6*2007/46*0337*14",
+        "e6*2007/46*0337*15",
+        "e6*NKS2014/0011*01"
+      ]
+    },
+    "popularity": {
+      "global_decile": 1,
+      "by_country": {
+        "es": {
+          "rank": 20,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 6,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 31,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 37,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "th": {
+          "rank": 1,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 15,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/toyota/hi-lux",
+      "van/toyota/hilux-2",
+      "van/toyota/hilux-2-4td",
+      "van/toyota/hilux-4-wd",
+      "van/toyota/hilux-4x4",
+      "van/toyota/hilux-double-cab",
+      "van/toyota/hilux-revo"
+    ]
+  },
+  {
+    "id": "toyota/land-cruiser",
+    "make_id": "toyota",
+    "slug": "land-cruiser",
+    "name": "Land Cruiser",
+    "kind": "van",
+    "aliases": [
+      "ランドクルーザー",
+      "Landcruiser"
+    ],
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "95/4085@33",
+        "TOY15330644",
+        "TOY23330720",
+        "e1*NIV18/858*TJ0585",
+        "e6*2001/116*0089*04",
+        "e6*2001/116*0089*07",
+        "e6*2007/46*0001*02",
+        "e6*93/81*0023",
+        "e6*93/81*0023*02",
+        "e6*93/81*0023*04"
+      ]
+    },
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "es": {
+          "rank": 102,
+          "decile": 5,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 36,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 59,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 42,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 81,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "car/toyota/land-cruiser-hard-top",
+      "van/toyota/kzj90",
+      "van/toyota/land-cruiser-100",
+      "van/toyota/land-cruiser-120",
+      "van/toyota/land-cruiser-120-series",
+      "van/toyota/land-cruiser-150",
+      "van/toyota/land-cruiser-150-series",
+      "van/toyota/land-cruiser-90",
+      "van/toyota/land-cruiser-90-series",
+      "van/toyota/land-cruiser-bj40",
+      "van/toyota/land-cruiser-bj45",
+      "van/toyota/land-cruiser-bj75lp-mrw-pick-up-4x4-2980",
+      "van/toyota/land-cruiser-first-edition-d-a",
+      "van/toyota/land-cruiser-hardtop",
+      "van/toyota/land-cruiser-lx-turbo",
+      "van/toyota/land-cruiser-van",
+      "van/toyota/landcruiser"
+    ]
+  },
+  {
+    "id": "toyota/proace-city",
+    "make_id": "toyota",
+    "slug": "proace-city",
+    "name": "Proace City",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e2*2007/46*0686*00",
+        "e2*2007/46*0686*04",
+        "e2*2007/46*0686*08",
+        "e2*2007/46*0686*10",
+        "e2*2007/46*0686*27",
+        "e2*2007/46*0686*28"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "es": {
+          "rank": 9,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 47,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 81,
+          "decile": 5,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 34,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/toyota/proace-city-2510"
+    ]
+  },
+  {
+    "id": "volkswagen/amarok",
+    "make_id": "volkswagen",
+    "slug": "amarok",
+    "name": "Amarok",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "e1*2007/46*0356*00",
+        "e1*2007/46*0356*01",
+        "e1*2007/46*0356*02",
+        "e1*2007/46*0356*06",
+        "e1*2007/46*0356*14",
+        "e1*2007/46*0356*17",
+        "e1*2007/46*0356*18",
+        "e1*2007/46*0750*00",
+        "e1*2007/46*0750*01",
+        "e1*2007/46*0750*02",
+        "e1*2007/46*0750*07",
+        "e17*NKS*0022*00",
+        "e5*2018/858*00042*01",
+        "e5*2018/858*00042*02",
+        "e5*2018/858*00042*03",
+        "e5*2018/858*00042*04",
+        "e5*2018/858*00042*05",
+        "e5*2018/858*00042*06",
+        "ee*2007/46*0597*11"
+      ]
+    },
+    "popularity": {
+      "global_decile": 1,
+      "by_country": {
+        "es": {
+          "rank": 29,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 19,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 26,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 47,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 33,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/volkswagen/amarok-dc-lang",
+      "van/volkswagen/amarok-dc-xxl",
+      "van/volkswagen/amarok-pluscab"
+    ]
+  },
+  {
+    "id": "volkswagen/caddy",
+    "make_id": "volkswagen",
+    "slug": "caddy",
+    "name": "Caddy",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "de",
+        "evidence": "registration",
+        "source": "de_kba_fz10"
+      },
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "de_kba_fz10",
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "E24*KS07/46*0638*00",
+        "FIN*071123*00076*00",
+        "FIN*090320*00076*02",
+        "L 320 NXXI",
+        "U/00634",
+        "VV-LB-0003-02",
+        "VV-LB-0003-10",
+        "VV-LB-0003-14",
+        "VV-LB-0003-15",
+        "e1*2001/116*0252",
+        "e1*2001/116*0252*13",
+        "e1*2001/116*0252*15",
+        "e1*2001/116*02520*32",
+        "e1*2007/116*0217*12",
+        "e1*2007/46*0217",
+        "e1*2007/46*0217*",
+        "e1*2007/46*0217*00",
+        "e1*2007/46*0217*15",
+        "e1*2007/46*0217*20",
+        "e1*2007/46*0217*30",
+        "e13*2018/858*00003*00",
+        "e13*2018/858*00003*06",
+        "e13*2018/858*00003*17",
+        "e24*KS07/46*0638*00",
+        "e4*2018/858*00082*03"
+      ]
+    },
+    "popularity": {
+      "global_decile": 1,
+      "by_country": {
+        "de": {
+          "rank": 4,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "es": {
+          "rank": 24,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 9,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 6,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 1,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 11,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "car/volkswagen/caddymaxi",
+      "van/volkswagen/abt-e-caddy",
+      "van/volkswagen/caddy-1",
+      "van/volkswagen/caddy-75-edition",
+      "van/volkswagen/caddy-cargo-2501",
+      "van/volkswagen/caddy-cargo-2510",
+      "van/volkswagen/caddy-diesel",
+      "van/volkswagen/caddy-kasten",
+      "van/volkswagen/caddy-life",
+      "van/volkswagen/caddy-max",
+      "van/volkswagen/caddy-modified-partition-wall",
+      "van/volkswagen/caddy-pick-up",
+      "van/volkswagen/caddy-sdi",
+      "van/volkswagen/caddy-van-1",
+      "van/volkswagen/caddymaxi",
+      "van/volkswagen/touran-van",
+      "van/volkswagen/vw-caddy"
+    ]
+  },
+  {
+    "id": "volkswagen/caravelle",
+    "make_id": "volkswagen",
+    "slug": "caravelle",
+    "name": "Caravelle",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "e1*96/79*0067*05"
+      ]
+    },
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "es": {
+          "rank": 172,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 66,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 81,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 61,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/volkswagen/multi-van",
+      "van/volkswagen/multivan-dc",
+      "van/volkswagen/multivan-startline"
+    ]
+  },
+  {
+    "id": "volkswagen/crafter",
+    "make_id": "volkswagen",
+    "slug": "crafter",
+    "name": "Crafter",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "de",
+        "evidence": "registration",
+        "source": "de_kba_fz10"
+      },
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "de_kba_fz10",
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "E1*2007/46*0514*02",
+        "FIN*090109*00174*00",
+        "FIN*090406*00187*00",
+        "L 768 NIV",
+        "RTI*2007/46*0514*04",
+        "RTI*2007/46*1619*16",
+        "U/01018",
+        "e*2007/46*0932*03",
+        "e1*2007/46*0514",
+        "e1*2007/46*0514*03",
+        "e1*2007/46*0514*04",
+        "e1*2007/46*0514*08",
+        "e1*2007/46*0522*02",
+        "e1*2007/46*0522*08",
+        "e1*2007/46*1613*01",
+        "e1*2007/46*1613*08",
+        "e1*2007/46*1613*09",
+        "e1*2007/46*1613*34",
+        "e1*2007/46*1619",
+        "e1*2007/46*1619*02",
+        "e1*2007/46*1935*15",
+        "e1*KS07/46*0041*01",
+        "e13*NIV18/858*LU0999",
+        "e13*NIV18/858*LU1043",
+        "e20*2007/46*0309*04"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "de": {
+          "rank": 15,
+          "decile": 5,
+          "confidence": "measured"
+        },
+        "es": {
+          "rank": 11,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 14,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 18,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 9,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 17,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/volkswagen/crafter-30",
+      "van/volkswagen/crafter-35",
+      "van/volkswagen/crafter-35-bestel-l2-h2",
+      "van/volkswagen/crafter-4motion",
+      "van/volkswagen/crafter-aut",
+      "van/volkswagen/crafter-multicab",
+      "van/volkswagen/crafter-z",
+      "van/volkswagen/grafter",
+      "van/volkswagen/vw-crafter",
+      "van/volkswagen/vw-crafter-aut"
+    ]
+  },
+  {
+    "id": "volkswagen/id-buzz-cargo",
+    "make_id": "volkswagen",
+    "slug": "id-buzz-cargo",
+    "name": "Id. Buzz Cargo",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e1*2018/858*00165*01",
+        "e1*2018/858*00165*03",
+        "e1*2018/858*00165*08",
+        "e1*2018/858*00165*10",
+        "e1*2018/858*00165*12"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "fi": {
+          "rank": 44,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 66,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 26,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/volkswagen/id-buzz-cargo-modified-partition-wall",
+      "van/volkswagen/id-buzz-cargo-pro",
+      "van/volkswagen/id-buzz-cargo-pro-4motion",
+      "van/volkswagen/id-buzz-cargo-pure"
+    ]
+  },
+  {
+    "id": "volkswagen/lt",
+    "make_id": "volkswagen",
+    "slug": "lt",
+    "name": "Lt",
+    "kind": "van",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "H 428 NIX",
+        "H 428 NXIII",
+        "H 428 NXVII",
+        "e1*2001/116*0041*16"
+      ]
+    },
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "es": {
+          "rank": 143,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 138,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 80,
+          "decile": 5,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 63,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 48,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "van/volkswagen/lt-28",
+      "van/volkswagen/lt-31",
+      "van/volkswagen/lt-32",
+      "van/volkswagen/lt-35",
+      "van/volkswagen/lt-40",
+      "van/volkswagen/lt-46",
+      "van/volkswagen/lt-46a",
+      "van/volkswagen/lt28",
+      "van/volkswagen/lt35",
+      "van/volkswagen/lt46a",
+      "van/volkswagen/vw-lt-35"
+    ]
+  },
+  {
+    "id": "volkswagen/transporter",
+    "make_id": "volkswagen",
+    "slug": "transporter",
+    "name": "Transporter",
+    "kind": "van",
+    "aliases": [
+      "Bulli",
+      "Kombi"
+    ],
+    "availability": [
+      {
+        "country": "de",
+        "evidence": "registration",
+        "source": "de_kba_fz10"
+      },
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "de_kba_fz10",
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "E24*KS07/46*0619*00",
+        "FIN*080411*00088*00",
+        "L148*03",
+        "L148*15",
+        "VV-LB-0004-07",
+        "e1*2001/116*0220*",
+        "e1*2001/116*0220*05",
+        "e1*2001/116*0220*23",
+        "e1*2007/46*0130*  30",
+        "e1*2007/46*0130*04",
+        "e1*2007/46*0130*06",
+        "e1*2007/46*0130*08",
+        "e1*2007/46*0130*09",
+        "e1*2007/46*0130*12",
+        "e1*2007/46*0130*13",
+        "e1*2007/46*0130*14",
+        "e1*2007/46*0130*15",
+        "e1*2007/46*0130*23",
+        "e1*2007/46*0130*30",
+        "e1*96/79*0067*05",
+        "e1*98/14*0067",
+        "e1*98/14*0067*09",
+        "e24*KS07/46*0619*00",
+        "e5*2018/858*00263*01",
+        "e5*2018/858*00263*03"
+      ]
+    },
+    "popularity": {
+      "global_decile": 1,
+      "by_country": {
+        "de": {
+          "rank": 2,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "es": {
+          "rank": 18,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 1,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 15,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 2,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 3,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "bus/volkswagen/t5",
+      "car/volkswagen/bestel",
+      "car/volkswagen/bestel-0",
+      "car/volkswagen/kastenwagen",
+      "car/volkswagen/kombi-2",
+      "car/volkswagen/kombiwagen",
+      "car/volkswagen/syncro",
+      "car/volkswagen/t2",
+      "car/volkswagen/t2-camper",
+      "car/volkswagen/t4",
+      "car/volkswagen/t5",
+      "car/volkswagen/t6",
+      "car/volkswagen/type-2",
+      "van/volkswagen/1000",
+      "van/volkswagen/7j0",
+      "van/volkswagen/800",
+      "van/volkswagen/abt-e-transporter",
+      "van/volkswagen/bestel-0",
+      "van/volkswagen/bestel-1",
+      "van/volkswagen/business-van",
+      "van/volkswagen/delivery-van",
+      "van/volkswagen/doppelkabine",
+      "van/volkswagen/etransporter-t32-commerce",
+      "van/volkswagen/kastenwagen",
+      "van/volkswagen/kastenwagen-lr",
+      "van/volkswagen/kombi-2",
+      "van/volkswagen/kombiwagen",
+      "van/volkswagen/kombiwagen-23-2400",
+      "van/volkswagen/pick-up",
+      "van/volkswagen/pick-up-1",
+      "van/volkswagen/pickup",
+      "van/volkswagen/syncro",
+      "van/volkswagen/t1",
+      "van/volkswagen/t4",
+      "van/volkswagen/t5-business-van",
+      "van/volkswagen/t5-transporter",
+      "van/volkswagen/tranporter",
+      "van/volkswagen/transport",
+      "van/volkswagen/transporter-1",
+      "van/volkswagen/transporter-2",
+      "van/volkswagen/transporter-75-edition",
+      "van/volkswagen/transporter-bestel",
+      "van/volkswagen/transporter-bestel-0",
+      "van/volkswagen/transporter-bestel-1",
+      "van/volkswagen/transporter-bestel-d",
+      "van/volkswagen/transporter-caravelle",
+      "van/volkswagen/transporter-dc",
+      "van/volkswagen/transporter-double-cab",
+      "van/volkswagen/transporter-doublecab",
+      "van/volkswagen/transporter-pick-up",
+      "van/volkswagen/transporter-sn-double-cab",
+      "van/volkswagen/transporter-syncro",
+      "van/volkswagen/transporter-ww-caravelle",
+      "van/volkswagen/trasporter",
+      "van/volkswagen/vw-pick-up-dh-2",
+      "van/volkswagen/vw-pickup-eh-2",
+      "van/volkswagen/vw-skap-2"
+    ]
+  }
+]

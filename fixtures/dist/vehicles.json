@@ -1,0 +1,7129 @@
+{
+  "version": "2026.07.6",
+  "schema_version": 2,
+  "region": "global",
+  "kinds": [
+    "bus",
+    "car",
+    "moped",
+    "motorcycle",
+    "truck",
+    "van"
+  ],
+  "source": "VehiclesDB — reconciled from official registries (see ATTRIBUTION.md)",
+  "license": "CC-BY-4.0",
+  "makes": [
+    {
+      "name": "Aixam",
+      "slug": "aixam",
+      "kinds": [
+        "car",
+        "moped",
+        "van"
+      ],
+      "models": [
+        {
+          "name": "500",
+          "slug": "500",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 9,
+          "availability": [
+            "gb",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Mac 500",
+          "slug": "mac-500",
+          "kind": "car",
+          "body_type": "convertible",
+          "global_decile": 10,
+          "availability": [
+            "gb",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Mega",
+          "slug": "mega",
+          "kind": "car",
+          "body_type": "convertible",
+          "global_decile": 8,
+          "availability": [
+            "gb",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "A400",
+          "slug": "a400",
+          "kind": "moped",
+          "global_decile": 6,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "A741",
+          "slug": "a741",
+          "kind": "moped",
+          "global_decile": 8,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "C3",
+          "slug": "c3",
+          "kind": "moped",
+          "global_decile": 7,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "K2",
+          "slug": "k2",
+          "kind": "moped",
+          "global_decile": 2,
+          "availability": [
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "M12RS",
+          "slug": "m12rs",
+          "kind": "moped",
+          "global_decile": 5,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Mega",
+          "slug": "mega",
+          "kind": "moped",
+          "global_decile": 9,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "MW12",
+          "slug": "mw12",
+          "kind": "moped",
+          "global_decile": 7,
+          "availability": [
+            "es",
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "S10",
+          "slug": "s10",
+          "kind": "moped",
+          "global_decile": 2,
+          "availability": [
+            "es",
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "S10-2",
+          "slug": "s10-2",
+          "kind": "moped",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "S8",
+          "slug": "s8",
+          "kind": "moped",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "S9",
+          "slug": "s9",
+          "kind": "moped",
+          "global_decile": 2,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Scouty",
+          "slug": "scouty",
+          "kind": "moped",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Mega",
+          "slug": "mega",
+          "kind": "van",
+          "global_decile": 4,
+          "availability": [
+            "gb"
+          ],
+          "regions": [
+            "eu"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Alfa Romeo",
+      "slug": "alfa-romeo",
+      "aliases": [
+        "Alfa"
+      ],
+      "kinds": [
+        "car"
+      ],
+      "models": [
+        {
+          "name": "145",
+          "slug": "145",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "146",
+          "slug": "146",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 4,
+          "availability": [
+            "gb",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "147",
+          "slug": "147",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "156",
+          "slug": "156",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "156 Berlina",
+          "slug": "156-berlina",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "156 Sport Wagon",
+          "slug": "156-sport-wagon",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "159",
+          "slug": "159",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "159 SW",
+          "slug": "159-sw",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 6,
+          "availability": [
+            "es",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/alfa-romeo/159sw"
+          ]
+        },
+        {
+          "name": "166",
+          "slug": "166",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "1750 GTV",
+          "slug": "1750-gtv",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 4,
+          "availability": [
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/alfa-romeo/1750gtv",
+            "car/alfa-romeo/gtv-1750",
+            "car/alfa-romeo/gtv1750"
+          ]
+        },
+        {
+          "name": "2000",
+          "slug": "2000",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 5,
+          "availability": [
+            "gb",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "2000 Berlina",
+          "slug": "2000-berlina",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 5,
+          "availability": [
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "2000 GTV",
+          "slug": "2000-gtv",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 3,
+          "availability": [
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/alfa-romeo/2000gtv"
+          ]
+        },
+        {
+          "name": "2000 Spider Veloce",
+          "slug": "2000-spider-veloce",
+          "kind": "car",
+          "body_type": "convertible",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "75",
+          "slug": "75",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "Alfasud",
+          "slug": "alfasud",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 5,
+          "availability": [
+            "gb",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "Alfetta GT",
+          "slug": "alfetta-gt",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "Brera",
+          "slug": "brera",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "Giulia",
+          "slug": "giulia",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ]
+        },
+        {
+          "name": "Giulietta",
+          "slug": "giulietta",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "GT",
+          "slug": "gt",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "GT 1300 Junior",
+          "slug": "gt-1300-junior",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 6,
+          "availability": [
+            "fi",
+            "lu",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/alfa-romeo/1300-gt-junior",
+            "car/alfa-romeo/1300gt-junior",
+            "car/alfa-romeo/gt1300junior"
+          ]
+        },
+        {
+          "name": "GTV",
+          "slug": "gtv",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 5,
+          "availability": [
+            "ar",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/alfa-romeo/romeo-gtv"
+          ]
+        },
+        {
+          "name": "GTV6",
+          "slug": "gtv6",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 4,
+          "availability": [
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/alfa-romeo/gtv-6"
+          ]
+        },
+        {
+          "name": "Junior",
+          "slug": "junior",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 4,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "Mito",
+          "slug": "mito",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "Spider",
+          "slug": "spider",
+          "kind": "car",
+          "body_type": "convertible",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ]
+        },
+        {
+          "name": "Spyder",
+          "slug": "spyder",
+          "kind": "car",
+          "body_type": "convertible",
+          "global_decile": 4,
+          "availability": [
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "Stelvio",
+          "slug": "stelvio",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 4,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ]
+        },
+        {
+          "name": "Tonale",
+          "slug": "tonale",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 4,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BMW",
+      "slug": "bmw",
+      "aliases": [
+        "Beemer",
+        "Bimmer"
+      ],
+      "kinds": [
+        "car",
+        "motorcycle",
+        "moped"
+      ],
+      "models": [
+        {
+          "name": "1 Series",
+          "slug": "1-series",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 2,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/bmw/1-er-reihe",
+            "car/bmw/1er-reihe",
+            "car/bmw/1erreihe",
+            "car/bmw/m-135i",
+            "car/bmw/m-140i",
+            "car/bmw/serie-1"
+          ]
+        },
+        {
+          "name": "2 Series",
+          "slug": "2-series",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 2,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/bmw/serie-2"
+          ]
+        },
+        {
+          "name": "3.0CS",
+          "slug": "3-0cs",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 5,
+          "availability": [
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/bmw/30cs"
+          ]
+        },
+        {
+          "name": "3 Series",
+          "slug": "3-series",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 2,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/bmw/3-er-reihe",
+            "car/bmw/compact",
+            "car/bmw/serie-3",
+            "car/bmw/serie3"
+          ]
+        },
+        {
+          "name": "4 Series",
+          "slug": "4-series",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 2,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/bmw/serie-4"
+          ]
+        },
+        {
+          "name": "5 Series",
+          "slug": "5-series",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 2,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/bmw/5-er-reihe",
+            "car/bmw/m-550d",
+            "car/bmw/serie-5"
+          ]
+        },
+        {
+          "name": "6 Series",
+          "slug": "6-series",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 4,
+          "availability": [
+            "ar",
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/bmw/serie-6"
+          ]
+        },
+        {
+          "name": "7 Series",
+          "slug": "7-series",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/bmw/7-er-reihe",
+            "car/bmw/serie-7"
+          ]
+        },
+        {
+          "name": "ActiveHybrid 7",
+          "slug": "activehybrid-7",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "ca",
+            "fi",
+            "nl",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na"
+          ],
+          "former_ids": [
+            "car/bmw/activehybrid-7-l",
+            "car/bmw/activehybrid-7l"
+          ]
+        },
+        {
+          "name": "i3",
+          "slug": "i3",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/bmw/i-3"
+          ]
+        },
+        {
+          "name": "M Roadster",
+          "slug": "m-roadster",
+          "kind": "car",
+          "body_type": "convertible",
+          "global_decile": 4,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/bmw/m"
+          ]
+        },
+        {
+          "name": "X1",
+          "slug": "x1",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 2,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/bmw/x-1"
+          ]
+        },
+        {
+          "name": "XM",
+          "slug": "xm",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 4,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/bmw/xm-50e",
+            "car/bmw/xm-label"
+          ]
+        },
+        {
+          "name": "Z3",
+          "slug": "z3",
+          "kind": "car",
+          "body_type": "roadster",
+          "global_decile": 3,
+          "availability": [
+            "ar",
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/bmw/z-3"
+          ]
+        },
+        {
+          "name": "C600 Sport",
+          "slug": "c600-sport",
+          "kind": "motorcycle",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/c600sport"
+          ]
+        },
+        {
+          "name": "C650 Sport",
+          "slug": "c650-sport",
+          "kind": "motorcycle",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/c650sport"
+          ]
+        },
+        {
+          "name": "G650 Xchallenge",
+          "slug": "g650-xchallenge",
+          "kind": "motorcycle",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/g650xchallenge"
+          ]
+        },
+        {
+          "name": "G650 Xcountry",
+          "slug": "g650-xcountry",
+          "kind": "motorcycle",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/g650xcountry"
+          ]
+        },
+        {
+          "name": "G650 Xmoto",
+          "slug": "g650-xmoto",
+          "kind": "motorcycle",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/g650xmoto"
+          ]
+        },
+        {
+          "name": "HP2 Sport",
+          "slug": "hp2-sport",
+          "kind": "motorcycle",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/hp2sport"
+          ]
+        },
+        {
+          "name": "K100RS",
+          "slug": "k100rs",
+          "kind": "motorcycle",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/k100rs-abs"
+          ]
+        },
+        {
+          "name": "K1100RS",
+          "slug": "k1100rs",
+          "kind": "motorcycle",
+          "global_decile": 5,
+          "availability": [
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/k1100rs-abs"
+          ]
+        },
+        {
+          "name": "R nineT",
+          "slug": "r-ninet",
+          "kind": "motorcycle",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl",
+            "nz",
+            "th",
+            "ua"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/r-nine-t"
+          ]
+        },
+        {
+          "name": "R nineT Urban G/S",
+          "slug": "r-ninet-urban-g-s",
+          "kind": "motorcycle",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "lu",
+            "nl",
+            "th"
+          ],
+          "regions": [
+            "as",
+            "eu"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/r-nine-t-urban-g-s"
+          ]
+        },
+        {
+          "name": "R100GS",
+          "slug": "r100gs",
+          "kind": "motorcycle",
+          "global_decile": 4,
+          "availability": [
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/r100g-s"
+          ]
+        },
+        {
+          "name": "R12 Ninet",
+          "slug": "r12-ninet",
+          "kind": "motorcycle",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "nl",
+            "th",
+            "ua"
+          ],
+          "regions": [
+            "as",
+            "eu"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/r12ninet"
+          ]
+        },
+        {
+          "name": "R18 Classic",
+          "slug": "r18-classic",
+          "kind": "motorcycle",
+          "global_decile": 5,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl",
+            "th"
+          ],
+          "regions": [
+            "as",
+            "eu"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/r18classic"
+          ]
+        },
+        {
+          "name": "R18 Transcontinental",
+          "slug": "r18-transcontinental",
+          "kind": "motorcycle",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "nl",
+            "th"
+          ],
+          "regions": [
+            "as",
+            "eu"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/r18transcontinental"
+          ]
+        },
+        {
+          "name": "R80G/S",
+          "slug": "r80g-s",
+          "kind": "motorcycle",
+          "global_decile": 2,
+          "availability": [
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/r80gs"
+          ]
+        },
+        {
+          "name": "R90S",
+          "slug": "r90s",
+          "kind": "motorcycle",
+          "global_decile": 2,
+          "availability": [
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "motorcycle/bmw/r90-s"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Citroën",
+      "slug": "citroen",
+      "kinds": [
+        "car",
+        "moped",
+        "van",
+        "truck",
+        "bus"
+      ],
+      "models": [
+        {
+          "name": "Ax",
+          "slug": "ax",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 6,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/ax-gt",
+            "car/citroen/ax11tre"
+          ]
+        },
+        {
+          "name": "B11",
+          "slug": "b11",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 6,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/citroen/b-11"
+          ]
+        },
+        {
+          "name": "BX",
+          "slug": "bx",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/bx-1",
+            "car/citroen/bx-14",
+            "car/citroen/bx-16",
+            "car/citroen/bx-16-tgs",
+            "car/citroen/bx-16-trs",
+            "car/citroen/bx-19",
+            "car/citroen/bx-19-gt",
+            "car/citroen/bx-19-gti",
+            "car/citroen/bx-19-trd",
+            "car/citroen/bx-19-trs",
+            "car/citroen/bx-19gti",
+            "car/citroen/bx-tzd-turbo",
+            "car/citroen/bx16rs",
+            "car/citroen/bx16trs",
+            "car/citroen/bx19-tri",
+            "car/citroen/bx19gti",
+            "car/citroen/bx19trs",
+            "car/citroen/bx19tzs"
+          ]
+        },
+        {
+          "name": "C1",
+          "slug": "c1",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/c-1",
+            "car/citroen/c1-1-0i"
+          ]
+        },
+        {
+          "name": "C2",
+          "slug": "c2",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/c-2"
+          ]
+        },
+        {
+          "name": "C3",
+          "slug": "c3",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/c3-1-1i",
+            "car/citroen/c3-1-4i"
+          ]
+        },
+        {
+          "name": "C3 Aircross",
+          "slug": "c3-aircross",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/nuevo-citroen-c3-aircr"
+          ]
+        },
+        {
+          "name": "C4",
+          "slug": "c4",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 2,
+          "availability": [
+            "ar",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/citroen/c4-1-6i",
+            "car/citroen/nuevo-c4"
+          ]
+        },
+        {
+          "name": "C4 Picasso",
+          "slug": "c4-picasso",
+          "kind": "car",
+          "body_type": "mpv",
+          "global_decile": 2,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/c4-picasso-1-6hdi",
+            "car/citroen/c4-picasso-1-6i"
+          ]
+        },
+        {
+          "name": "C4X",
+          "slug": "c4x",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 5,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/citroen/c4-x"
+          ]
+        },
+        {
+          "name": "C5 Aircross",
+          "slug": "c5-aircross",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 2,
+          "availability": [
+            "es",
+            "fi",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/nuevo-c5-aircross-hybr"
+          ]
+        },
+        {
+          "name": "CX",
+          "slug": "cx",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/cx-20-pallas",
+            "car/citroen/cx-22-trs",
+            "car/citroen/cx-22trs",
+            "car/citroen/cx-2400",
+            "car/citroen/cx-25",
+            "car/citroen/cx-25-prestige",
+            "car/citroen/cx-25-trd",
+            "car/citroen/cx-familiale",
+            "car/citroen/cx-pallas",
+            "car/citroen/cx-prestige",
+            "car/citroen/cx20",
+            "car/citroen/cx2000",
+            "car/citroen/cx2200",
+            "car/citroen/cx22trs",
+            "car/citroen/cx2400",
+            "car/citroen/cx2400-pallas",
+            "car/citroen/cx25",
+            "car/citroen/cx2500",
+            "car/citroen/cx25gti"
+          ]
+        },
+        {
+          "name": "DS",
+          "slug": "ds",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/d-special",
+            "car/citroen/d-super",
+            "car/citroen/d-super-5",
+            "car/citroen/d20",
+            "car/citroen/d20super",
+            "car/citroen/ds-19",
+            "car/citroen/ds-20",
+            "car/citroen/ds-21",
+            "car/citroen/ds-21-m",
+            "car/citroen/ds-21-pallas",
+            "car/citroen/ds-23",
+            "car/citroen/ds-23-pallas",
+            "car/citroen/ds-pallas",
+            "car/citroen/ds-special",
+            "car/citroen/ds-super",
+            "car/citroen/ds20",
+            "car/citroen/ds20-pallas",
+            "car/citroen/ds21",
+            "car/citroen/ds21-pallas",
+            "car/citroen/ds21pallas",
+            "car/citroen/ds23",
+            "car/citroen/pallas",
+            "car/citroen/safari"
+          ]
+        },
+        {
+          "name": "DS3",
+          "slug": "ds3",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/ds-3",
+            "car/citroen/ds3-r3t",
+            "car/citroen/ds3-racing"
+          ]
+        },
+        {
+          "name": "DS5",
+          "slug": "ds5",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/ds-5"
+          ]
+        },
+        {
+          "name": "Dyane",
+          "slug": "dyane",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/dyane-6"
+          ]
+        },
+        {
+          "name": "GS",
+          "slug": "gs",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/g-special",
+            "car/citroen/gs-1220",
+            "car/citroen/gs-break",
+            "car/citroen/gs-club",
+            "car/citroen/gs-pallas",
+            "car/citroen/gs-special",
+            "car/citroen/gs1220-club",
+            "car/citroen/gsx"
+          ]
+        },
+        {
+          "name": "Gsa",
+          "slug": "gsa",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 6,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/gsa-break",
+            "car/citroen/gsa-club",
+            "car/citroen/gsa-pallas",
+            "car/citroen/gsa-special"
+          ]
+        },
+        {
+          "name": "I D",
+          "slug": "i-d",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 8,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/id"
+          ]
+        },
+        {
+          "name": "ID19",
+          "slug": "id19",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/id-19"
+          ]
+        },
+        {
+          "name": "ID20",
+          "slug": "id20",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/citroen/id-20"
+          ]
+        },
+        {
+          "name": "Xm",
+          "slug": "xm",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 7,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/citroen/xm-v6"
+          ]
+        },
+        {
+          "name": "Xsara Picasso",
+          "slug": "xsara-picasso",
+          "kind": "car",
+          "body_type": "mpv",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/citroen/xsara-picasso-1-8i-16v"
+          ]
+        },
+        {
+          "name": "Ak",
+          "slug": "ak",
+          "kind": "van",
+          "global_decile": 6,
+          "availability": [
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/citroen/ak400"
+          ]
+        },
+        {
+          "name": "Berlingo",
+          "slug": "berlingo",
+          "kind": "van",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/citroen/berlingo-1-6hdi-600-55",
+            "van/citroen/berlingo-1-9d-600",
+            "van/citroen/berlingo-2-0hdi-600",
+            "van/citroen/berlingo-600-1-6hdi",
+            "van/citroen/berlingo-600-1-6hdif",
+            "van/citroen/berlingo-crew-cab",
+            "van/citroen/berlingo-talla-m-blueh",
+            "van/citroen/berlingo-van",
+            "van/citroen/berlingo-van-2510",
+            "van/citroen/berlingo-van-talla-m-b"
+          ]
+        },
+        {
+          "name": "E-Berlingo",
+          "slug": "e-berlingo",
+          "kind": "van",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/citroen/e-berlingo-van"
+          ]
+        },
+        {
+          "name": "HY",
+          "slug": "hy",
+          "kind": "van",
+          "global_decile": 7,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/citroen/hy-78",
+            "van/citroen/hy78"
+          ]
+        },
+        {
+          "name": "Jumper",
+          "slug": "jumper",
+          "kind": "van",
+          "global_decile": 1,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/citroen/cargo-jumper",
+            "van/citroen/jumper-2",
+            "van/citroen/jumper-33lh-2-2hdi-dc",
+            "van/citroen/jumper-multicab",
+            "van/citroen/jumper-oder-relay",
+            "van/citroen/jumper-ou-relay"
+          ]
+        },
+        {
+          "name": "Jumpy",
+          "slug": "jumpy",
+          "kind": "van",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/citroen/jumpy-1000-l1h1-1-6hdi",
+            "van/citroen/jumpy-business-van",
+            "van/citroen/jumpy-furgon-m-diesel",
+            "van/citroen/jumpy-oder-dispatch",
+            "van/citroen/jumpy-spacetourer"
+          ]
+        },
+        {
+          "name": "Nemo",
+          "slug": "nemo",
+          "kind": "van",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/citroen/nemo-1",
+            "van/citroen/nemo-1-4hdi"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Dacia",
+      "slug": "dacia",
+      "kinds": [
+        "car",
+        "van"
+      ],
+      "models": [
+        {
+          "name": "1310",
+          "slug": "1310",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 10,
+          "availability": [
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Bigster",
+          "slug": "bigster",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 3,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/dacia/bigster-expression-hev-auto"
+          ]
+        },
+        {
+          "name": "Duster",
+          "slug": "duster",
+          "kind": "car",
+          "body_type": "suv",
+          "aliases": [
+            "Renault Duster"
+          ],
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/dacia/duster-extreme"
+          ]
+        },
+        {
+          "name": "Jogger",
+          "slug": "jogger",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Logan",
+          "slug": "logan",
+          "kind": "car",
+          "body_type": "hatchback",
+          "aliases": [
+            "Renault Logan",
+            "Renault Symbol",
+            "Renault Tondar 90"
+          ],
+          "global_decile": 3,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/dacia/logan-mcv"
+          ]
+        },
+        {
+          "name": "Sandero",
+          "slug": "sandero",
+          "kind": "car",
+          "body_type": "hatchback",
+          "aliases": [
+            "Renault Sandero"
+          ],
+          "global_decile": 2,
+          "availability": [
+            "ar",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "sa"
+          ]
+        },
+        {
+          "name": "Sandero Stepway",
+          "slug": "sandero-stepway",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 9,
+          "availability": [
+            "es",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "Spring",
+          "slug": "spring",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 3,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Dokker",
+          "slug": "dokker",
+          "kind": "van",
+          "global_decile": 2,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ford",
+      "slug": "ford",
+      "kinds": [
+        "car",
+        "van",
+        "truck",
+        "bus"
+      ],
+      "models": [
+        {
+          "name": "20 M",
+          "slug": "20-m",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/ford/20m"
+          ]
+        },
+        {
+          "name": "Anglia",
+          "slug": "anglia",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/anglia-105e"
+          ]
+        },
+        {
+          "name": "Bronco",
+          "slug": "bronco",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/bronco-11",
+            "car/ford/bronco-badlands",
+            "car/ford/bronco-black-diamond",
+            "car/ford/bronco-outer-banks",
+            "car/ford/bronco-raptor",
+            "car/ford/bronco-sasquatch",
+            "car/ford/bronco-wildtrak",
+            "car/ford/bronco-xlt"
+          ]
+        },
+        {
+          "name": "C-Max",
+          "slug": "c-max",
+          "kind": "car",
+          "body_type": "mpv",
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/c-max-energi",
+            "car/ford/c-max-trend",
+            "car/ford/cmax",
+            "car/ford/focus-c-max"
+          ]
+        },
+        {
+          "name": "Capri",
+          "slug": "capri",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 3,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/capri-1600-l",
+            "car/ford/capri-3000-gt",
+            "car/ford/capri-premium-ev"
+          ]
+        },
+        {
+          "name": "Cortina",
+          "slug": "cortina",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/consul-cortina",
+            "car/ford/cortina-1300",
+            "car/ford/cortina-1600-l",
+            "car/ford/cortina-gt",
+            "car/ford/cortina-lotus"
+          ]
+        },
+        {
+          "name": "Custom",
+          "slug": "custom",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/custom-v8"
+          ]
+        },
+        {
+          "name": "EcoSport",
+          "slug": "ecosport",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/eco-sport"
+          ]
+        },
+        {
+          "name": "Edge",
+          "slug": "edge",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/edge-sel",
+            "car/ford/edge-sport",
+            "car/ford/edge-titanium"
+          ]
+        },
+        {
+          "name": "Escape",
+          "slug": "escape",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 2,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/escape-s",
+            "car/ford/escape-se",
+            "car/ford/escape-sel",
+            "car/ford/escape-titanium",
+            "car/ford/escape-xls",
+            "car/ford/escape-xlt"
+          ]
+        },
+        {
+          "name": "Escort",
+          "slug": "escort",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/escort-1",
+            "car/ford/escort-1100",
+            "car/ford/escort-1300",
+            "car/ford/escort-1300-l",
+            "car/ford/escort-1300-sport",
+            "car/ford/escort-1300l",
+            "car/ford/escort-1600l",
+            "car/ford/escort-gt",
+            "car/ford/escort-mexico-1600-gt",
+            "car/ford/escort-rs2000",
+            "car/ford/escort-wagon",
+            "car/ford/escort-xr3i",
+            "car/ford/escort-zx2"
+          ]
+        },
+        {
+          "name": "Explorer",
+          "slug": "explorer",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 2,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/explorer-2wd",
+            "car/ford/explorer-ffv",
+            "car/ford/explorer-fwd",
+            "car/ford/explorer-limited",
+            "car/ford/explorer-ltd",
+            "car/ford/explorer-premium-ev",
+            "car/ford/explorer-sport",
+            "car/ford/explorer-timberline",
+            "car/ford/explorer-tremor",
+            "car/ford/explorer-xls",
+            "car/ford/explorer-xlt"
+          ]
+        },
+        {
+          "name": "Fairlane",
+          "slug": "fairlane",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 2,
+          "availability": [
+            "fi",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/fairlane-500",
+            "car/ford/fairlane-500-galaxie",
+            "car/ford/fairlane-500-skyliner",
+            "car/ford/fairlane-skyliner",
+            "car/ford/fairlane-town",
+            "car/ford/fairlane-victoria",
+            "car/ford/fairline",
+            "car/ford/fairline-500"
+          ]
+        },
+        {
+          "name": "Fusion",
+          "slug": "fusion",
+          "kind": "car",
+          "body_type": "mpv",
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/fusion-energi",
+            "car/ford/fusion-se",
+            "car/ford/fusion-titanium"
+          ]
+        },
+        {
+          "name": "Galaxie",
+          "slug": "galaxie",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 2,
+          "availability": [
+            "fi",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/galaxie-500",
+            "car/ford/galaxie-500-hardtop",
+            "car/ford/galaxie-500-sunliner",
+            "car/ford/galaxie-500xl",
+            "car/ford/galaxie-sunliner",
+            "car/ford/galaxy-500"
+          ]
+        },
+        {
+          "name": "Model T",
+          "slug": "model-t",
+          "kind": "car",
+          "body_type": "convertible",
+          "aliases": [
+            "Tin Lizzie"
+          ],
+          "global_decile": 2,
+          "availability": [
+            "fi",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/model-t-runabout",
+            "car/ford/model-t-speedster",
+            "car/ford/model-t-touring",
+            "car/ford/model-t-tudor",
+            "car/ford/t",
+            "car/ford/t-ford",
+            "car/ford/t-roadster",
+            "car/ford/t-runabout",
+            "car/ford/t-touring",
+            "car/ford/t-tudor"
+          ]
+        },
+        {
+          "name": "Mondeo",
+          "slug": "mondeo",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 1,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/mondeo-st220"
+          ]
+        },
+        {
+          "name": "Mustang",
+          "slug": "mustang",
+          "kind": "car",
+          "body_type": "coupe",
+          "aliases": [
+            "Stang",
+            "Pony"
+          ],
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/mach-1",
+            "car/ford/mach-i",
+            "car/ford/mustang-2",
+            "car/ford/mustang-2d",
+            "car/ford/mustang-4",
+            "car/ford/mustang-boss-351",
+            "car/ford/mustang-bullit",
+            "car/ford/mustang-bullitt",
+            "car/ford/mustang-cobra",
+            "car/ford/mustang-dark-horse",
+            "car/ford/mustang-ecoboost",
+            "car/ford/mustang-ecoboost-conv",
+            "car/ford/mustang-ecoboost-premium",
+            "car/ford/mustang-grande",
+            "car/ford/mustang-gt",
+            "car/ford/mustang-gt-390",
+            "car/ford/mustang-gt350",
+            "car/ford/mustang-gt500-shelby",
+            "car/ford/mustang-gta",
+            "car/ford/mustang-hardtop",
+            "car/ford/mustang-hardtop-grande",
+            "car/ford/mustang-lx",
+            "car/ford/mustang-mach-1",
+            "car/ford/mustang-mach-i",
+            "car/ford/mustang-shelby-gt350",
+            "car/ford/mustang-shelby-gt500",
+            "car/ford/mustang-sportsroof",
+            "car/ford/mustang-v6",
+            "car/ford/shelby-gt-500",
+            "car/ford/shelby-gt350",
+            "car/ford/shelby-gt350-mustang",
+            "car/ford/shelby-gt500",
+            "car/ford/shelby-gt500-mustang"
+          ]
+        },
+        {
+          "name": "Mustang Mach-E",
+          "slug": "mustang-mach-e",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na"
+          ],
+          "former_ids": [
+            "car/ford/mustang-mach-gt",
+            "car/ford/mustang-mach-premium",
+            "car/ford/mustang-mach-rally",
+            "car/ford/mustang-mach-rwd"
+          ]
+        },
+        {
+          "name": "Sierra",
+          "slug": "sierra",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/sierra-2",
+            "car/ford/sierra-2-0i-clx",
+            "car/ford/sierra-2-0i-ghia",
+            "car/ford/sierra-2-0l",
+            "car/ford/sierra-l"
+          ]
+        },
+        {
+          "name": "Torino",
+          "slug": "torino",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/ford/torino-gt"
+          ]
+        },
+        {
+          "name": "F-150",
+          "slug": "f-150",
+          "kind": "truck",
+          "global_decile": 2,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/ford/f150"
+          ]
+        },
+        {
+          "name": "F-250",
+          "slug": "f-250",
+          "kind": "truck",
+          "global_decile": 2,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/ford/f250",
+            "truck/ford/f250xlt"
+          ]
+        },
+        {
+          "name": "F-350",
+          "slug": "f-350",
+          "kind": "truck",
+          "global_decile": 2,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/ford/f350"
+          ]
+        },
+        {
+          "name": "F-150",
+          "slug": "f-150",
+          "kind": "van",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/ford/f-150-lariat",
+            "van/ford/f-150-platinum",
+            "van/ford/f-150-raptor",
+            "van/ford/f-150-xlt",
+            "van/ford/f150",
+            "van/ford/f150-lariat",
+            "van/ford/f150-pick-up",
+            "van/ford/f150-ranger",
+            "van/ford/f150-supercab",
+            "van/ford/f150-triton",
+            "van/ford/f150-xlt",
+            "van/ford/f150-xlt-lariat",
+            "van/ford/ranger-f-150",
+            "van/ford/ranger-f150"
+          ]
+        },
+        {
+          "name": "Model T",
+          "slug": "model-t",
+          "kind": "van",
+          "aliases": [
+            "Tin Lizzie"
+          ],
+          "global_decile": 6,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/ford/t",
+            "van/ford/t-pick-up"
+          ]
+        },
+        {
+          "name": "Ranger",
+          "slug": "ranger",
+          "kind": "van",
+          "global_decile": 2,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "th"
+          ],
+          "regions": [
+            "as",
+            "eu"
+          ],
+          "former_ids": [
+            "van/ford/ranger-double-cab",
+            "van/ford/ranger-pickup",
+            "van/ford/ranger-super-cab",
+            "van/ford/ranger-xlt"
+          ]
+        },
+        {
+          "name": "Tourneo",
+          "slug": "tourneo",
+          "kind": "van",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/ford/transit-tourneo"
+          ]
+        },
+        {
+          "name": "Transit",
+          "slug": "transit",
+          "kind": "van",
+          "global_decile": 1,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/ford/transit-100",
+            "van/ford/transit-100-van",
+            "van/ford/transit-100l",
+            "van/ford/transit-100s",
+            "van/ford/transit-120",
+            "van/ford/transit-130",
+            "van/ford/transit-150",
+            "van/ford/transit-150l",
+            "van/ford/transit-190",
+            "van/ford/transit-2",
+            "van/ford/transit-260s-fd-sportvan-140-lr-4-36",
+            "van/ford/transit-260s-fd-van-85-lr-4-23",
+            "van/ford/transit-260s-van-85dpf-lr-4-23",
+            "van/ford/transit-280m",
+            "van/ford/transit-280m-van-lr-115dpf-4-36",
+            "van/ford/transit-300",
+            "van/ford/transit-300-s",
+            "van/ford/transit-300l",
+            "van/ford/transit-300m",
+            "van/ford/transit-300s",
+            "van/ford/transit-330",
+            "van/ford/transit-330m",
+            "van/ford/transit-350",
+            "van/ford/transit-350-m",
+            "van/ford/transit-350e",
+            "van/ford/transit-350l",
+            "van/ford/transit-350l-cdclb-146-5-44",
+            "van/ford/transit-ft-300-l",
+            "van/ford/transit-td",
+            "van/ford/transit-tecnocar",
+            "van/ford/transit-trend",
+            "van/ford/transit-van",
+            "van/ford/transit-van-300m"
+          ]
+        },
+        {
+          "name": "Transit Custom",
+          "slug": "transit-custom",
+          "kind": "van",
+          "global_decile": 1,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/ford/transit-costum",
+            "van/ford/transit-custom-van"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Mercedes-Benz",
+      "slug": "mercedes-benz",
+      "aliases": [
+        "Merc",
+        "Benz",
+        "MB"
+      ],
+      "kinds": [
+        "car",
+        "van",
+        "truck",
+        "bus"
+      ],
+      "models": [
+        {
+          "name": "Sprinter",
+          "slug": "sprinter",
+          "kind": "bus",
+          "global_decile": 1,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "bus/mercedes-benz/412d-ka-904463-kasten",
+            "bus/mercedes-benz/906"
+          ]
+        },
+        {
+          "name": "170 S",
+          "slug": "170-s",
+          "kind": "car",
+          "body_type": "convertible",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/170-s-4d",
+            "car/mercedes-benz/170s"
+          ]
+        },
+        {
+          "name": "190 E",
+          "slug": "190-e",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl",
+            "nz",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/190-e-1",
+            "car/mercedes-benz/190-e-2",
+            "car/mercedes-benz/190e",
+            "car/mercedes-benz/190e-2"
+          ]
+        },
+        {
+          "name": "200 E",
+          "slug": "200-e",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "nl",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/200e"
+          ]
+        },
+        {
+          "name": "230 CE",
+          "slug": "230-ce",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "nl",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/230ce"
+          ]
+        },
+        {
+          "name": "230 E",
+          "slug": "230-e",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "nl",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/230e"
+          ]
+        },
+        {
+          "name": "230 TE",
+          "slug": "230-te",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "nl",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/230te"
+          ]
+        },
+        {
+          "name": "250 S",
+          "slug": "250-s",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/250s"
+          ]
+        },
+        {
+          "name": "280 E",
+          "slug": "280-e",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/280e"
+          ]
+        },
+        {
+          "name": "300 D",
+          "slug": "300-d",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/300-d-lang",
+            "car/mercedes-benz/300-d-turbo",
+            "car/mercedes-benz/300-dt",
+            "car/mercedes-benz/300d",
+            "car/mercedes-benz/300d-lang",
+            "car/mercedes-benz/300d-turbo"
+          ]
+        },
+        {
+          "name": "300 E",
+          "slug": "300-e",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/300-e-4-matic",
+            "car/mercedes-benz/300e"
+          ]
+        },
+        {
+          "name": "300 SE",
+          "slug": "300-se",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/300se"
+          ]
+        },
+        {
+          "name": "A-Class",
+          "slug": "a-class",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 2,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/a"
+          ]
+        },
+        {
+          "name": "C-Class",
+          "slug": "c-class",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 2,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/c"
+          ]
+        },
+        {
+          "name": "E-Class",
+          "slug": "e-class",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 2,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/e"
+          ]
+        },
+        {
+          "name": "G-Class",
+          "slug": "g-class",
+          "kind": "car",
+          "body_type": "suv",
+          "aliases": [
+            "Geländewagen",
+            "G-Wagen"
+          ],
+          "global_decile": 3,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/g",
+            "van/mercedes-benz/g",
+            "van/mercedes-benz/g-class"
+          ]
+        },
+        {
+          "name": "ML",
+          "slug": "ml",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 2,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/m"
+          ]
+        },
+        {
+          "name": "V-Class",
+          "slug": "v-class",
+          "kind": "car",
+          "body_type": "mpv",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/v"
+          ]
+        },
+        {
+          "name": "1117",
+          "slug": "1117",
+          "kind": "truck",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/mercedes-benz/1117-l",
+            "truck/mercedes-benz/1117l"
+          ]
+        },
+        {
+          "name": "609",
+          "slug": "609",
+          "kind": "truck",
+          "global_decile": 2,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/mercedes-benz/609d-ka"
+          ]
+        },
+        {
+          "name": "814",
+          "slug": "814",
+          "kind": "truck",
+          "global_decile": 1,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/mercedes-benz/814-dk",
+            "truck/mercedes-benz/814-l",
+            "truck/mercedes-benz/814dk",
+            "truck/mercedes-benz/814l"
+          ]
+        },
+        {
+          "name": "Arocs",
+          "slug": "arocs",
+          "kind": "truck",
+          "global_decile": 1,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/mercedes-benz/arcos"
+          ]
+        },
+        {
+          "name": "Atego",
+          "slug": "atego",
+          "kind": "truck",
+          "global_decile": 1,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/mercedes-benz/ateco"
+          ]
+        },
+        {
+          "name": "L 508",
+          "slug": "l-508",
+          "kind": "truck",
+          "global_decile": 2,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/mercedes-benz/l508"
+          ]
+        },
+        {
+          "name": "Sprinter",
+          "slug": "sprinter",
+          "kind": "truck",
+          "global_decile": 1,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/mercedes-benz/312d-ka-903462-kasten",
+            "truck/mercedes-benz/312d-ka-903463-kasten",
+            "truck/mercedes-benz/904",
+            "truck/mercedes-benz/906",
+            "truck/mercedes-benz/906-ba-50",
+            "truck/mercedes-benz/906ba50",
+            "truck/mercedes-benz/spinter"
+          ]
+        },
+        {
+          "name": "108 D",
+          "slug": "108-d",
+          "kind": "van",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/mercedes-benz/108d"
+          ]
+        },
+        {
+          "name": "110 D",
+          "slug": "110-d",
+          "kind": "van",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/mercedes-benz/110d"
+          ]
+        },
+        {
+          "name": "311",
+          "slug": "311",
+          "kind": "van",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/mercedes-benz/311-cdi",
+            "van/mercedes-benz/311cdi"
+          ]
+        },
+        {
+          "name": "313",
+          "slug": "313",
+          "kind": "van",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/mercedes-benz/313-cdi",
+            "van/mercedes-benz/313cdi"
+          ]
+        },
+        {
+          "name": "Sprinter",
+          "slug": "sprinter",
+          "kind": "van",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "th"
+          ],
+          "regions": [
+            "as",
+            "eu"
+          ],
+          "former_ids": [
+            "car/mercedes-benz/902-6-ka",
+            "car/mercedes-benz/906",
+            "car/mercedes-benz/906-ac-30",
+            "car/mercedes-benz/906-ac-35",
+            "car/mercedes-benz/906-ka-35",
+            "van/mercedes-benz/902-ka",
+            "van/mercedes-benz/903",
+            "van/mercedes-benz/903-6-308cdi",
+            "van/mercedes-benz/906",
+            "van/mercedes-benz/906-ba-35",
+            "van/mercedes-benz/906-ba35",
+            "van/mercedes-benz/906-ka-30",
+            "van/mercedes-benz/906-ka-30-sprinter-209cdi",
+            "van/mercedes-benz/906-ka-30-sprinter-210cdi",
+            "van/mercedes-benz/906-ka-30-sprinter-211cdi",
+            "van/mercedes-benz/906-ka-35",
+            "van/mercedes-benz/906-ka-35-sprinter-310cdi",
+            "van/mercedes-benz/906-ka-35-sprinter-311cdi",
+            "van/mercedes-benz/906-ka-35-sprinter-313cdi",
+            "van/mercedes-benz/906-ka-35-sprinter-315cdi",
+            "van/mercedes-benz/906-ka-35-sprinter-316cdi",
+            "van/mercedes-benz/906-ka-35-sprinter-318cdi",
+            "van/mercedes-benz/906-ok-30",
+            "van/mercedes-benz/906ba35",
+            "van/mercedes-benz/906ok30",
+            "van/mercedes-benz/spinter",
+            "van/mercedes-benz/spriner",
+            "van/mercedes-benz/srinter"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Renault",
+      "slug": "renault",
+      "kinds": [
+        "car",
+        "motorcycle",
+        "moped",
+        "van",
+        "truck",
+        "bus"
+      ],
+      "models": [
+        {
+          "name": "11",
+          "slug": "11",
+          "kind": "car",
+          "body_type": "hatchback",
+          "aliases": [
+            "Renault Encore"
+          ],
+          "global_decile": 6,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/r11"
+          ]
+        },
+        {
+          "name": "12",
+          "slug": "12",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 6,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/12-tl",
+            "car/renault/12tl",
+            "car/renault/r-12",
+            "car/renault/r12"
+          ]
+        },
+        {
+          "name": "16",
+          "slug": "16",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/16-ts",
+            "car/renault/16ts",
+            "car/renault/r-16-tl",
+            "car/renault/r16",
+            "car/renault/r16tx"
+          ]
+        },
+        {
+          "name": "19",
+          "slug": "19",
+          "kind": "car",
+          "body_type": "convertible",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/19-gtx",
+            "car/renault/r-19",
+            "car/renault/r19"
+          ]
+        },
+        {
+          "name": "21",
+          "slug": "21",
+          "kind": "car",
+          "body_type": "sedan",
+          "aliases": [
+            "Eagle Medallion",
+            "Renault Medallion"
+          ],
+          "global_decile": 6,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/21-nevada",
+            "car/renault/21-rx",
+            "car/renault/21-turbo",
+            "car/renault/21-turbo-quadra",
+            "car/renault/r21"
+          ]
+        },
+        {
+          "name": "25",
+          "slug": "25",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/25-gtx",
+            "car/renault/25-txi",
+            "car/renault/25-v6-turbo",
+            "car/renault/r25"
+          ]
+        },
+        {
+          "name": "4",
+          "slug": "4",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 4,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/4-gtl",
+            "car/renault/4-iconic",
+            "car/renault/4-l",
+            "car/renault/4gtl",
+            "car/renault/r-4",
+            "car/renault/r-4-gtl",
+            "car/renault/r4",
+            "car/renault/r4-gtl",
+            "car/renault/r4-tl",
+            "car/renault/r4l"
+          ]
+        },
+        {
+          "name": "4CV",
+          "slug": "4cv",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "lu",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/4-cv"
+          ]
+        },
+        {
+          "name": "5",
+          "slug": "5",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 4,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/5-gt-turbo",
+            "car/renault/5-gtl",
+            "car/renault/5-gtx",
+            "car/renault/5-iconic",
+            "car/renault/5-techno",
+            "car/renault/5gtl",
+            "car/renault/5tl",
+            "car/renault/r-5",
+            "car/renault/r5",
+            "car/renault/r5-alpine-turbo",
+            "car/renault/r5-gt-turbo",
+            "car/renault/r5-gtl",
+            "car/renault/r5gtl"
+          ]
+        },
+        {
+          "name": "8",
+          "slug": "8",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 6,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/r-1135-gordini",
+            "car/renault/r08",
+            "car/renault/r8"
+          ]
+        },
+        {
+          "name": "9",
+          "slug": "9",
+          "kind": "car",
+          "body_type": "sedan",
+          "aliases": [
+            "Renault Alliance"
+          ],
+          "global_decile": 6,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/renault/r9"
+          ]
+        },
+        {
+          "name": "Arkana",
+          "slug": "arkana",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 3,
+          "availability": [
+            "ar",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/renault/arkana-megane-conquest",
+            "car/renault/megane-conquest"
+          ]
+        },
+        {
+          "name": "Captur",
+          "slug": "captur",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/capture"
+          ]
+        },
+        {
+          "name": "Caravelle",
+          "slug": "caravelle",
+          "kind": "car",
+          "body_type": "convertible",
+          "global_decile": 6,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/caravelle-1100",
+            "car/renault/r-1133-caravelle"
+          ]
+        },
+        {
+          "name": "Clio",
+          "slug": "clio",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/clio-societe",
+            "car/renault/clio-sport"
+          ]
+        },
+        {
+          "name": "Dauphine",
+          "slug": "dauphine",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "lu",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/dauphine-gordini",
+            "car/renault/dauphine-r1090"
+          ]
+        },
+        {
+          "name": "Espace",
+          "slug": "espace",
+          "kind": "car",
+          "body_type": "mpv",
+          "global_decile": 3,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/grand-espace"
+          ]
+        },
+        {
+          "name": "Fluence",
+          "slug": "fluence",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/fluence-z-e"
+          ]
+        },
+        {
+          "name": "Fuego",
+          "slug": "fuego",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/fuego-gtx",
+            "car/renault/fuego-turbo"
+          ]
+        },
+        {
+          "name": "Megane",
+          "slug": "megane",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/megane-break",
+            "car/renault/megane-sport"
+          ]
+        },
+        {
+          "name": "Modus",
+          "slug": "modus",
+          "kind": "car",
+          "body_type": "mpv",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/grand-modus"
+          ]
+        },
+        {
+          "name": "Scenic",
+          "slug": "scenic",
+          "kind": "car",
+          "body_type": "mpv",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/renault/meganescenic"
+          ]
+        },
+        {
+          "name": "Ae",
+          "slug": "ae",
+          "kind": "truck",
+          "global_decile": 6,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/renault/ae385",
+            "truck/renault/ae420"
+          ]
+        },
+        {
+          "name": "C",
+          "slug": "c",
+          "kind": "truck",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/renault/c380",
+            "truck/renault/c430",
+            "truck/renault/c440",
+            "truck/renault/c520"
+          ]
+        },
+        {
+          "name": "D",
+          "slug": "d",
+          "kind": "truck",
+          "global_decile": 2,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/renault/d12",
+            "truck/renault/d13",
+            "truck/renault/d14",
+            "truck/renault/d16"
+          ]
+        },
+        {
+          "name": "K",
+          "slug": "k",
+          "kind": "truck",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/renault/k480"
+          ]
+        },
+        {
+          "name": "T",
+          "slug": "t",
+          "kind": "truck",
+          "global_decile": 1,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/renault/t380",
+            "truck/renault/t460",
+            "truck/renault/t480"
+          ]
+        },
+        {
+          "name": "Kangoo",
+          "slug": "kangoo",
+          "kind": "van",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/renault/fc-kangoo",
+            "van/renault/kango",
+            "van/renault/kangoo-express",
+            "van/renault/kangoo-express-z-e",
+            "van/renault/kangoo-rapid",
+            "van/renault/kangoo-van"
+          ]
+        },
+        {
+          "name": "Master",
+          "slug": "master",
+          "kind": "van",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/renault-trucks/master",
+            "van/renault/e-tech-master",
+            "van/renault/fd-master",
+            "van/renault/filovan-master",
+            "van/renault/master-2",
+            "van/renault/master-be-combi-lvc",
+            "van/renault/master-f3500",
+            "van/renault/master-horsebox",
+            "van/renault/master-jpm",
+            "van/renault/master-t-35",
+            "van/renault/master-t35",
+            "van/renault/master-theault",
+            "van/renault/master-ze"
+          ]
+        },
+        {
+          "name": "Trafic",
+          "slug": "trafic",
+          "kind": "van",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/renault-trucks/trafic",
+            "van/renault/traffic",
+            "van/renault/trafic-dubbele-cabine",
+            "van/renault/trafic-fourgon"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "SEAT",
+      "slug": "seat",
+      "kinds": [
+        "car",
+        "van"
+      ],
+      "models": [
+        {
+          "name": "127",
+          "slug": "127",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 7,
+          "availability": [
+            "es",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/seat/127-sport"
+          ]
+        },
+        {
+          "name": "600",
+          "slug": "600",
+          "kind": "car",
+          "body_type": "sedan",
+          "aliases": [
+            "Seiscientos",
+            "Seílla"
+          ],
+          "global_decile": 6,
+          "availability": [
+            "es",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "800",
+          "slug": "800",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 9,
+          "availability": [
+            "fi",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Alhambra",
+          "slug": "alhambra",
+          "kind": "car",
+          "body_type": "mpv",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "Altea",
+          "slug": "altea",
+          "kind": "car",
+          "body_type": "mpv",
+          "global_decile": 2,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/seat/altea-4-freetrack",
+            "car/seat/altea-freetrack"
+          ]
+        },
+        {
+          "name": "Arona",
+          "slug": "arona",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "Arosa",
+          "slug": "arosa",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Ateca",
+          "slug": "ateca",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "Cordoba",
+          "slug": "cordoba",
+          "kind": "car",
+          "body_type": "sedan",
+          "aliases": [
+            "Córdoba"
+          ],
+          "global_decile": 5,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "Exeo",
+          "slug": "exeo",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Ibiza",
+          "slug": "ibiza",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/seat/ibiza-cupra"
+          ]
+        },
+        {
+          "name": "Leon",
+          "slug": "leon",
+          "kind": "car",
+          "body_type": "hatchback",
+          "aliases": [
+            "León"
+          ],
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/seat/leon-1",
+            "car/seat/leon-cupra",
+            "car/seat/leon-sc",
+            "car/seat/leon-sportourer",
+            "car/seat/leon-x-perience"
+          ]
+        },
+        {
+          "name": "Malaga",
+          "slug": "malaga",
+          "kind": "car",
+          "body_type": "sedan",
+          "aliases": [
+            "Málaga",
+            "Gredos"
+          ],
+          "global_decile": 9,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Marbella",
+          "slug": "marbella",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 7,
+          "availability": [
+            "gb",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Mii",
+          "slug": "mii",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Tarraco",
+          "slug": "tarraco",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        },
+        {
+          "name": "Toledo",
+          "slug": "toledo",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "eu"
+          ]
+        },
+        {
+          "name": "Inca",
+          "slug": "inca",
+          "kind": "van",
+          "global_decile": 5,
+          "availability": [
+            "fi",
+            "gb",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tesla",
+      "slug": "tesla",
+      "kinds": [
+        "car"
+      ],
+      "models": [
+        {
+          "name": "Cybertruck",
+          "slug": "cybertruck",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 9,
+          "availability": [
+            "ca",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na"
+          ]
+        },
+        {
+          "name": "Model 3",
+          "slug": "model-3",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 1,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ]
+        },
+        {
+          "name": "Model S",
+          "slug": "model-s",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ]
+        },
+        {
+          "name": "Model X",
+          "slug": "model-x",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 4,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ]
+        },
+        {
+          "name": "Model Y",
+          "slug": "model-y",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 1,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/tesla/y"
+          ]
+        },
+        {
+          "name": "Roadster",
+          "slug": "roadster",
+          "kind": "car",
+          "body_type": "convertible",
+          "global_decile": 6,
+          "availability": [
+            "gb",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Toyota",
+      "slug": "toyota",
+      "aliases": [
+        "丰田",
+        "トヨタ"
+      ],
+      "kinds": [
+        "car",
+        "van",
+        "truck",
+        "bus"
+      ],
+      "models": [
+        {
+          "name": "Hiace",
+          "slug": "hiace",
+          "kind": "bus",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "gb",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "bus/toyota/hi"
+          ]
+        },
+        {
+          "name": "Land Cruiser",
+          "slug": "land-cruiser",
+          "kind": "bus",
+          "aliases": [
+            "ランドクルーザー",
+            "Landcruiser"
+          ],
+          "global_decile": 6,
+          "availability": [
+            "gb",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "bus/toyota/landcruiser"
+          ]
+        },
+        {
+          "name": "4-Runner",
+          "slug": "4-runner",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 4,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/4runner"
+          ]
+        },
+        {
+          "name": "Altezza",
+          "slug": "altezza",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/altezza-gita",
+            "car/toyota/altezza-rs200"
+          ]
+        },
+        {
+          "name": "Aygo",
+          "slug": "aygo",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/aygo-cross"
+          ]
+        },
+        {
+          "name": "Bb",
+          "slug": "bb",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 2,
+          "availability": [
+            "fi",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/bb-opendeck"
+          ]
+        },
+        {
+          "name": "C-HR",
+          "slug": "c-hr",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 2,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/ch-r",
+            "car/toyota/chr"
+          ]
+        },
+        {
+          "name": "Caldina",
+          "slug": "caldina",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/caldina-gt-four",
+            "car/toyota/caldina-gt-t"
+          ]
+        },
+        {
+          "name": "Camry",
+          "slug": "camry",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/camry-2",
+            "car/toyota/camry-le",
+            "car/toyota/camry-le-se",
+            "car/toyota/camry-se",
+            "car/toyota/camry-trd",
+            "car/toyota/camry-wagon",
+            "car/toyota/camry-xle",
+            "car/toyota/camry-xle-xse",
+            "car/toyota/camry-xse"
+          ]
+        },
+        {
+          "name": "Carina",
+          "slug": "carina",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/carina-1600",
+            "car/toyota/carina-dx"
+          ]
+        },
+        {
+          "name": "Celica",
+          "slug": "celica",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 4,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/celica-1",
+            "car/toyota/celica-1600",
+            "car/toyota/celica-2",
+            "car/toyota/celica-gt",
+            "car/toyota/celica-gt-4",
+            "car/toyota/celica-gt-four",
+            "car/toyota/celica-gt4",
+            "car/toyota/celica-hard-top",
+            "car/toyota/celica-liftback",
+            "car/toyota/celica-lt",
+            "car/toyota/celica-supra"
+          ]
+        },
+        {
+          "name": "Corolla",
+          "slug": "corolla",
+          "kind": "car",
+          "body_type": "hatchback",
+          "aliases": [
+            "カローラ"
+          ],
+          "global_decile": 1,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/ae86",
+            "car/toyota/corolla-1",
+            "car/toyota/corolla-1200",
+            "car/toyota/corolla-1600-gt",
+            "car/toyota/corolla-altis",
+            "car/toyota/corolla-compressor",
+            "car/toyota/corolla-fx",
+            "car/toyota/corolla-gt",
+            "car/toyota/corolla-im",
+            "car/toyota/corolla-le-eco",
+            "car/toyota/corolla-sport",
+            "car/toyota/corolla-wagon",
+            "car/toyota/corolla-xle",
+            "car/toyota/corolla-xse"
+          ]
+        },
+        {
+          "name": "Corolla Fielder",
+          "slug": "corolla-fielder",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/fielder"
+          ]
+        },
+        {
+          "name": "Hiace",
+          "slug": "hiace",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/hi-ace"
+          ]
+        },
+        {
+          "name": "Highlander",
+          "slug": "highlander",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "ar",
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/toyota/higlander"
+          ]
+        },
+        {
+          "name": "Hilux",
+          "slug": "hilux",
+          "kind": "car",
+          "body_type": "pickup",
+          "aliases": [
+            "ハイラックス"
+          ],
+          "global_decile": 3,
+          "availability": [
+            "ar",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/toyota/hilux-revo"
+          ]
+        },
+        {
+          "name": "Land Cruiser",
+          "slug": "land-cruiser",
+          "kind": "car",
+          "body_type": "hatchback",
+          "aliases": [
+            "ランドクルーザー",
+            "Landcruiser"
+          ],
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/bj40",
+            "car/toyota/fj40",
+            "car/toyota/land-cruiser-100",
+            "car/toyota/land-cruiser-120",
+            "car/toyota/land-cruiser-120series",
+            "car/toyota/land-cruiser-150",
+            "car/toyota/land-cruiser-150-serie",
+            "car/toyota/land-cruiser-150-series",
+            "car/toyota/land-cruiser-150series",
+            "car/toyota/land-cruiser-200",
+            "car/toyota/land-cruiser-300",
+            "car/toyota/land-cruiser-300-gr-sport",
+            "car/toyota/land-cruiser-90",
+            "car/toyota/land-cruiser-bj40",
+            "car/toyota/land-cruiser-hj61",
+            "car/toyota/land-cruiser-vx",
+            "car/toyota/land-cuiser",
+            "car/toyota/landcruiser"
+          ]
+        },
+        {
+          "name": "Land Cruiser Prado",
+          "slug": "land-cruiser-prado",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "my",
+            "nl",
+            "ua"
+          ],
+          "regions": [
+            "as",
+            "eu"
+          ],
+          "former_ids": [
+            "car/toyota/land-cruiser-prado-150",
+            "car/toyota/land-cruiser-prado-gx",
+            "car/toyota/prado"
+          ]
+        },
+        {
+          "name": "Mark",
+          "slug": "mark",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "gb",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/corona-mark",
+            "car/toyota/corona-mk",
+            "car/toyota/mark-2"
+          ]
+        },
+        {
+          "name": "Mark X",
+          "slug": "mark-x",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "fi",
+            "my",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/mark-x-250g",
+            "car/toyota/markx"
+          ]
+        },
+        {
+          "name": "Prius",
+          "slug": "prius",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/prius-eco",
+            "car/toyota/prius-phv"
+          ]
+        },
+        {
+          "name": "RAV4",
+          "slug": "rav4",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 3,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/toyota/rav",
+            "car/toyota/rav-4",
+            "car/toyota/rav4-ev",
+            "car/toyota/rav4-le-xle",
+            "car/toyota/rav4-limited",
+            "car/toyota/rav4-soft-top"
+          ]
+        },
+        {
+          "name": "Starlet",
+          "slug": "starlet",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/toyota/starlet-1",
+            "car/toyota/starlet-dl",
+            "car/toyota/starlet-gt-turbo"
+          ]
+        },
+        {
+          "name": "Yaris",
+          "slug": "yaris",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 2,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/toyota/yaris-grmn",
+            "car/toyota/yaris-ia"
+          ]
+        },
+        {
+          "name": "Land Cruiser",
+          "slug": "land-cruiser",
+          "kind": "truck",
+          "aliases": [
+            "ランドクルーザー",
+            "Landcruiser"
+          ],
+          "global_decile": 9,
+          "availability": [
+            "gb",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "truck/toyota/landcruiser"
+          ]
+        },
+        {
+          "name": "Dyna",
+          "slug": "dyna",
+          "kind": "van",
+          "global_decile": 3,
+          "availability": [
+            "fi",
+            "gb",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/toyota/dyna-100",
+            "van/toyota/dyna-150"
+          ]
+        },
+        {
+          "name": "Hiace",
+          "slug": "hiace",
+          "kind": "van",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "th"
+          ],
+          "regions": [
+            "as",
+            "eu"
+          ],
+          "former_ids": [
+            "van/toyota/hi-ace",
+            "van/toyota/hiace-2",
+            "van/toyota/hiace-2-4td",
+            "van/toyota/hiace-van"
+          ]
+        },
+        {
+          "name": "Hilux",
+          "slug": "hilux",
+          "kind": "van",
+          "aliases": [
+            "ハイラックス"
+          ],
+          "global_decile": 1,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "th"
+          ],
+          "regions": [
+            "as",
+            "eu"
+          ],
+          "former_ids": [
+            "van/toyota/hi-lux",
+            "van/toyota/hilux-2",
+            "van/toyota/hilux-2-4td",
+            "van/toyota/hilux-4-wd",
+            "van/toyota/hilux-4x4",
+            "van/toyota/hilux-double-cab",
+            "van/toyota/hilux-revo"
+          ]
+        },
+        {
+          "name": "Land Cruiser",
+          "slug": "land-cruiser",
+          "kind": "van",
+          "aliases": [
+            "ランドクルーザー",
+            "Landcruiser"
+          ],
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/toyota/land-cruiser-hard-top",
+            "van/toyota/kzj90",
+            "van/toyota/land-cruiser-100",
+            "van/toyota/land-cruiser-120",
+            "van/toyota/land-cruiser-120-series",
+            "van/toyota/land-cruiser-150",
+            "van/toyota/land-cruiser-150-series",
+            "van/toyota/land-cruiser-90",
+            "van/toyota/land-cruiser-90-series",
+            "van/toyota/land-cruiser-bj40",
+            "van/toyota/land-cruiser-bj45",
+            "van/toyota/land-cruiser-bj75lp-mrw-pick-up-4x4-2980",
+            "van/toyota/land-cruiser-first-edition-d-a",
+            "van/toyota/land-cruiser-hardtop",
+            "van/toyota/land-cruiser-lx-turbo",
+            "van/toyota/land-cruiser-van",
+            "van/toyota/landcruiser"
+          ]
+        },
+        {
+          "name": "Proace City",
+          "slug": "proace-city",
+          "kind": "van",
+          "global_decile": 2,
+          "availability": [
+            "es",
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/toyota/proace-city-2510"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Volkswagen",
+      "slug": "volkswagen",
+      "aliases": [
+        "VW",
+        "Vdub"
+      ],
+      "kinds": [
+        "car",
+        "van",
+        "truck",
+        "bus"
+      ],
+      "models": [
+        {
+          "name": "Caravelle",
+          "slug": "caravelle",
+          "kind": "bus",
+          "global_decile": 5,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "bus/volkswagen/micro-bus",
+            "bus/volkswagen/microbus"
+          ]
+        },
+        {
+          "name": "Arteon",
+          "slug": "arteon",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 4,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/arteon-4motion"
+          ]
+        },
+        {
+          "name": "Atlas",
+          "slug": "atlas",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "nl",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na"
+          ],
+          "former_ids": [
+            "car/volkswagen/atlas-4motion",
+            "car/volkswagen/atlas-4motion-peak-edition",
+            "car/volkswagen/atlas-se-4motion"
+          ]
+        },
+        {
+          "name": "Beetle",
+          "slug": "beetle",
+          "kind": "car",
+          "body_type": "hatchback",
+          "aliases": [
+            "Käfer",
+            "Vocho",
+            "Fusca",
+            "Coccinelle",
+            "Type 1"
+          ],
+          "global_decile": 2,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/10-11c",
+            "car/volkswagen/11",
+            "car/volkswagen/1110",
+            "car/volkswagen/112",
+            "car/volkswagen/113",
+            "car/volkswagen/114",
+            "car/volkswagen/118",
+            "car/volkswagen/11c",
+            "car/volkswagen/1200-2d",
+            "car/volkswagen/1200-kupla",
+            "car/volkswagen/1200-lim-113",
+            "car/volkswagen/1200-lim-117",
+            "car/volkswagen/1202",
+            "car/volkswagen/1300",
+            "car/volkswagen/1300-s",
+            "car/volkswagen/1300l",
+            "car/volkswagen/1300s",
+            "car/volkswagen/1302",
+            "car/volkswagen/1302-ls",
+            "car/volkswagen/1302-s",
+            "car/volkswagen/1302ls",
+            "car/volkswagen/1302s",
+            "car/volkswagen/1303",
+            "car/volkswagen/1303-ls",
+            "car/volkswagen/1303-s",
+            "car/volkswagen/1303-s-135031",
+            "car/volkswagen/1303l",
+            "car/volkswagen/1303ls",
+            "car/volkswagen/1303s",
+            "car/volkswagen/automatic",
+            "car/volkswagen/beatle",
+            "car/volkswagen/beetle-dune",
+            "car/volkswagen/beettle",
+            "car/volkswagen/bug",
+            "car/volkswagen/cabriolet-1302",
+            "car/volkswagen/cabriolet-1303",
+            "car/volkswagen/classica",
+            "car/volkswagen/de-luxe",
+            "car/volkswagen/deluxe",
+            "car/volkswagen/kaefer",
+            "car/volkswagen/kafer",
+            "car/volkswagen/newbeetle",
+            "car/volkswagen/special",
+            "car/volkswagen/super-beetle",
+            "car/volkswagen/typ-1",
+            "car/volkswagen/typ-11",
+            "car/volkswagen/type-i",
+            "car/volkswagen/vw-1-11",
+            "car/volkswagen/vw-1200",
+            "car/volkswagen/vw-1300",
+            "car/volkswagen/vw-beetle",
+            "car/volkswagen/vw1-11",
+            "car/volkswagen/vw1300"
+          ]
+        },
+        {
+          "name": "Bora",
+          "slug": "bora",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/e-bora"
+          ]
+        },
+        {
+          "name": "California",
+          "slug": "california",
+          "kind": "car",
+          "body_type": "van",
+          "global_decile": 4,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/california-beach",
+            "car/volkswagen/california-exclusive",
+            "car/volkswagen/california-generation"
+          ]
+        },
+        {
+          "name": "Caravelle",
+          "slug": "caravelle",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 2,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/caravelle-2",
+            "car/volkswagen/caravelle-syncro",
+            "car/volkswagen/kleinbus",
+            "car/volkswagen/kleinbuss",
+            "car/volkswagen/kleinbuss-1600-22",
+            "car/volkswagen/micro-bus",
+            "car/volkswagen/microbus",
+            "car/volkswagen/multi-van",
+            "car/volkswagen/multivan-starline",
+            "car/volkswagen/multivan-startline",
+            "car/volkswagen/multivan-syncro",
+            "car/volkswagen/multivan-t6",
+            "car/volkswagen/vw-campingwagen",
+            "car/volkswagen/vw-caravelle-2"
+          ]
+        },
+        {
+          "name": "CC",
+          "slug": "cc",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/cc-4motion",
+            "car/volkswagen/cc-sport"
+          ]
+        },
+        {
+          "name": "Fox",
+          "slug": "fox",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na"
+          ],
+          "former_ids": [
+            "car/volkswagen/urban"
+          ]
+        },
+        {
+          "name": "Golf",
+          "slug": "golf",
+          "kind": "car",
+          "body_type": "hatchback",
+          "aliases": [
+            "Rabbit"
+          ],
+          "global_decile": 2,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/colf",
+            "car/volkswagen/gti",
+            "car/volkswagen/gti-16v",
+            "car/volkswagen/gti-vr6",
+            "car/volkswagen/r32",
+            "car/volkswagen/vw-golf",
+            "car/volkswagen/vw-golf-gls",
+            "car/volkswagen/vw-golf-r32"
+          ]
+        },
+        {
+          "name": "Id. Buzz",
+          "slug": "id-buzz",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 4,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "th",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/id-buzz-gtx-kr",
+            "car/volkswagen/id-buzz-gtx-lr",
+            "car/volkswagen/id-buzz-pro",
+            "car/volkswagen/id-buzz-pro-4motion",
+            "car/volkswagen/id-buzz-pro-kr",
+            "car/volkswagen/id-buzz-pro-lr",
+            "car/volkswagen/id-buzz-pure-kr"
+          ]
+        },
+        {
+          "name": "Jetta",
+          "slug": "jetta",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 3,
+          "availability": [
+            "ca",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/gli",
+            "car/volkswagen/jetta-cl",
+            "car/volkswagen/jetta-diesel",
+            "car/volkswagen/jetta-gl",
+            "car/volkswagen/jetta-gl-diesel",
+            "car/volkswagen/jetta-gli",
+            "car/volkswagen/jetta-glx",
+            "car/volkswagen/jetta-se",
+            "car/volkswagen/jetta-sportwagen",
+            "car/volkswagen/jetta-wagon"
+          ]
+        },
+        {
+          "name": "Karmann Ghia",
+          "slug": "karmann-ghia",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 5,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/1200-karmann-ghia",
+            "car/volkswagen/1300-karmann-ghia",
+            "car/volkswagen/1500-karmann-ghia",
+            "car/volkswagen/1600-karmann-ghia",
+            "car/volkswagen/ghia",
+            "car/volkswagen/karman",
+            "car/volkswagen/karman-ghia",
+            "car/volkswagen/karmann",
+            "car/volkswagen/karmann-chia",
+            "car/volkswagen/karmann-ghia-14",
+            "car/volkswagen/karmann-ghia-1600",
+            "car/volkswagen/karmann-ghia-tc",
+            "car/volkswagen/kharman-ghia",
+            "car/volkswagen/kharmann-ghia"
+          ]
+        },
+        {
+          "name": "Lt",
+          "slug": "lt",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 5,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/lt-26",
+            "car/volkswagen/lt-28",
+            "car/volkswagen/lt-28d",
+            "car/volkswagen/lt-31",
+            "car/volkswagen/lt-35",
+            "car/volkswagen/lt-35-d",
+            "car/volkswagen/lt-35d",
+            "car/volkswagen/lt-40",
+            "car/volkswagen/lt28",
+            "car/volkswagen/lt28d",
+            "car/volkswagen/lt35"
+          ]
+        },
+        {
+          "name": "Lupo",
+          "slug": "lupo",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/lupo-1"
+          ]
+        },
+        {
+          "name": "Passat",
+          "slug": "passat",
+          "kind": "car",
+          "body_type": "sedan",
+          "global_decile": 2,
+          "availability": [
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/passat-1",
+            "car/volkswagen/passat-2",
+            "car/volkswagen/passat-4motion",
+            "car/volkswagen/passat-cc-sport",
+            "car/volkswagen/passat-diesel",
+            "car/volkswagen/passat-gls",
+            "car/volkswagen/passat-glx",
+            "car/volkswagen/passat-gt",
+            "car/volkswagen/passat-se",
+            "car/volkswagen/passat-syncro",
+            "car/volkswagen/passat-wagon",
+            "car/volkswagen/passat-wagon-4motion",
+            "car/volkswagen/passat-wagon-syncro",
+            "car/volkswagen/vw-passat"
+          ]
+        },
+        {
+          "name": "Polo",
+          "slug": "polo",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/cross-polo",
+            "car/volkswagen/polo-1",
+            "car/volkswagen/polo-cl",
+            "car/volkswagen/polo-cross",
+            "car/volkswagen/polo-g40",
+            "car/volkswagen/polo-l"
+          ]
+        },
+        {
+          "name": "Scirocco",
+          "slug": "scirocco",
+          "kind": "car",
+          "body_type": "coupe",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/scirocco-16v",
+            "car/volkswagen/scirocco-gt",
+            "car/volkswagen/vw-scirocco"
+          ]
+        },
+        {
+          "name": "Tayron",
+          "slug": "tayron",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 3,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/tayron-elegance-etsi-s"
+          ]
+        },
+        {
+          "name": "Tiguan",
+          "slug": "tiguan",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 1,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "ie",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/volkswagen/tguan",
+            "car/volkswagen/tiguan-2",
+            "car/volkswagen/tiguan-2-0t",
+            "car/volkswagen/tiguan-4-motion",
+            "car/volkswagen/tiguan-4motion",
+            "car/volkswagen/tiguan-limited",
+            "car/volkswagen/tiguan-s",
+            "car/volkswagen/tiguan-se",
+            "car/volkswagen/tiguan-se-4motion",
+            "car/volkswagen/tiguan-sel",
+            "car/volkswagen/tiguan-sel-4motion",
+            "car/volkswagen/tiquan"
+          ]
+        },
+        {
+          "name": "Touareg",
+          "slug": "touareg",
+          "kind": "car",
+          "body_type": "suv",
+          "global_decile": 2,
+          "availability": [
+            "ar",
+            "ca",
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua",
+            "us"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "na",
+            "oc",
+            "sa"
+          ],
+          "former_ids": [
+            "car/volkswagen/touareg-ehybrid",
+            "car/volkswagen/touareg-v6",
+            "car/volkswagen/toureg"
+          ]
+        },
+        {
+          "name": "Touran",
+          "slug": "touran",
+          "kind": "car",
+          "body_type": "mpv",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "my",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "as",
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/cross-touran"
+          ]
+        },
+        {
+          "name": "Up",
+          "slug": "up",
+          "kind": "car",
+          "body_type": "hatchback",
+          "global_decile": 3,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl",
+            "nz",
+            "ua"
+          ],
+          "regions": [
+            "eu",
+            "oc"
+          ],
+          "former_ids": [
+            "car/volkswagen/up-1"
+          ]
+        },
+        {
+          "name": "Amarok",
+          "slug": "amarok",
+          "kind": "van",
+          "global_decile": 1,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/volkswagen/amarok-dc-lang",
+            "van/volkswagen/amarok-dc-xxl",
+            "van/volkswagen/amarok-pluscab"
+          ]
+        },
+        {
+          "name": "Caddy",
+          "slug": "caddy",
+          "kind": "van",
+          "global_decile": 1,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "car/volkswagen/caddymaxi",
+            "van/volkswagen/abt-e-caddy",
+            "van/volkswagen/caddy-1",
+            "van/volkswagen/caddy-75-edition",
+            "van/volkswagen/caddy-cargo-2501",
+            "van/volkswagen/caddy-cargo-2510",
+            "van/volkswagen/caddy-diesel",
+            "van/volkswagen/caddy-kasten",
+            "van/volkswagen/caddy-life",
+            "van/volkswagen/caddy-max",
+            "van/volkswagen/caddy-modified-partition-wall",
+            "van/volkswagen/caddy-pick-up",
+            "van/volkswagen/caddy-sdi",
+            "van/volkswagen/caddy-van-1",
+            "van/volkswagen/caddymaxi",
+            "van/volkswagen/touran-van",
+            "van/volkswagen/vw-caddy"
+          ]
+        },
+        {
+          "name": "Caravelle",
+          "slug": "caravelle",
+          "kind": "van",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/volkswagen/multi-van",
+            "van/volkswagen/multivan-dc",
+            "van/volkswagen/multivan-startline"
+          ]
+        },
+        {
+          "name": "Crafter",
+          "slug": "crafter",
+          "kind": "van",
+          "global_decile": 2,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/volkswagen/crafter-30",
+            "van/volkswagen/crafter-35",
+            "van/volkswagen/crafter-35-bestel-l2-h2",
+            "van/volkswagen/crafter-4motion",
+            "van/volkswagen/crafter-aut",
+            "van/volkswagen/crafter-multicab",
+            "van/volkswagen/crafter-z",
+            "van/volkswagen/grafter",
+            "van/volkswagen/vw-crafter",
+            "van/volkswagen/vw-crafter-aut"
+          ]
+        },
+        {
+          "name": "Id. Buzz Cargo",
+          "slug": "id-buzz-cargo",
+          "kind": "van",
+          "global_decile": 2,
+          "availability": [
+            "fi",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/volkswagen/id-buzz-cargo-modified-partition-wall",
+            "van/volkswagen/id-buzz-cargo-pro",
+            "van/volkswagen/id-buzz-cargo-pro-4motion",
+            "van/volkswagen/id-buzz-cargo-pure"
+          ]
+        },
+        {
+          "name": "Lt",
+          "slug": "lt",
+          "kind": "van",
+          "global_decile": 3,
+          "availability": [
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "van/volkswagen/lt-28",
+            "van/volkswagen/lt-31",
+            "van/volkswagen/lt-32",
+            "van/volkswagen/lt-35",
+            "van/volkswagen/lt-40",
+            "van/volkswagen/lt-46",
+            "van/volkswagen/lt-46a",
+            "van/volkswagen/lt28",
+            "van/volkswagen/lt35",
+            "van/volkswagen/lt46a",
+            "van/volkswagen/vw-lt-35"
+          ]
+        },
+        {
+          "name": "Transporter",
+          "slug": "transporter",
+          "kind": "van",
+          "aliases": [
+            "Bulli",
+            "Kombi"
+          ],
+          "global_decile": 1,
+          "availability": [
+            "de",
+            "es",
+            "fi",
+            "gb",
+            "lu",
+            "nl"
+          ],
+          "regions": [
+            "eu"
+          ],
+          "former_ids": [
+            "bus/volkswagen/t5",
+            "car/volkswagen/bestel",
+            "car/volkswagen/bestel-0",
+            "car/volkswagen/kastenwagen",
+            "car/volkswagen/kombi-2",
+            "car/volkswagen/kombiwagen",
+            "car/volkswagen/syncro",
+            "car/volkswagen/t2",
+            "car/volkswagen/t2-camper",
+            "car/volkswagen/t4",
+            "car/volkswagen/t5",
+            "car/volkswagen/t6",
+            "car/volkswagen/type-2",
+            "van/volkswagen/1000",
+            "van/volkswagen/7j0",
+            "van/volkswagen/800",
+            "van/volkswagen/abt-e-transporter",
+            "van/volkswagen/bestel-0",
+            "van/volkswagen/bestel-1",
+            "van/volkswagen/business-van",
+            "van/volkswagen/delivery-van",
+            "van/volkswagen/doppelkabine",
+            "van/volkswagen/etransporter-t32-commerce",
+            "van/volkswagen/kastenwagen",
+            "van/volkswagen/kastenwagen-lr",
+            "van/volkswagen/kombi-2",
+            "van/volkswagen/kombiwagen",
+            "van/volkswagen/kombiwagen-23-2400",
+            "van/volkswagen/pick-up",
+            "van/volkswagen/pick-up-1",
+            "van/volkswagen/pickup",
+            "van/volkswagen/syncro",
+            "van/volkswagen/t1",
+            "van/volkswagen/t4",
+            "van/volkswagen/t5-business-van",
+            "van/volkswagen/t5-transporter",
+            "van/volkswagen/tranporter",
+            "van/volkswagen/transport",
+            "van/volkswagen/transporter-1",
+            "van/volkswagen/transporter-2",
+            "van/volkswagen/transporter-75-edition",
+            "van/volkswagen/transporter-bestel",
+            "van/volkswagen/transporter-bestel-0",
+            "van/volkswagen/transporter-bestel-1",
+            "van/volkswagen/transporter-bestel-d",
+            "van/volkswagen/transporter-caravelle",
+            "van/volkswagen/transporter-dc",
+            "van/volkswagen/transporter-double-cab",
+            "van/volkswagen/transporter-doublecab",
+            "van/volkswagen/transporter-pick-up",
+            "van/volkswagen/transporter-sn-double-cab",
+            "van/volkswagen/transporter-syncro",
+            "van/volkswagen/transporter-ww-caravelle",
+            "van/volkswagen/trasporter",
+            "van/volkswagen/vw-pick-up-dh-2",
+            "van/volkswagen/vw-pickup-eh-2",
+            "van/volkswagen/vw-skap-2"
+          ]
+        }
+      ]
+    }
+  ]
+}

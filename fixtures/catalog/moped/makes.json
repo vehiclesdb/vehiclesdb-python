@@ -1,0 +1,61 @@
+[
+  {
+    "id": "aixam",
+    "slug": "aixam",
+    "name": "Aixam",
+    "kinds": [
+      "moped"
+    ],
+    "countries": [
+      "es",
+      "fi",
+      "lu",
+      "nl"
+    ]
+  },
+  {
+    "id": "bmw",
+    "slug": "bmw",
+    "name": "BMW",
+    "aliases": [
+      "Beemer",
+      "Bimmer"
+    ],
+    "kinds": [
+      "moped"
+    ],
+    "countries": [
+      "lu",
+      "nl"
+    ]
+  },
+  {
+    "id": "citroen",
+    "slug": "citroen",
+    "name": "Citroën",
+    "kinds": [
+      "moped"
+    ],
+    "countries": [
+      "es",
+      "fi",
+      "lu",
+      "nl"
+    ]
+  },
+  {
+    "id": "renault",
+    "slug": "renault",
+    "name": "Renault",
+    "kinds": [
+      "moped"
+    ],
+    "countries": [
+      "es",
+      "fi",
+      "lu",
+      "nl",
+      "nz"
+    ]
+  }
+]

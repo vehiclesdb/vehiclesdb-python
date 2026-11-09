@@ -1,0 +1,75 @@
+# PEP 621 metadata for the `vehiclesdb` package.
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vehiclesdb"
+# Keep in sync with __version__ in src/vehiclesdb/client.py. Not read from the
+# installed metadata at runtime on purpose: the package has to import and work
+# straight from a source tree (that is how the offline tests run it), where no
+# dist-info exists to read.
+version = "0.1.0"
+description = "Vehicle makes, models and canonical vehicle ids, from the open CC-BY VehiclesDB dataset."
+readme = "README.md"
+# 3.9 is the floor CI tests (macOS ships 3.9 as /usr/bin/python3), so no
+# `X | None` unions, no `match`, no `dict | dict` anywhere in src/.
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "VehiclesDB" }]
+keywords = [
+  "vehicles",
+  "cars",
+  "makes",
+  "models",
+  "automotive",
+  "vin",
+  "dataset",
+  "open-data",
+  "motorcycles",
+  "fleet",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3 :: Only",
+  "Topic :: Database",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Typing :: Typed",
+]
+# Zero required dependencies: urllib.request + json only. This is a hard
+# constraint, not a default — the package has to be a safe transitive dep.
+dependencies = []
+
+[project.optional-dependencies]
+# `pip install "vehiclesdb[httpx]"` only makes vehiclesdb.httpx_transport()
+# usable; nothing imports httpx unless you call it.
+httpx = ["httpx>=0.23"]
+
+[project.urls]
+Homepage = "https://vehiclesdb.com"
+Documentation = "https://github.com/vehiclesdb/vehiclesdb-python#readme"
+Source = "https://github.com/vehiclesdb/vehiclesdb-python"
+Issues = "https://github.com/vehiclesdb/vehiclesdb-python/issues"
+Changelog = "https://github.com/vehiclesdb/vehiclesdb-python/blob/main/CHANGELOG.md"
+Dataset = "https://github.com/vehiclesdb/vehiclesdb"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+# PEP 561: ship the marker so type checkers trust the inline annotations.
+vehiclesdb = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,969 @@
+[
+  {
+    "id": "bmw/c600-sport",
+    "make_id": "bmw",
+    "slug": "c600-sport",
+    "name": "C600 Sport",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e1*2002/24*0552*00",
+        "e1*2002/24*0552*01"
+      ]
+    },
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "fi": {
+          "rank": 664,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 996,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/c600sport"
+    ]
+  },
+  {
+    "id": "bmw/c650-sport",
+    "make_id": "bmw",
+    "slug": "c650-sport",
+    "name": "C650 Sport",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e1*168/2013*00005*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 5,
+      "by_country": {
+        "fi": {
+          "rank": 1352,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 1036,
+          "decile": 3,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/c650sport"
+    ]
+  },
+  {
+    "id": "bmw/g650-xchallenge",
+    "make_id": "bmw",
+    "slug": "g650-xchallenge",
+    "name": "G650 Xchallenge",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e11*2002/24*0500*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 4,
+      "by_country": {
+        "fi": {
+          "rank": 597,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 1637,
+          "decile": 4,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/g650xchallenge"
+    ]
+  },
+  {
+    "id": "bmw/g650-xcountry",
+    "make_id": "bmw",
+    "slug": "g650-xcountry",
+    "name": "G650 Xcountry",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e11*2002/24*0500*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 4,
+      "by_country": {
+        "fi": {
+          "rank": 764,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 1533,
+          "decile": 4,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/g650xcountry"
+    ]
+  },
+  {
+    "id": "bmw/g650-xmoto",
+    "make_id": "bmw",
+    "slug": "g650-xmoto",
+    "name": "G650 Xmoto",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e11*2002/24*0500*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 4,
+      "by_country": {
+        "fi": {
+          "rank": 763,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 1750,
+          "decile": 4,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/g650xmoto"
+    ]
+  },
+  {
+    "id": "bmw/hp2-sport",
+    "make_id": "bmw",
+    "slug": "hp2-sport",
+    "name": "HP2 Sport",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e1*2002/24*0284*01"
+      ]
+    },
+    "popularity": {
+      "global_decile": 5,
+      "by_country": {
+        "fi": {
+          "rank": 1364,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 1590,
+          "decile": 4,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/hp2sport"
+    ]
+  },
+  {
+    "id": "bmw/k100rs",
+    "make_id": "bmw",
+    "slug": "k100rs",
+    "name": "K100RS",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "nz",
+        "evidence": "registration",
+        "source": "nz_nzta"
+      }
+    ],
+    "regions": [
+      "eu",
+      "oc"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw",
+      "nz_nzta"
+    ],
+    "popularity": {
+      "global_decile": 4,
+      "by_country": {
+        "fi": {
+          "rank": 2040,
+          "decile": 9,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 115,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nz": {
+          "rank": 329,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/k100rs-abs"
+    ]
+  },
+  {
+    "id": "bmw/k1100rs",
+    "make_id": "bmw",
+    "slug": "k1100rs",
+    "name": "K1100RS",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "nz",
+        "evidence": "registration",
+        "source": "nz_nzta"
+      },
+      {
+        "country": "ua",
+        "evidence": "registration",
+        "source": "ua_mvs"
+      }
+    ],
+    "regions": [
+      "eu",
+      "oc"
+    ],
+    "sources": [
+      "nl_rdw",
+      "nz_nzta",
+      "ua_mvs"
+    ],
+    "popularity": {
+      "global_decile": 5,
+      "by_country": {
+        "nl": {
+          "rank": 318,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nz": {
+          "rank": 1257,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "ua": {
+          "rank": 1133,
+          "decile": 9,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/k1100rs-abs"
+    ]
+  },
+  {
+    "id": "bmw/r-ninet",
+    "make_id": "bmw",
+    "slug": "r-ninet",
+    "name": "R nineT",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "nz",
+        "evidence": "registration",
+        "source": "nz_nzta"
+      },
+      {
+        "country": "th",
+        "evidence": "registration",
+        "source": "th_dlt"
+      },
+      {
+        "country": "ua",
+        "evidence": "registration",
+        "source": "ua_mvs"
+      }
+    ],
+    "regions": [
+      "as",
+      "eu",
+      "oc"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "nz_nzta",
+      "th_dlt",
+      "ua_mvs"
+    ],
+    "xrefs": {
+      "tan": [
+        "e1*168/2013*00009*02",
+        "e1*168/2013*00009*05",
+        "e1*168/2013*00225*01",
+        "e1*168/2013*00225*02",
+        "e1*2002/24*0230*11",
+        "e1*2002/24*0230*12"
+      ]
+    },
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "es": {
+          "rank": 522,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 300,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 97,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 375,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nz": {
+          "rank": 128,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "th": {
+          "rank": 300,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "ua": {
+          "rank": 143,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/r-nine-t"
+    ]
+  },
+  {
+    "id": "bmw/r-ninet-urban-g-s",
+    "make_id": "bmw",
+    "slug": "r-ninet-urban-g-s",
+    "name": "R nineT Urban G/S",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "th",
+        "evidence": "registration",
+        "source": "th_dlt"
+      }
+    ],
+    "regions": [
+      "as",
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "th_dlt"
+    ],
+    "xrefs": {
+      "tan": [
+        "e1*168/2013*00009*02",
+        "e1*168/2013*00009*03",
+        "e1*168/2013*00225*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 5,
+      "by_country": {
+        "fi": {
+          "rank": 589,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 728,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 1001,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "th": {
+          "rank": 283,
+          "decile": 7,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/r-nine-t-urban-g-s"
+    ]
+  },
+  {
+    "id": "bmw/r100gs",
+    "make_id": "bmw",
+    "slug": "r100gs",
+    "name": "R100GS",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "nz",
+        "evidence": "registration",
+        "source": "nz_nzta"
+      },
+      {
+        "country": "ua",
+        "evidence": "registration",
+        "source": "ua_mvs"
+      }
+    ],
+    "regions": [
+      "eu",
+      "oc"
+    ],
+    "sources": [
+      "nl_rdw",
+      "nz_nzta",
+      "ua_mvs"
+    ],
+    "popularity": {
+      "global_decile": 4,
+      "by_country": {
+        "nl": {
+          "rank": 414,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nz": {
+          "rank": 392,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "ua": {
+          "rank": 1135,
+          "decile": 9,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/r100g-s"
+    ]
+  },
+  {
+    "id": "bmw/r12-ninet",
+    "make_id": "bmw",
+    "slug": "r12-ninet",
+    "name": "R12 Ninet",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "th",
+        "evidence": "registration",
+        "source": "th_dlt"
+      },
+      {
+        "country": "ua",
+        "evidence": "registration",
+        "source": "ua_mvs"
+      }
+    ],
+    "regions": [
+      "as",
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "nl_rdw",
+      "th_dlt",
+      "ua_mvs"
+    ],
+    "xrefs": {
+      "tan": [
+        "e1*168/2013*00341*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 4,
+      "by_country": {
+        "es": {
+          "rank": 218,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 1111,
+          "decile": 5,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 1439,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "th": {
+          "rank": 162,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "ua": {
+          "rank": 373,
+          "decile": 3,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/r12ninet"
+    ]
+  },
+  {
+    "id": "bmw/r18-classic",
+    "make_id": "bmw",
+    "slug": "r18-classic",
+    "name": "R18 Classic",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "th",
+        "evidence": "registration",
+        "source": "th_dlt"
+      }
+    ],
+    "regions": [
+      "as",
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "th_dlt"
+    ],
+    "xrefs": {
+      "tan": [
+        "e1*168/2013*00213*00",
+        "e1*168/2013*00213*02",
+        "e1*168/2013*00213*03"
+      ]
+    },
+    "popularity": {
+      "global_decile": 5,
+      "by_country": {
+        "es": {
+          "rank": 530,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 862,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 539,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 1513,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "th": {
+          "rank": 330,
+          "decile": 8,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/r18classic"
+    ]
+  },
+  {
+    "id": "bmw/r18-transcontinental",
+    "make_id": "bmw",
+    "slug": "r18-transcontinental",
+    "name": "R18 Transcontinental",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "th",
+        "evidence": "registration",
+        "source": "th_dlt"
+      }
+    ],
+    "regions": [
+      "as",
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw",
+      "th_dlt"
+    ],
+    "xrefs": {
+      "tan": [
+        "e1*168/2013*00213*01"
+      ]
+    },
+    "popularity": {
+      "global_decile": 5,
+      "by_country": {
+        "fi": {
+          "rank": 836,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 1871,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "th": {
+          "rank": 240,
+          "decile": 6,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/r18transcontinental"
+    ]
+  },
+  {
+    "id": "bmw/r80g-s",
+    "make_id": "bmw",
+    "slug": "r80g-s",
+    "name": "R80G/S",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "nz",
+        "evidence": "registration",
+        "source": "nz_nzta"
+      }
+    ],
+    "regions": [
+      "eu",
+      "oc"
+    ],
+    "sources": [
+      "nl_rdw",
+      "nz_nzta"
+    ],
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "nl": {
+          "rank": 457,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nz": {
+          "rank": 418,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/r80gs"
+    ]
+  },
+  {
+    "id": "bmw/r90s",
+    "make_id": "bmw",
+    "slug": "r90s",
+    "name": "R90S",
+    "kind": "motorcycle",
+    "availability": [
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "nz",
+        "evidence": "registration",
+        "source": "nz_nzta"
+      }
+    ],
+    "regions": [
+      "eu",
+      "oc"
+    ],
+    "sources": [
+      "nl_rdw",
+      "nz_nzta"
+    ],
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "nl": {
+          "rank": 442,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nz": {
+          "rank": 511,
+          "decile": 3,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "motorcycle/bmw/r90-s"
+    ]
+  }
+]

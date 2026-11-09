@@ -1,0 +1,327 @@
+[
+  {
+    "id": "mercedes-benz/sprinter",
+    "make_id": "mercedes-benz",
+    "slug": "sprinter",
+    "name": "Sprinter",
+    "kind": "bus",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      },
+      {
+        "country": "nz",
+        "evidence": "registration",
+        "source": "nz_nzta"
+      },
+      {
+        "country": "ua",
+        "evidence": "registration",
+        "source": "ua_mvs"
+      }
+    ],
+    "regions": [
+      "eu",
+      "oc"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "nz_nzta",
+      "ua_mvs",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "2243316103",
+        "2243316301",
+        "2243316302",
+        "2243316311",
+        "4243131406",
+        "E9*2007/46*6089*02",
+        "E9*2007/46*6241*00",
+        "FIN*090818*00153*01",
+        "FIN*090825*00214*00",
+        "FIN*100616*00100*01",
+        "e1*2007/46*0296*02",
+        "e1*2007/46*0296*04",
+        "e1*2007/46*0298*08",
+        "e1*2007/46*0298*10",
+        "e32*2007/46*0061*01",
+        "e32*2007/46*0075*03",
+        "e32*2007/46*0075*05",
+        "e36*2007/46*0001*02",
+        "e36*2007/46*0005*00",
+        "e9*2007/46*0136*07",
+        "e9*2007/46*0310*01",
+        "e9*2007/46*6089*01",
+        "e9*2007/46*6253*00",
+        "e9*2007/46*6255*02",
+        "e9*2007/46*6380*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 1,
+      "by_country": {
+        "es": {
+          "rank": 6,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 1,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 6,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 9,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nz": {
+          "rank": 3,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "ua": {
+          "rank": 1,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 2,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "bus/mercedes-benz/412d-ka-904463-kasten",
+      "bus/mercedes-benz/906"
+    ]
+  },
+  {
+    "id": "toyota/hiace",
+    "make_id": "toyota",
+    "slug": "hiace",
+    "name": "Hiace",
+    "kind": "bus",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "nz",
+        "evidence": "registration",
+        "source": "nz_nzta"
+      },
+      {
+        "country": "ua",
+        "evidence": "registration",
+        "source": "ua_mvs"
+      }
+    ],
+    "regions": [
+      "eu",
+      "oc"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nz_nzta",
+      "ua_mvs",
+      "uk_dft"
+    ],
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "fi": {
+          "rank": 129,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "nz": {
+          "rank": 1,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "ua": {
+          "rank": 26,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 30,
+          "decile": 3,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "bus/toyota/hi"
+    ]
+  },
+  {
+    "id": "toyota/land-cruiser",
+    "make_id": "toyota",
+    "slug": "land-cruiser",
+    "name": "Land Cruiser",
+    "kind": "bus",
+    "aliases": [
+      "ランドクルーザー",
+      "Landcruiser"
+    ],
+    "availability": [
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "nz",
+        "evidence": "registration",
+        "source": "nz_nzta"
+      }
+    ],
+    "regions": [
+      "eu",
+      "oc"
+    ],
+    "sources": [
+      "nz_nzta",
+      "uk_dft"
+    ],
+    "popularity": {
+      "global_decile": 6,
+      "by_country": {
+        "nz": {
+          "rank": 25,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 93,
+          "decile": 10,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "bus/toyota/landcruiser"
+    ]
+  },
+  {
+    "id": "volkswagen/caravelle",
+    "make_id": "volkswagen",
+    "slug": "caravelle",
+    "name": "Caravelle",
+    "kind": "bus",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "nz",
+        "evidence": "registration",
+        "source": "nz_nzta"
+      },
+      {
+        "country": "ua",
+        "evidence": "registration",
+        "source": "ua_mvs"
+      }
+    ],
+    "regions": [
+      "eu",
+      "oc"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "nz_nzta",
+      "ua_mvs",
+      "uk_dft"
+    ],
+    "popularity": {
+      "global_decile": 5,
+      "by_country": {
+        "es": {
+          "rank": 64,
+          "decile": 10,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 55,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "nz": {
+          "rank": 95,
+          "decile": 7,
+          "confidence": "measured"
+        },
+        "ua": {
+          "rank": 82,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 6,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "bus/volkswagen/micro-bus",
+      "bus/volkswagen/microbus"
+    ]
+  }
+]

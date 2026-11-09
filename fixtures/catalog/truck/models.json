@@ -1,0 +1,1003 @@
+[
+  {
+    "id": "ford/f-150",
+    "make_id": "ford",
+    "slug": "f-150",
+    "name": "F-150",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e1*NIV18/858*PTA381",
+        "e1*NIV18/858*PTA385"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "fi": {
+          "rank": 58,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 294,
+          "decile": 3,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/ford/f150"
+    ]
+  },
+  {
+    "id": "ford/f-250",
+    "make_id": "ford",
+    "slug": "f-250",
+    "name": "F-250",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "fi": {
+          "rank": 42,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 126,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/ford/f250",
+      "truck/ford/f250xlt"
+    ]
+  },
+  {
+    "id": "ford/f-350",
+    "make_id": "ford",
+    "slug": "f-350",
+    "name": "F-350",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "fi": {
+          "rank": 106,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 167,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/ford/f350"
+    ]
+  },
+  {
+    "id": "mercedes-benz/1117",
+    "make_id": "mercedes-benz",
+    "slug": "1117",
+    "name": "1117",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "fi": {
+          "rank": 225,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 243,
+          "decile": 3,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/mercedes-benz/1117-l",
+      "truck/mercedes-benz/1117l"
+    ]
+  },
+  {
+    "id": "mercedes-benz/609",
+    "make_id": "mercedes-benz",
+    "slug": "609",
+    "name": "609",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "fi": {
+          "rank": 149,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 170,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/mercedes-benz/609d-ka"
+    ]
+  },
+  {
+    "id": "mercedes-benz/814",
+    "make_id": "mercedes-benz",
+    "slug": "814",
+    "name": "814",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "popularity": {
+      "global_decile": 1,
+      "by_country": {
+        "fi": {
+          "rank": 107,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 102,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/mercedes-benz/814-dk",
+      "truck/mercedes-benz/814-l",
+      "truck/mercedes-benz/814dk",
+      "truck/mercedes-benz/814l"
+    ]
+  },
+  {
+    "id": "mercedes-benz/arocs",
+    "make_id": "mercedes-benz",
+    "slug": "arocs",
+    "name": "Arocs",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "MEB262596402372",
+        "RTI*2007/46*0732*15",
+        "RTI*2007/46*0736*11",
+        "e1*2007/46*0737",
+        "e1*2007/46*0742*02",
+        "e1*2007/46*0743*02",
+        "e1*2007/46*0743*14",
+        "e13*NIV18/858*LU0494",
+        "e13*NIV18/858*LU0978",
+        "e13*NIV18/858*LU1037"
+      ]
+    },
+    "popularity": {
+      "global_decile": 1,
+      "by_country": {
+        "es": {
+          "rank": 12,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 15,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 15,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 30,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/mercedes-benz/arcos"
+    ]
+  },
+  {
+    "id": "mercedes-benz/atego",
+    "make_id": "mercedes-benz",
+    "slug": "atego",
+    "name": "Atego",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "K074*",
+        "K074*14",
+        "K115*07",
+        "RTI*2007/46*0841*02",
+        "RTI*2007/46*1170*12",
+        "RTI*2007/46*1171*02",
+        "RTI*2007/46*1171*11",
+        "e1*2007/46*0841*01",
+        "e1*2007/46*0842*02",
+        "e1*2007/46*1170",
+        "e1*2007/46*1170*04",
+        "e1*2007/46*1170*08",
+        "e1*2007/46*1171",
+        "e6*IFA2013*1820*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 1,
+      "by_country": {
+        "es": {
+          "rank": 25,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 6,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 16,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 10,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/mercedes-benz/ateco"
+    ]
+  },
+  {
+    "id": "mercedes-benz/l-508",
+    "make_id": "mercedes-benz",
+    "slug": "l-508",
+    "name": "L 508",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "fi": {
+          "rank": 179,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 158,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/mercedes-benz/l508"
+    ]
+  },
+  {
+    "id": "mercedes-benz/sprinter",
+    "make_id": "mercedes-benz",
+    "slug": "sprinter",
+    "name": "Sprinter",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "xrefs": {
+      "tan": [
+        "2243287102",
+        "2243287301",
+        "2243315306",
+        "2243315313",
+        "2243315320",
+        "E1*2001/116*0127*09",
+        "E1*2001/116*0354*01",
+        "E1*2001/116*0354*02",
+        "FIN*080122*00071*00",
+        "FIN*080526*00100*00",
+        "FIN*081111*00153*00",
+        "FIN*090406*00188*00",
+        "FIN*090701*00207*00",
+        "FIN*090825*00214*00",
+        "G0313DE43c",
+        "K624",
+        "L766*01",
+        "L844*03",
+        "e1*2001/116*0127*10",
+        "e1*2001/116*0354*05",
+        "e1*2001/116*0354*06",
+        "e1*2007/46*0294*03",
+        "e1*2007/46*0298*02",
+        "e1*2007/46*0298*06",
+        "e1*2007/46*0301*15"
+      ]
+    },
+    "popularity": {
+      "global_decile": 1,
+      "by_country": {
+        "es": {
+          "rank": 38,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 1,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 20,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 8,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 6,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/mercedes-benz/312d-ka-903462-kasten",
+      "truck/mercedes-benz/312d-ka-903463-kasten",
+      "truck/mercedes-benz/904",
+      "truck/mercedes-benz/906",
+      "truck/mercedes-benz/906-ba-50",
+      "truck/mercedes-benz/906ba50",
+      "truck/mercedes-benz/spinter"
+    ]
+  },
+  {
+    "id": "renault/ae",
+    "make_id": "renault",
+    "slug": "ae",
+    "name": "Ae",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "popularity": {
+      "global_decile": 6,
+      "by_country": {
+        "fi": {
+          "rank": 745,
+          "decile": 7,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 358,
+          "decile": 4,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/renault/ae385",
+      "truck/renault/ae420"
+    ]
+  },
+  {
+    "id": "renault/c",
+    "make_id": "renault",
+    "slug": "c",
+    "name": "C",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e1*2007/46*1059*21",
+        "e13*NIV18/858*LU1028",
+        "e2*2007/46*0031*27",
+        "e2*2007/46*0230*17",
+        "e6*NIV18/858*T01603"
+      ]
+    },
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "es": {
+          "rank": 19,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 88,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 73,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 165,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/renault/c380",
+      "truck/renault/c430",
+      "truck/renault/c440",
+      "truck/renault/c520"
+    ]
+  },
+  {
+    "id": "renault/d",
+    "make_id": "renault",
+    "slug": "d",
+    "name": "D",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "E2*2007/46*0135",
+        "RTI*2007/46*0135*09",
+        "RTI*2007/46*0135*23",
+        "e6*2007/46*0202*01"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "es": {
+          "rank": 13,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 82,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 26,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 39,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/renault/d12",
+      "truck/renault/d13",
+      "truck/renault/d14",
+      "truck/renault/d16"
+    ]
+  },
+  {
+    "id": "renault/k",
+    "make_id": "renault",
+    "slug": "k",
+    "name": "K",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e1*2007/46*0358*34",
+        "e13*NIV18/858*LU0306*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 4,
+      "by_country": {
+        "es": {
+          "rank": 68,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 447,
+          "decile": 5,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 40,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 390,
+          "decile": 4,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/renault/k480"
+    ]
+  },
+  {
+    "id": "renault/t",
+    "make_id": "renault",
+    "slug": "t",
+    "name": "T",
+    "kind": "truck",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e2*2007/46*0229*04",
+        "e2*2007/46*0229*16",
+        "e2*2007/46*0229*19",
+        "e2*2007/46*0229*20",
+        "e2*2007/46*0229*24",
+        "e2*2007/46*0229*34",
+        "e2*2007/46*0229*35",
+        "e2*2007/46*0229*36",
+        "e2*2007/46*0229*43",
+        "e2*2007/46*0229*44",
+        "e2*2007/46*0229*45",
+        "e2*2007/46*0230*05",
+        "e2*2007/46*0230*18",
+        "e2*2007/46*0230*19"
+      ]
+    },
+    "popularity": {
+      "global_decile": 1,
+      "by_country": {
+        "es": {
+          "rank": 6,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 81,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 4,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 15,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/renault/t380",
+      "truck/renault/t460",
+      "truck/renault/t480"
+    ]
+  },
+  {
+    "id": "toyota/land-cruiser",
+    "make_id": "toyota",
+    "slug": "land-cruiser",
+    "name": "Land Cruiser",
+    "kind": "truck",
+    "aliases": [
+      "ランドクルーザー",
+      "Landcruiser"
+    ],
+    "availability": [
+      {
+        "country": "gb",
+        "evidence": "registration",
+        "source": "uk_dft"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "nl_rdw",
+      "uk_dft"
+    ],
+    "popularity": {
+      "global_decile": 9,
+      "by_country": {
+        "nl": {
+          "rank": 948,
+          "decile": 9,
+          "confidence": "measured"
+        },
+        "gb": {
+          "rank": 105,
+          "decile": 9,
+          "confidence": "measured"
+        }
+      }
+    },
+    "former_ids": [
+      "truck/toyota/landcruiser"
+    ]
+  }
+]

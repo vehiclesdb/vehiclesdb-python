@@ -1,0 +1,609 @@
+[
+  {
+    "id": "aixam/a400",
+    "make_id": "aixam",
+    "slug": "a400",
+    "name": "A400",
+    "kind": "moped",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e9*92/61*001*01"
+      ]
+    },
+    "popularity": {
+      "global_decile": 6,
+      "by_country": {
+        "fi": {
+          "rank": 304,
+          "decile": 6,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 515,
+          "decile": 5,
+          "confidence": "measured"
+        }
+      }
+    }
+  },
+  {
+    "id": "aixam/a741",
+    "make_id": "aixam",
+    "slug": "a741",
+    "name": "A741",
+    "kind": "moped",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e2*2002/24*0009*01"
+      ]
+    },
+    "popularity": {
+      "global_decile": 8,
+      "by_country": {
+        "fi": {
+          "rank": 337,
+          "decile": 7,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 1007,
+          "decile": 9,
+          "confidence": "measured"
+        }
+      }
+    }
+  },
+  {
+    "id": "aixam/c3",
+    "make_id": "aixam",
+    "slug": "c3",
+    "name": "C3",
+    "kind": "moped",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "popularity": {
+      "global_decile": 7,
+      "by_country": {
+        "fi": {
+          "rank": 409,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 540,
+          "decile": 5,
+          "confidence": "measured"
+        }
+      }
+    }
+  },
+  {
+    "id": "aixam/k2",
+    "make_id": "aixam",
+    "slug": "k2",
+    "name": "K2",
+    "kind": "moped",
+    "availability": [
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "nl_rdw"
+    ],
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "nl": {
+          "rank": 237,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    }
+  },
+  {
+    "id": "aixam/m12rs",
+    "make_id": "aixam",
+    "slug": "m12rs",
+    "name": "M12RS",
+    "kind": "moped",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e2*168/2013*00016*00",
+        "e2*168/2013*00054*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 5,
+      "by_country": {
+        "es": {
+          "rank": 29,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 407,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 31,
+          "decile": 7,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 338,
+          "decile": 3,
+          "confidence": "measured"
+        }
+      }
+    }
+  },
+  {
+    "id": "aixam/mega",
+    "make_id": "aixam",
+    "slug": "mega",
+    "name": "Mega",
+    "kind": "moped",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e2*2002/24*0023*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 9,
+      "by_country": {
+        "fi": {
+          "rank": 405,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 965,
+          "decile": 9,
+          "confidence": "measured"
+        }
+      }
+    }
+  },
+  {
+    "id": "aixam/mw12",
+    "make_id": "aixam",
+    "slug": "mw12",
+    "name": "MW12",
+    "kind": "moped",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e2*2002/24*0066*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 7,
+      "by_country": {
+        "es": {
+          "rank": 89,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 334,
+          "decile": 7,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 608,
+          "decile": 6,
+          "confidence": "measured"
+        }
+      }
+    }
+  },
+  {
+    "id": "aixam/s10",
+    "make_id": "aixam",
+    "slug": "s10",
+    "name": "S10",
+    "kind": "moped",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e2*168/2013*00039*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "es": {
+          "rank": 6,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 135,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 171,
+          "decile": 2,
+          "confidence": "measured"
+        }
+      }
+    }
+  },
+  {
+    "id": "aixam/s10-2",
+    "make_id": "aixam",
+    "slug": "s10-2",
+    "name": "S10-2",
+    "kind": "moped",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "nl_rdw"
+    ],
+    "popularity": {
+      "global_decile": 4,
+      "by_country": {
+        "es": {
+          "rank": 13,
+          "decile": 2,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 587,
+          "decile": 5,
+          "confidence": "measured"
+        }
+      }
+    }
+  },
+  {
+    "id": "aixam/s8",
+    "make_id": "aixam",
+    "slug": "s8",
+    "name": "S8",
+    "kind": "moped",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e2*2002/24*0045*00"
+      ]
+    },
+    "popularity": {
+      "global_decile": 3,
+      "by_country": {
+        "es": {
+          "rank": 87,
+          "decile": 8,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 18,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 120,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    }
+  },
+  {
+    "id": "aixam/s9",
+    "make_id": "aixam",
+    "slug": "s9",
+    "name": "S9",
+    "kind": "moped",
+    "availability": [
+      {
+        "country": "es",
+        "evidence": "registration",
+        "source": "es_dgt"
+      },
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "lu",
+        "evidence": "registration",
+        "source": "lu_snca"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "es_dgt",
+      "fi_traficom",
+      "lu_snca",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e2*168/2013*00003*00",
+        "e2*168/2013*00003*06",
+        "e2*168/2013*00027*01"
+      ]
+    },
+    "popularity": {
+      "global_decile": 2,
+      "by_country": {
+        "es": {
+          "rank": 33,
+          "decile": 3,
+          "confidence": "measured"
+        },
+        "fi": {
+          "rank": 13,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "lu": {
+          "rank": 5,
+          "decile": 1,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 66,
+          "decile": 1,
+          "confidence": "measured"
+        }
+      }
+    }
+  },
+  {
+    "id": "aixam/scouty",
+    "make_id": "aixam",
+    "slug": "scouty",
+    "name": "Scouty",
+    "kind": "moped",
+    "availability": [
+      {
+        "country": "fi",
+        "evidence": "registration",
+        "source": "fi_traficom"
+      },
+      {
+        "country": "nl",
+        "evidence": "registration",
+        "source": "nl_rdw"
+      }
+    ],
+    "regions": [
+      "eu"
+    ],
+    "sources": [
+      "fi_traficom",
+      "nl_rdw"
+    ],
+    "xrefs": {
+      "tan": [
+        "e2*2002/24*0015*00",
+        "e2*2002/24*0015*03"
+      ]
+    },
+    "popularity": {
+      "global_decile": 5,
+      "by_country": {
+        "fi": {
+          "rank": 199,
+          "decile": 4,
+          "confidence": "measured"
+        },
+        "nl": {
+          "rank": 674,
+          "decile": 6,
+          "confidence": "measured"
+        }
+      }
+    }
+  }
+]

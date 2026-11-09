@@ -1,0 +1,283 @@
+[
+  {
+    "id": "aixam",
+    "slug": "aixam",
+    "name": "Aixam",
+    "kinds": [
+      "car"
+    ],
+    "countries": [
+      "gb",
+      "nl"
+    ]
+  },
+  {
+    "id": "alfa-romeo",
+    "slug": "alfa-romeo",
+    "name": "Alfa Romeo",
+    "aliases": [
+      "Alfa"
+    ],
+    "kinds": [
+      "car"
+    ],
+    "countries": [
+      "ar",
+      "ca",
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "ie",
+      "lu",
+      "my",
+      "nl",
+      "nz",
+      "ua",
+      "us"
+    ]
+  },
+  {
+    "id": "bmw",
+    "slug": "bmw",
+    "name": "BMW",
+    "aliases": [
+      "Beemer",
+      "Bimmer"
+    ],
+    "kinds": [
+      "car"
+    ],
+    "countries": [
+      "ar",
+      "ca",
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "ie",
+      "lu",
+      "my",
+      "nl",
+      "nz",
+      "th",
+      "ua",
+      "us"
+    ]
+  },
+  {
+    "id": "citroen",
+    "slug": "citroen",
+    "name": "Citroën",
+    "kinds": [
+      "car"
+    ],
+    "countries": [
+      "ar",
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "ie",
+      "lu",
+      "my",
+      "nl",
+      "nz",
+      "ua"
+    ]
+  },
+  {
+    "id": "dacia",
+    "slug": "dacia",
+    "name": "Dacia",
+    "kinds": [
+      "car"
+    ],
+    "countries": [
+      "ar",
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "ie",
+      "lu",
+      "nl",
+      "nz",
+      "ua"
+    ]
+  },
+  {
+    "id": "ford",
+    "slug": "ford",
+    "name": "Ford",
+    "kinds": [
+      "car"
+    ],
+    "countries": [
+      "ar",
+      "ca",
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "ie",
+      "lu",
+      "my",
+      "nl",
+      "nz",
+      "th",
+      "ua",
+      "us"
+    ]
+  },
+  {
+    "id": "mercedes-benz",
+    "slug": "mercedes-benz",
+    "name": "Mercedes-Benz",
+    "aliases": [
+      "Merc",
+      "Benz",
+      "MB"
+    ],
+    "kinds": [
+      "car"
+    ],
+    "countries": [
+      "ar",
+      "ca",
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "ie",
+      "lu",
+      "my",
+      "nl",
+      "nz",
+      "th",
+      "ua",
+      "us"
+    ]
+  },
+  {
+    "id": "renault",
+    "slug": "renault",
+    "name": "Renault",
+    "kinds": [
+      "car"
+    ],
+    "countries": [
+      "ar",
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "ie",
+      "lu",
+      "my",
+      "nl",
+      "nz",
+      "ua",
+      "us"
+    ]
+  },
+  {
+    "id": "seat",
+    "slug": "seat",
+    "name": "SEAT",
+    "kinds": [
+      "car"
+    ],
+    "countries": [
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "ie",
+      "lu",
+      "nl",
+      "nz",
+      "ua"
+    ]
+  },
+  {
+    "id": "tesla",
+    "slug": "tesla",
+    "name": "Tesla",
+    "kinds": [
+      "car"
+    ],
+    "countries": [
+      "ar",
+      "ca",
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "ie",
+      "lu",
+      "my",
+      "nl",
+      "nz",
+      "th",
+      "ua",
+      "us"
+    ]
+  },
+  {
+    "id": "toyota",
+    "slug": "toyota",
+    "name": "Toyota",
+    "aliases": [
+      "丰田",
+      "トヨタ"
+    ],
+    "kinds": [
+      "car"
+    ],
+    "countries": [
+      "ar",
+      "ca",
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "ie",
+      "lu",
+      "my",
+      "nl",
+      "nz",
+      "th",
+      "ua",
+      "us"
+    ]
+  },
+  {
+    "id": "volkswagen",
+    "slug": "volkswagen",
+    "name": "Volkswagen",
+    "aliases": [
+      "VW",
+      "Vdub"
+    ],
+    "kinds": [
+      "car"
+    ],
+    "countries": [
+      "ar",
+      "ca",
+      "de",
+      "es",
+      "fi",
+      "gb",
+      "ie",
+      "lu",
+      "my",
+      "nl",
+      "nz",
+      "th",
+      "ua",
+      "us"
+    ]
+  }
+]

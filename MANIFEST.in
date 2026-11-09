@@ -1,0 +1,4 @@
+# The sdist carries what it takes to run the offline test suite.
+include CHANGELOG.md CONTRACT.md
+recursive-include tests *.py
+recursive-include fixtures *.json
