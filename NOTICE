@@ -1,0 +1,16 @@
+vehiclesdb
+Code: MIT (see LICENSE). Data: CC-BY 4.0 (see below).
+
+The MIT licence in LICENSE covers the CODE of this package only.
+
+The vehicle DATA this package reads is a separate work under a separate
+licence: CC-BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Free for
+any use, including commercial. Visible credit with a link is a CONDITION of
+that licence (§3(a)), not a courtesy:
+
+    Vehicle data by VehiclesDB (https://vehiclesdb.com)
+
+Upstream register notices (KBA's dl-de/by-2-0, RDW's terms, Traficom's CC-BY,
+and others) apply under every licence for this data, the commercial one
+included. They are the registers' own terms, not VehiclesDB's to waive. See
+https://github.com/vehiclesdb/vehiclesdb/blob/main/ATTRIBUTION.md

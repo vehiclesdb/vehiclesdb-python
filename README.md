@@ -203,7 +203,7 @@ are listed in
 [`ATTRIBUTION.md`](https://github.com/vehiclesdb/vehiclesdb/blob/main/ATTRIBUTION.md);
 read it rather than any paraphrase.
 
-The **code** in this package is MIT. The **data** is CC-BY 4.0. See `LICENSE`.
+The **code** in this package is MIT. The **data** is CC-BY 4.0. See [`LICENSE`](./LICENSE) and [`NOTICE`](./NOTICE).
 
 ## HTTP: bring your own, or bring nothing
 

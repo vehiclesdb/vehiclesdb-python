@@ -21,7 +21,9 @@ env:
 jobs:
   test:
     name: unit (Python ${{ matrix.python }})
-    runs-on: ubuntu-latest
+    # actions/setup-python has no 3.9 build for ubuntu-latest (26.04); 3.9 is
+    # still the floor in requires-python, so test it on 24.04.
+    runs-on: ${{ matrix.python == '3.9' && 'ubuntu-24.04' || 'ubuntu-latest' }}
     strategy:
       fail-fast: false
       matrix:

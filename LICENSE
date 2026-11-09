@@ -1,9 +1,3 @@
-Two licences apply here, and they cover different things.
-
--------------------------------------------------------------------------------
-THE CODE in this package (src/, tests/) — MIT
--------------------------------------------------------------------------------
-
 MIT License
 
 Copyright (c) 2026 VehiclesDB
@@ -25,27 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
--------------------------------------------------------------------------------
-THE DATA this package reads — CC-BY 4.0
--------------------------------------------------------------------------------
-
-The vehicle dataset is NOT covered by the MIT licence above. It is published
-under Creative Commons Attribution 4.0 International (CC-BY 4.0):
-
-    https://creativecommons.org/licenses/by/4.0/
-
-Free for any use, including commercial. Visible credit with a link is a
-CONDITION of that licence (§3(a)), not a courtesy. The form requested:
-
-    Vehicle data by VehiclesDB (https://vehiclesdb.com)
-
-`VehiclesDB(...).attribution` returns that notice at runtime, and
-`.attribution_html` returns the ready-to-embed link, so you never have to
-copy the prose by hand.
-
-Upstream register notices (KBA's dl-de/by-2-0, RDW's terms, Traficom's CC-BY,
-and the rest) apply under EVERY licence for this data, the commercial one
-included — they are the registers' own terms, not VehiclesDB's to waive:
-
-    https://github.com/vehiclesdb/vehiclesdb/blob/main/ATTRIBUTION.md
