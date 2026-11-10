@@ -91,7 +91,7 @@ def urllib_transport(timeout: float = 10.0) -> Transport:
     A transport is `transport(url: str, headers: Dict[str, str]) -> (status, bytes)`.
     It returns the status instead of raising for 4xx/5xx, because the API's
     error bodies are documented JSON that callers need to see
-    (`{"error": "no_image", "id": ...}`); only a failure to get any response at
+    (`{"error": "no_render", "id": ...}`); only a failure to get any response at
     all is an exception. That one signature is the whole seam the tests use to
     stay offline.
     """
@@ -103,7 +103,7 @@ def urllib_transport(timeout: float = 10.0) -> Transport:
                 return response.getcode(), response.read()
         except urllib.error.HTTPError as exc:
             # An HTTPError IS a response object. Reading it here is what lets
-            # a 404 surface as VehiclesDBApiError(404, {"error": "no_image"})
+            # a 404 surface as VehiclesDBApiError(404, {"error": "no_render"})
             # instead of an opaque stdlib exception.
             return exc.code, exc.read()
         except urllib.error.URLError as exc:
@@ -512,9 +512,11 @@ class VehiclesDB:
         :raises VehiclesDBApiError: any non-200, with ``.status``, ``.body`` and
             ``.code``; typed subclasses for 401/403 (``VehiclesDBAuthError``),
             402 (``VehiclesDBPaymentRequiredError``), 404
-            (``VehiclesDBNotFoundError``) and 429 (``VehiclesDBRateLimitError``,
-            ``.retry_after``). 422 ``unknown_color`` / ``unsupported_filter``
-            stay plain ``VehiclesDBApiError``.
+            (``VehiclesDBNotFoundError``: ``.code`` is ``unknown_model`` when
+            the id is not in the API's dataset, ``no_render`` when the vehicle
+            has no render yet) and 429 (``VehiclesDBRateLimitError``,
+            ``.retry_after``). 422 ``unknown_color`` / ``invalid_format`` /
+            ``unsupported_filter`` stay plain ``VehiclesDBApiError``.
         :raises VehiclesDBTimeoutError: no response within ``timeout``.
         """
         unknown = set(options) - {"color", "format"}

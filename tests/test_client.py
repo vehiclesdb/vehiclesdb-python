@@ -610,12 +610,12 @@ class ImagesTest(unittest.TestCase):
             self.client(stub).images("car/renault/clio", colour="blue")
         self.assertEqual(stub.calls, [])
 
-    def test_404_no_image_becomes_a_api_error(self):
-        stub = StubTransport(404, {"error": "no_image", "id": "car/volkswagen/passat"})
+    def test_404_no_render_becomes_a_api_error(self):
+        stub = StubTransport(404, {"error": "no_render", "id": "car/volkswagen/passat"})
         with self.assertRaises(VehiclesDBApiError) as caught:
             self.client(stub).images("car/volkswagen/passat")
         self.assertEqual(caught.exception.status, 404)
-        self.assertEqual(caught.exception.body["error"], "no_image")
+        self.assertEqual(caught.exception.body["error"], "no_render")
         self.assertEqual(caught.exception.body["id"], "car/volkswagen/passat")
 
     def test_401_unauthorized_becomes_an_api_error(self):

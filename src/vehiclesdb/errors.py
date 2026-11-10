@@ -36,7 +36,7 @@ class VehiclesDBApiError(VehiclesDBError):
     `status` is the HTTP status, `body` the decoded JSON body when the response
     was JSON (else the raw text), and `code` the body's machine-readable
     `error` string (`invalid_token`, `insufficient_credits`, `rate_limited`,
-    `no_image`, `unknown_color`, ...) or None. The statuses an integration
+    `unknown_model`, `no_render`, `unknown_color`, ...) or None. The statuses an integration
     handles differently raise the subclasses below; read `code` for the rest.
     """
 
