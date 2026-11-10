@@ -5,7 +5,7 @@
 
 `vehiclesdb` gives your Python code a real list of vehicle makes and models —
 cars, motorcycles, mopeds, vans, trucks and buses, reconciled from the official
-registers of 18 countries — plus one stable id per nameplate:
+registers of every country the dataset covers — plus one stable id per nameplate:
 
 ```
 kind/make_slug/model_slug        e.g.  car/volkswagen/golf
