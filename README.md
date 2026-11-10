@@ -67,10 +67,10 @@ unresolvable query gives you `None`. Nothing here raises on user input.
 
 | | dataset mode (default) | API mode |
 |---|---|---|
-| where answers come from | the published CC-BY dataset on jsDelivr | `https://vehiclesdb.com/v1` |
+| where answers come from | the published CC-BY dataset on jsDelivr | `https://vehiclesdb.com/api/v1` |
 | needs a key | no | yes |
-| `makes` `models` `model` `resolve` `search` | ✅ local | *coming* — the `/v1` endpoints are not live yet |
-| `images` | ❌ no local answer exists | ✅ **live today** |
+| `makes` `models` `model` `by_id` `successor` `catalog` `resolve` `model_match` `search`, labels | ✅ local | — |
+| `images` | ❌ no local answer exists | ✅ |
 
 Dataset mode is not a stub. The dataset is real, current and complete for what
 it covers, and the package fetches it **once, lazily, and memoizes it** —
@@ -92,8 +92,30 @@ shot["color"], shot["requested_color"]   # what you got vs what you asked for
 Colour matching is honest by design: ask for a colour that is rendered and you
 get it; ask for one that is not and the API serves a sensible fallback and
 tells you it did. A colour outside the canonical palette is a `422`, never a
-silent guess. Non-2xx responses become `VehiclesDBApiError` with `.status` and
-`.body`.
+silent guess.
+
+Non-2xx responses raise `VehiclesDBApiError` with `.status`, `.body` and
+`.code` (the body's `error`, e.g. `"no_image"`). The statuses you handle
+differently have their own subclasses: `VehiclesDBAuthError` (401/403: missing,
+invalid or revoked key), `VehiclesDBPaymentRequiredError` (402: the wallet is
+empty), `VehiclesDBNotFoundError` (404) and `VehiclesDBRateLimitError` (429,
+with `.retry_after` in seconds, read from the body's `retry_after`, which the
+API always sends). No response within `timeout` raises
+`VehiclesDBTimeoutError` (a `TransportError`).
+
+```python
+from vehiclesdb import VehiclesDBAuthError, VehiclesDBNotFoundError, VehiclesDBPaymentRequiredError
+
+try:
+    shot = db.images("car/volkswagen/passat")
+except VehiclesDBNotFoundError:
+    shot = None   # no render yet: show your placeholder
+except (VehiclesDBAuthError, VehiclesDBPaymentRequiredError):
+    raise         # alert someone: every image call fails until the key or wallet is fixed
+```
+
+0.1.0 called `/v1/...`, which is not the API's path, so every image call
+failed; 0.2.0 calls `/api/v1/...`.
 
 Methods for endpoints that do not exist yet (`stats`, `markets`, `plates`,
 `vin`, `resolve/batch`) are deliberately **absent**. A method that 404s is
@@ -120,8 +142,40 @@ db.resolve("golf")                    # None: no make, and the name alone is not
 ```
 
 `model_match(make, model)` is for data that already has the two in separate
-columns. Both accept `kind=` to restrict candidates and `country=` to restrict
-availability.
+columns. Both accept `kind=` (scopes the name rungs; an explicit id still
+answers), `kinds=` (a hard filter on every rung, ids included; `[]` matches
+nothing) and `country=` to restrict availability.
+
+`r.confident` is `True` when the answer is neither ambiguous nor a typo guess:
+the recommended bar for rewriting stored data without a human.
+
+**Kinds.** Some nameplates are published in several kinds (the Iveco Daily is a
+bus, a truck and a van). Without a kind every VehiclesDB surface picks the same
+one: lowest `mass_decile`, then van, car, bus, truck, moped, motorcycle
+([RESOLUTION.md §3a](https://github.com/vehiclesdb/vehiclesdb/blob/main/RESOLUTION.md)).
+
+```python
+db.resolve("Iveco Daily").id                     # "van/iveco/daily"
+db.resolve("Iveco Daily", kind="truck").id       # "truck/iveco/daily"
+db.resolve("bus/iveco/daily", kinds=["car"])     # None: kinds is a hard filter
+```
+
+**Stored ids.** Store `id`. When a release renames a record, the old id becomes
+a `former_id` of the new one: `db.successor(old_id)` is the id to store now,
+`db.by_id(old_id)` the record (one dataset fetch, no catalog call).
+
+```python
+db.successor("car/alfa-romeo/1750gtv")   # "car/alfa-romeo/1750-gtv"
+```
+
+**Pickers and labels.** `db.catalog(kind="car", country="es")` gives
+`[{"make": Make, "models": [Model, ...]}, ...]` for one market, name-ordered.
+`db.color_options("es")`, `db.colors("es")`, `db.kind_label("van", "es")`
+(`"Furgoneta"`) and `db.body_type_label("wagon", "es")` (`"Familiar"`) carry
+English and Spanish labels; `db.color("gris")` reads slugs and English/Spanish
+names. `Model.registration_years` (`{"first", "last"}`) is a hint for a year
+picker: first-registration years seen in the registers, not production years,
+never a validation bound; `None` until the release publishes it.
 
 The ladder is `exact` (1.00) → `former_id` (0.98) → `fold` (0.97) → `alias`
 (0.93) → `form` (0.92) → `alias` (0.90) → `cleaned` (0.90) → `fuzzy` (0.80).
@@ -244,11 +298,13 @@ published field names from
 nothing renamed, nothing invented.
 
 ```python
-Make       (id, slug, name, kinds, countries?, aliases?)
+Make       (id, slug, name, kinds, countries?, aliases, former_slugs)
 Model      (id, make_id, make_name, slug, name, kind, body_type?, body_types?,
-            aliases?, former_ids?, global_decile?, popularity?, availability,
-            regions, sources?, xrefs?)
-Resolution (id, kind, make, model, method, confidence, source, match, alternates, via, ambiguous)
+            aliases, forms, former_ids, global_decile?, mass_decile?,
+            registration_years?, popularity?, availability, regions, sources?,
+            xrefs?)
+Resolution (id, kind, make, model, method, confidence, confident, source, match,
+            alternates, via, ambiguous)
 ```
 
 Two things to know about `Model`:
@@ -259,8 +315,10 @@ Two things to know about `Model`:
   the global decile; the per-kind catalog (what `model()` reads) carries the
   full list and the per-country ranks. `model()` fills in both sides.
 - **The absence rule is binding.** An absent optional field means "not
-  catalogued yet", never "no" — so `aliases` is `None`, not `[]`, when nobody
-  has curated any, and `to_dict()` *omits* the key rather than emitting `null`.
+  catalogued yet", never "no" — so optional scalars and objects are `None` and
+  `to_dict()` *omits* them rather than emitting `null`. List fields (`aliases`,
+  `forms`, `former_ids`, `former_slugs`) are `[]` when there are none, as in
+  the JS SDK and the gem (0.1.0 used `None`).
   Code against presence, not against versions. `Model.raw` is the untouched
   published record if you need a field newer than this package.
 
@@ -303,6 +361,9 @@ to this repo. See [`CONTRACT.md`](./CONTRACT.md).
 - [`@vehiclesdb/client`](https://www.npmjs.com/package/@vehiclesdb/client) —
   the JavaScript SDK ([repo](https://github.com/vehiclesdb/vehiclesdb-js)),
   same contract.
+- [`make-model-dropdown`](https://github.com/vehiclesdb/make-model-dropdown) —
+  the browser make → model picker; same resolution contract, offline dataset
+  mode, a hidden id field, and an ES module for importmaps.
 - [`vehiclesdb/vehiclesdb`](https://github.com/vehiclesdb/vehiclesdb) — the
   open dataset itself (`SCHEMA.md`, `RESOLUTION.md`, `ATTRIBUTION.md`).
 - [`CHANGELOG.md`](./CHANGELOG.md)

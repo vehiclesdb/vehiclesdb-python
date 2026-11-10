@@ -21,6 +21,7 @@ from .client import (
     ATTRIBUTION_TEXT,
     DATASET_BASE_URL_TEMPLATE,
     DEFAULT_API_BASE_URL,
+    KIND_PRECEDENCE,
     VehiclesDB,
     __version__,
     httpx_transport,
@@ -31,7 +32,12 @@ from .errors import (
     MissingApiKeyError,
     TransportError,
     VehiclesDBApiError,
+    VehiclesDBAuthError,
     VehiclesDBError,
+    VehiclesDBNotFoundError,
+    VehiclesDBPaymentRequiredError,
+    VehiclesDBRateLimitError,
+    VehiclesDBTimeoutError,
 )
 from .models import MATCH_CONFIDENCE, Make, Model, Resolution
 
@@ -44,6 +50,12 @@ __all__ = [
     "VehiclesDBError",
     "MissingApiKeyError",
     "VehiclesDBApiError",
+    "VehiclesDBAuthError",
+    "VehiclesDBPaymentRequiredError",
+    "VehiclesDBNotFoundError",
+    "VehiclesDBRateLimitError",
+    "VehiclesDBTimeoutError",
+    "KIND_PRECEDENCE",
     "DatasetError",
     "TransportError",
     "urllib_transport",

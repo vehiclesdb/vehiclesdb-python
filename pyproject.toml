@@ -9,7 +9,7 @@ name = "vehiclesdb"
 # installed metadata at runtime on purpose: the package has to import and work
 # straight from a source tree (that is how the offline tests run it), where no
 # dist-info exists to read.
-version = "0.1.0"
+version = "0.2.0"
 description = "Vehicle makes, models and canonical vehicle ids, from the open CC-BY VehiclesDB dataset."
 readme = "README.md"
 # 3.9 is the floor CI tests (macOS ships 3.9 as /usr/bin/python3), so no

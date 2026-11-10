@@ -35,8 +35,8 @@ Two requirements follow:
 | | dataset mode (default) | API mode |
 |---|---|---|
 | needs a key | no | yes |
-| answers from | the published CC-BY dataset, `https://cdn.jsdelivr.net/gh/vehiclesdb/vehiclesdb@{version}` | `https://vehiclesdb.com/v1` |
-| methods | `makes` `models` `model` `modelMatch`/`model_match` `resolve` `search` | `images` |
+| answers from | the published CC-BY dataset, `https://cdn.jsdelivr.net/gh/vehiclesdb/vehiclesdb@{version}` | `https://vehiclesdb.com/api/v1` |
+| methods | `makes` `models` `model` `byId`/`by_id` `successor` `catalog` `modelMatch`/`model_match` `resolve` `search`, the colour/kind/body-type labels | `images` |
 
 - **Dataset mode** reads the same release files the Ruby gem refreshes from,
   so all three SDKs read the same bytes. Constructing a client makes no
@@ -63,6 +63,11 @@ Two requirements follow:
 | `modelMatch(make, model, …)` / `model_match(make, model, …)` | Resolution or null | the pair resolution ladder |
 | `resolve(text, kind?, country?)` | Resolution or null | the text resolution ladder |
 | `search(query, kind?, limit=25)` | ranked list of Model | local ranked substring match |
+| `byId(id, follow=true, kinds?)` / `by_id(...)` | Model (light) or null | exact id, then (with `follow`) the record a former id moved to; no catalog fetch |
+| `successor(id)` | id string or null | the live id for a stored id: itself, its successor, or null |
+| `catalog(kind?, kinds?, country?)` | list of `{make, models[]}` | picker data: name-ordered, filtered by kind(s) and register evidence in `country` |
+| `colors(locale?)`, `colorOptions`/`color_options(locale?)`, `color(query, locale?)` | palette | the 14-colour palette; names in `en`/`es`; `color()` reads slugs and English/Spanish names |
+| `kindLabel`/`kind_label(kind, locale?)`, `bodyTypeLabel`/`body_type_label(...)` | string or null | display labels in `en`/`es` |
 | `images(id, color?, format?)` | the endpoint's JSON, verbatim | **API only** |
 
 Endpoints that have not shipped (`stats`, `markets`, `plates`, `vin`,
@@ -82,15 +87,22 @@ JavaScript, `body_type` / `former_ids` / `global_decile` in Python. The
 *concepts* and the *values* must match.
 
 ```
-Make       { id, slug, name, kinds[], countries[]?, aliases[]? }
+Make       { id, slug, name, kinds[], countries[]?, aliases[], former_slugs[] }
 Model      { id, make_id, make_name, slug, name, kind, body_type|body_types[],
-             aliases[]?, forms[]?, former_ids[]?, global_decile|popularity{},
-             availability[], regions[] }
-Resolution { id?, kind?, make?, model?, method, confidence, source, match,
-             alternates[], candidates[], ambiguous, via[] }
+             aliases[], forms[], former_ids[], global_decile|popularity{},
+             mass_decile, registration_years{first,last}?, availability[],
+             regions[] }
+Resolution { id?, kind?, make?, model?, method, confidence, confident, source,
+             match, alternates[], candidates[], ambiguous, via[] }
 ```
 
 - `id` is always the canonical `kind/make_slug/model_slug`.
+- Array fields are `[]` when the release has none (never null), in every SDK.
+- `registration_years` is a **hint**: the first and last first-registration
+  year seen in the registers, not production years, never a validation bound.
+  Null until the release publishes it.
+- `confident` = not ambiguous and `method` is not `fuzzy`: the recommended
+  threshold for applying an answer to stored data without a human.
 - `body_type`/`body_types` and `global_decile`/`popularity` are the two
   published projections. The light `dist/vehicles.json` carries the primary
   body type and the global decile, while the per-kind catalog carries the full
@@ -140,11 +152,16 @@ Confidences label rungs. They are not probabilities.
   non-`[a-z0-9]` to single spaces, and trim. Pair lookups also keep raw
   lowercase equality, for native-script aliases.
 - **Uniqueness:** spacing-blind names, aliases and forms must identify one
-  make/model record (kind variants count as one). Aliases and forms are
-  make-scoped. An ambiguous rung stops the ladder.
-- **Kind variants:** the tie-break is lowest global decile, then wider
-  availability, then release kind order, then id. `kind` restricts candidates;
-  `country` restricts availability.
+  nameplate (make + model slug; kind variants count as one). Aliases and forms
+  are make-scoped. An ambiguous rung stops the ladder.
+- **Kind variants** (RESOLUTION.md §3a): when a rung's winning candidates are
+  one nameplate in several kinds, pick by lowest `mass_decile` (unranked
+  last), then kind precedence van, car, bus, truck, moped, motorcycle, then id
+  (ordinal). Only the records the rung matched compete. `kind` scopes the name
+  rungs (an explicit id still answers); `kinds` is a hard filter on every
+  rung, ids included (`[]` matches nothing); `country` restricts availability.
+- **Make former slugs:** a make input equal to a published `former_slugs`
+  value lands on the successor make (`via` `former_make_slug:old→new`).
 - **Typos** apply to human-shaped input only. Paths, underscores, `+`,
   backslashes, edge or double hyphens and single-case hyphenated slugs disable
   them for the whole text.
@@ -152,7 +169,8 @@ Confidences label rungs. They are not probabilities.
     characters, two from six. A tie between closest makes means no match.
   - Model typos compare equal word counts with matching initials. A differing
     word must have no digits and at least four letters. One edit is allowed per
-    word, or two from nine letters. A tie is ambiguous.
+    word, or two from nine letters. A tie between nameplates is ambiguous;
+    a tie between kinds of one nameplate is a kind variant (above).
   - A make typo caps the answer at `fuzzy` / 0.80, and a model typo never
     stacks on top of it.
 - **Result shape:** `id`, `kind`, `make`, `model`, `confidence`, `source`,

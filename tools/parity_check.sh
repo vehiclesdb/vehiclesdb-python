@@ -272,6 +272,36 @@ cat > "$CASES" <<'JSON'
     "make": "Landrover",
     "model": "Discovery",
     "kind": "car"
+  },
+  {
+    "input": "iveco daily"
+  },
+  {
+    "make": "Iveco",
+    "model": "Turbo"
+  },
+  {
+    "make": "Iveco",
+    "model": "Dialy"
+  },
+  {
+    "make": "Ford",
+    "model": "Model T"
+  },
+  {
+    "input": "Tin Lizzie"
+  },
+  {
+    "input": "iveco daily",
+    "kinds": ["truck", "bus"]
+  },
+  {
+    "input": "bus/iveco/daily",
+    "kinds": ["car"]
+  },
+  {
+    "input": "toyota land cruiser",
+    "kinds": []
   }
 ]
 JSON
@@ -283,8 +313,8 @@ const db = new VehiclesDB({fetch: async url => { if (!url.endsWith('/dist/vehicl
 ;(async () => {
  const results = []
  for (const c of JSON.parse(fs.readFileSync(process.env.CASES))) {
-   const r = c.make ? await db.modelMatch(c.make, c.model, {kind:c.kind}) : await db.resolve(c.input, {kind:c.kind})
-   results.push([c, r ? {id:r.id, method:r.method, confidence:r.confidence, via:r.via, ambiguous:r.ambiguous, candidates:r.candidates.map(m=>m.id).sort()} : null])
+   const r = c.make ? await db.modelMatch(c.make, c.model, {kind:c.kind, kinds:c.kinds}) : await db.resolve(c.input, {kind:c.kind, kinds:c.kinds})
+   results.push([c, r ? {id:r.id, method:r.method, confidence:r.confidence, confident:r.confident, via:r.via, ambiguous:r.ambiguous, candidates:r.candidates.map(m=>m.id).sort()} : null])
  }
  fs.writeFileSync(process.env.JS_OUT, JSON.stringify(results))
 })().catch(e=>{console.error(e);process.exit(1)})
@@ -303,8 +333,8 @@ db = VehiclesDB(transport=transport)
 results = []
 with open(os.environ['CASES']) as f: cases = json.load(f)
 for c in cases:
-    r = db.model_match(c['make'], c['model'], kind=c.get('kind')) if 'make' in c else db.resolve(c['input'], kind=c.get('kind'))
-    results.append([c, dict(id=r.id, method=r.method, confidence=r.confidence, via=r.via, ambiguous=r.ambiguous, candidates=sorted(m.id for m in r.candidates)) if r else None])
+    r = db.model_match(c['make'], c['model'], kind=c.get('kind'), kinds=c.get('kinds')) if 'make' in c else db.resolve(c['input'], kind=c.get('kind'), kinds=c.get('kinds'))
+    results.append([c, dict(id=r.id, method=r.method, confidence=r.confidence, confident=r.confident, via=r.via, ambiguous=r.ambiguous, candidates=sorted(m.id for m in r.candidates)) if r else None])
 with open(os.environ['PY_OUT'], 'w') as f: json.dump(results, f)
 with open(os.environ['JS_OUT']) as f: js = json.load(f)
 for a, b in zip(js, results):

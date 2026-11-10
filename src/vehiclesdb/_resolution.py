@@ -72,9 +72,8 @@ class Resolver:
                 for m in db._models_by_make.get(make.slug, [])]
 
     def pick(self, models):
-        order = {k: i for i, k in enumerate(self.db._kinds)}
-        return min(models, key=lambda m: (m.global_decile if m.global_decile is not None else float('inf'),
-                                         -len(m.availability), order.get(m.kind, float('inf')), m.id))
+        from .client import pick_collision
+        return pick_collision(models)
 
     def result(self, hits, method, via, ambiguous=False, confidence=None, selected=None):
         hits = list({m.id: m for m in hits}.values())
@@ -92,6 +91,9 @@ class Resolver:
         for m in self.db._makes:
             if q and q in (fold(m.name), fold(m.slug)):
                 return dict(make=m, via=[], typo=False)
+        for m in self.db._makes:
+            if q and any(fold(f) == q for f in m.former_slugs):
+                return dict(make=m, via=['former_make_slug:%s→%s' % (q, m.slug)], typo=False)
         for m in self.db._makes:
             if any(fold(a) == q if q else key and raw_key(a) == key for a in m.aliases or []):
                 return dict(make=m, via=['make_alias:%s→%s' % (q, m.slug)] if q else [], typo=False)
@@ -120,9 +122,9 @@ class Resolver:
         m = next(iter(hits.values()))
         return dict(make=m, via=['make_typo:%s→%s' % (q, m.slug)], typo=True)
 
-    def scope(self, make, kind, country):
+    def scope(self, make, kind, country, kinds=None):
         return [e for e in self.scopes[make.slug] if
-                (not kind or e['model'].kind == kind) and
+                (not kind or e['model'].kind == kind) and (kinds is None or e['model'].kind in kinds) and
                 (not country or raw_key(country) in e['model'].availability)]
 
     def rungs(self, entries, query, via, cap):
@@ -156,10 +158,10 @@ class Resolver:
             return self.result(models, method if ambiguous else cap or method, via + [step], ambiguous)
         return None
 
-    def ladder(self, resolved, raw, kind=None, country=None, heuristics=True, make_query=''):
+    def ladder(self, resolved, raw, kind=None, country=None, heuristics=True, make_query='', kinds=None):
         make, typo = resolved['make'], resolved['typo']
         via = (['kind_hint:%s' % kind] if kind else []) + resolved['via']
-        entries = self.scope(make, kind, country)
+        entries = self.scope(make, kind, country, kinds)
         query = fold(raw)
         if not query:
             hits = [e['model'] for e in entries if raw_key(raw) and any(raw_key(a) == raw_key(raw) for a in e['model'].aliases or [])]
@@ -217,23 +219,25 @@ class Resolver:
         return self.result([m for r in top for m in r[2]], 'fuzzy',
                            via + steps + ['model_typo:%s%s' % (query, '' if ambiguous else '→' + top[0][1])], ambiguous)
 
-    def pair(self, make, model, kind=None, country=None):
+    def pair(self, make, model, kind=None, country=None, kinds=None):
         resolved = self.make(make)
         if resolved is None:
             return None
-        return self.ladder(resolved, model, kind, country, make_query=make)
+        return self.ladder(resolved, model, kind, country, make_query=make, kinds=kinds)
 
-    def text(self, raw, kind=None, country=None):
+    def text(self, raw, kind=None, country=None, kinds=None):
         raw = str(raw or '').strip()
         if not raw:
             return None
 
         def allowed(m):
-            return (not kind or m.kind == kind) and (not country or raw_key(country) in m.availability)
+            return ((not kind or m.kind == kind) and (kinds is None or m.kind in kinds) and
+                    (not country or raw_key(country) in m.availability))
 
         hint = ['kind_hint:%s' % kind] if kind else []
         def by_id(hits, method):
-            hits = [m for m in hits if not country or raw_key(country) in m.availability]
+            hits = [m for m in hits if (kinds is None or m.kind in kinds) and
+                    (not country or raw_key(country) in m.availability)]
             if not hits:
                 return None
             via = hint + ['%s:%s' % (method, raw)]
@@ -262,7 +266,7 @@ class Resolver:
             if split:
                 break
         if split and split[1]:
-            found = self.rungs(self.scope(split[0]['make'], kind, country), split[1],
+            found = self.rungs(self.scope(split[0]['make'], kind, country, kinds), split[1],
                                hint + split[0]['via'], 'fuzzy' if split[0]['typo'] else None)
             if found is not None:
                 return found
@@ -277,4 +281,4 @@ class Resolver:
                 return self.result(hits, 'alias', hint + ['alias:%s→%s/%s' % (q, model.make_id, model.slug)], confidence=.90)
         if not split or not split[1] or not eligible(raw):
             return None
-        return self.ladder(split[0], split[1], kind, country, True, split[2])
+        return self.ladder(split[0], split[1], kind, country, True, split[2], kinds)

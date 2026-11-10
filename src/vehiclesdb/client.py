@@ -7,10 +7,9 @@ JS / Python clients must give the same answer to the same question.
 
 Two hard rules this file obeys:
 
-1. **No unshipped endpoints.** `GET /v1/vehicles/.../images` is the only live
-   `/v1` endpoint today. `makes`/`models`/`model`/`resolve`/`search` are
-   answered locally from the published CC-BY dataset, and `images()` is API
-   only. There is no method here for `stats`, `markets`, `plates`, `vin` or
+1. **No unshipped endpoints.** `images()` (`GET /api/v1/vehicles/.../images`)
+   is the one API call. Everything else is answered locally from the
+   published CC-BY dataset. There is no method here for `stats`, `markets`, `plates`, `vin` or
    `resolve/batch` — a method that 404s invites integrations onto semantics we
    have not shipped.
 2. **Nothing fetches in `__init__`.** Constructing a client is free; the
@@ -19,6 +18,7 @@ Two hard rules this file obeys:
 """
 
 import json
+import socket
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -31,13 +31,16 @@ from .errors import (
     TransportError,
     VehiclesDBApiError,
     VehiclesDBError,
+    VehiclesDBTimeoutError,
+    api_error,
 )
+from ._labels import BODY_TYPE_LABELS, COLOR_SYNONYMS, COLORS, KIND_LABELS, locale_of
 from .models import Make, Model, Resolution
 
 # Keep in sync with `version` in pyproject.toml (there is no build-time
 # metadata read here on purpose: this package must import with zero deps and
 # without being installed, which is how the offline tests run it).
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 # The exact CDN base the published Ruby gem uses, minus the trailing path —
 # vehicles/lib/vehicles/configuration.rb:72 sets
@@ -70,6 +73,11 @@ ATTRIBUTION_HTML = (
 # without special-casing None in half a dozen sort keys.
 _UNRANKED = 99
 
+# RESOLUTION.md §3a: when one nameplate answers in several kinds and the caller
+# gave no kind, the tie-break is lowest mass_decile, then this kind
+# precedence, then the id. Identical on every VehiclesDB surface.
+KIND_PRECEDENCE = ("van", "car", "bus", "truck", "moped", "motorcycle")
+
 Transport = Callable[[str, Dict[str, str]], Tuple[int, bytes]]
 
 
@@ -99,8 +107,12 @@ def urllib_transport(timeout: float = 10.0) -> Transport:
             # instead of an opaque stdlib exception.
             return exc.code, exc.read()
         except urllib.error.URLError as exc:
+            if isinstance(exc.reason, socket.timeout):
+                raise VehiclesDBTimeoutError(url, exc)
             raise TransportError(url, exc)
-        except OSError as exc:  # socket.timeout on <3.10, connection resets
+        except socket.timeout as exc:  # TimeoutError on 3.10+
+            raise VehiclesDBTimeoutError(url, exc)
+        except OSError as exc:  # connection resets
             raise TransportError(url, exc)
 
     return _fetch
@@ -120,14 +132,20 @@ def httpx_transport(client: Any = None, timeout: float = 10.0) -> Transport:
     """
 
     def _fetch(url: str, headers: Dict[str, str]) -> Tuple[int, bytes]:
-        if client is not None:
-            response = client.get(url, headers=headers)
-            return response.status_code, response.content
-        import httpx  # noqa: F401  (deliberately lazy — see docstring)
+        try:
+            if client is not None:
+                response = client.get(url, headers=headers)
+                return response.status_code, response.content
+            import httpx  # noqa: F401  (deliberately lazy — see docstring)
 
-        with httpx.Client(timeout=timeout, follow_redirects=True) as owned:
-            response = owned.get(url, headers=headers)
-            return response.status_code, response.content
+            with httpx.Client(timeout=timeout, follow_redirects=True) as owned:
+                response = owned.get(url, headers=headers)
+                return response.status_code, response.content
+        except Exception as exc:
+            # httpx.TimeoutException and its subclasses, without importing httpx.
+            if any("Timeout" in cls.__name__ for cls in type(exc).__mro__):
+                raise VehiclesDBTimeoutError(url, exc)
+            raise
 
     return _fetch
 
@@ -320,7 +338,7 @@ class VehiclesDB:
             former = self._former_ids.get(vehicle_id)
             if not former:
                 return None
-            lean = _pick(former)
+            lean = pick_collision(former)
         return self._with_catalog(lean)
 
     def _resolver(self):
@@ -331,14 +349,103 @@ class VehiclesDB:
         return self._resolution_engine
 
     def model_match(self, make: str, model: str, kind: Optional[str] = None,
-                    country: Optional[str] = None) -> Optional[Resolution]:
-        """Resolve separate fields with the RESOLUTION.md ladder."""
-        return self._resolver().pair(make, model, kind, country)
+                    country: Optional[str] = None,
+                    kinds: Optional[Iterable[str]] = None) -> Optional[Resolution]:
+        """Resolve separate fields with the RESOLUTION.md ladder.
+
+        ``kind`` scopes the name rungs; ``kinds`` is a hard filter on every
+        rung (``[]`` matches nothing) — RESOLUTION.md §3a.
+        """
+        return self._resolver().pair(make, model, kind, country, _kinds(kinds))
 
     def resolve(self, query: str, kind: Optional[str] = None,
-                country: Optional[str] = None) -> Optional[Resolution]:
-        """Best effort text resolution; None for no match, a result for ambiguity."""
-        return self._resolver().text(query, kind, country)
+                country: Optional[str] = None,
+                kinds: Optional[Iterable[str]] = None) -> Optional[Resolution]:
+        """Best effort text resolution; None for no match, a result for ambiguity.
+
+        ``kind`` scopes the name rungs (an explicit id still answers);
+        ``kinds`` is a hard filter on every rung, ids included.
+        """
+        return self._resolver().text(query, kind, country, _kinds(kinds))
+
+    def by_id(self, vehicle_id: str, follow: bool = True,
+              kinds: Optional[Iterable[str]] = None) -> Optional[Model]:
+        """A light record by canonical id, from the one dataset fetch.
+
+        Unlike ``model()`` this never fetches the per-kind catalog. With
+        ``follow`` (default) a former id lands on the record that replaced it.
+        ``kinds`` is a hard filter. Unknown id: ``None``.
+        """
+        key = _join_id((vehicle_id,))
+        self._dataset()
+        allowed = _kinds(kinds)
+        ok = (lambda m: True) if allowed is None else (lambda m: m.kind in allowed)
+        live = self._models_by_id.get(key)
+        if live is not None:
+            return live if ok(live) else None
+        if not follow:
+            return None
+        candidates = [m for m in self._former_ids.get(key, []) if ok(m)]
+        return pick_collision(candidates) if candidates else None
+
+    def successor(self, vehicle_id: str) -> Optional[str]:
+        """The live canonical id for a stored id: the id itself when live, its
+        successor when a release renamed or merged it, ``None`` when unknown."""
+        model = self.by_id(vehicle_id, follow=True)
+        return model.id if model is not None else None
+
+    def catalog(self, kind: Optional[str] = None, country: Optional[str] = None,
+                kinds: Optional[Iterable[str]] = None) -> List[Dict[str, Any]]:
+        """Picker data: ``[{"make": Make, "models": [Model, ...]}, ...]``.
+
+        Makes in name order, models in name order, filtered by ``kind`` /
+        ``kinds`` and by ``country`` (models with register evidence there;
+        makes left with no model are dropped). One dataset fetch.
+        """
+        self._dataset()
+        allowed = _kinds(kinds)
+        cc = country.strip().lower() if country else None
+        out = []
+        for make in sorted(self._makes, key=lambda m: (fold(m.name), m.slug)):
+            models = [m for m in self._models_by_make.get(make.slug, [])
+                      if (kind is None or m.kind == kind) and (allowed is None or m.kind in allowed)
+                      and (cc is None or cc in m.availability)]
+            if not models:
+                continue
+            models.sort(key=lambda m: (fold(m.name), m.id))
+            out.append({"make": make, "models": models})
+        return out
+
+    # -- reference labels (no I/O) -----------------------------------------
+
+    def colors(self, locale: Optional[str] = None) -> List[Dict[str, str]]:
+        """The canonical 14-colour palette: ``[{"slug", "name", "hex"}]``, names in ``en``/``es``."""
+        lang = locale_of(locale)
+        return [{"slug": slug, "name": names[lang], "hex": hex_} for slug, hex_, names in COLORS]
+
+    def color_options(self, locale: Optional[str] = None) -> List[Tuple[str, str]]:
+        """``[(label, slug), ...]`` for a select — the gem's ``color_options``."""
+        return [(c["name"], c["slug"]) for c in self.colors(locale)]
+
+    def color(self, query: str, locale: Optional[str] = None) -> Optional[Dict[str, str]]:
+        """A palette colour from a slug or an English/Spanish name or synonym
+        (``"gris"``, ``"Marrón"``, ``"navy"``), or ``None``."""
+        q = fold(query)
+        if not q:
+            return None
+        slug = next((s for s, _, names in COLORS if s == q or any(fold(n) == q for n in names.values())), None)
+        slug = slug or COLOR_SYNONYMS.get(q)
+        return next((c for c in self.colors(locale) if c["slug"] == slug), None) if slug else None
+
+    def kind_label(self, kind: str, locale: Optional[str] = None) -> Optional[str]:
+        """``"Coche"`` for ``kind_label("car", "es")``. Unknown kind: ``None``."""
+        labels = KIND_LABELS.get(str(kind or "").strip().lower())
+        return labels[locale_of(locale)] if labels else None
+
+    def body_type_label(self, body_type: str, locale: Optional[str] = None) -> Optional[str]:
+        """``"Familiar"`` for ``body_type_label("wagon", "es")``. Unknown: ``None``."""
+        labels = BODY_TYPE_LABELS.get(str(body_type or "").strip().lower())
+        return labels[locale_of(locale)] if labels else None
 
     def search(self, query: str, kind: Optional[str] = None, limit: int = 25) -> List[Model]:
         """Ranked substring search over model names — an autocomplete endpoint.
@@ -383,8 +490,7 @@ class VehiclesDB:
         ``db.images("car/renault/clio", color="blue")`` or
         ``db.images("car", "renault", "clio", color="blue")``.
 
-        This is the one endpoint of the `/v1` catalog that is live today
-        (`GET /v1/vehicles/{kind}/{make}/{model}/images`). There is no dataset
+        ``GET /api/v1/vehicles/{kind}/{make}/{model}/images``. There is no dataset
         fallback: the open dataset contains identity and structure, not
         imagery, so a local answer would be a fiction. Without ``api_key`` you
         get ``MissingApiKeyError`` rather than an empty result.
@@ -403,10 +509,13 @@ class VehiclesDB:
         :param color: palette colour slug; the API defaults to ``grey``.
         :param format: ``"webp"`` (API default) or ``"png"``.
         :raises MissingApiKeyError: no ``api_key`` on the client.
-        :raises VehiclesDBApiError: any non-200, with ``.status`` and ``.body``
-            (401 ``{"error": "unauthorized"}``, 404
-            ``{"error": "no_image", "id": ...}``, 422 ``unknown_color`` /
-            ``unsupported_filter``).
+        :raises VehiclesDBApiError: any non-200, with ``.status``, ``.body`` and
+            ``.code``; typed subclasses for 401/403 (``VehiclesDBAuthError``),
+            402 (``VehiclesDBPaymentRequiredError``), 404
+            (``VehiclesDBNotFoundError``) and 429 (``VehiclesDBRateLimitError``,
+            ``.retry_after``). 422 ``unknown_color`` / ``unsupported_filter``
+            stay plain ``VehiclesDBApiError``.
+        :raises VehiclesDBTimeoutError: no response within ``timeout``.
         """
         unknown = set(options) - {"color", "format"}
         if unknown:
@@ -420,7 +529,7 @@ class VehiclesDB:
             raise MissingApiKeyError("images")
 
         vehicle_id = _join_id(parts)
-        path = "/v1/vehicles/%s/images" % "/".join(
+        path = "/api/v1/vehicles/%s/images" % "/".join(
             urllib.parse.quote(segment, safe="") for segment in vehicle_id.split("/")
         )
         params = {k: v for k, v in options.items() if v is not None}
@@ -431,7 +540,7 @@ class VehiclesDB:
         status, body = self._transport(url, self._api_headers())
         payload = _decode_json(body, url)
         if status != 200:
-            raise VehiclesDBApiError(status, payload, url)
+            raise api_error(status, payload, url)
         if not isinstance(payload, dict):
             raise VehiclesDBApiError(status, payload, url)
         return payload
@@ -439,8 +548,7 @@ class VehiclesDB:
     # -- internals ---------------------------------------------------------
 
     def _api_headers(self) -> Dict[str, str]:
-        # The endpoint authenticates with a bearer token
-        # (401 -> {"error":"unauthorized"}).
+        # The API authenticates with a bearer token (401 -> VehiclesDBAuthError).
         headers = {
             "Accept": "application/json",
             "User-Agent": "vehiclesdb-python/%s (+https://vehiclesdb.com)" % __version__,
@@ -511,7 +619,8 @@ class VehiclesDB:
                 name=raw_make["name"],
                 kinds=list(raw_make.get("kinds", [])),
                 countries=None,  # not in this projection — see Make's docstring
-                aliases=list(raw_make["aliases"]) if raw_make.get("aliases") else None,
+                aliases=list(raw_make.get("aliases") or []),
+                former_slugs=list(raw_make.get("former_slugs") or []),
             )
             makes.append(make)
             makes_by_slug[make.slug] = make
@@ -535,10 +644,12 @@ class VehiclesDB:
                     name=raw_model["name"],
                     kind=raw_model["kind"],
                     body_type=raw_model.get("body_type"),
-                    aliases=list(raw_model["aliases"]) if raw_model.get("aliases") else None,
-                    forms=list(raw_model["forms"]) if raw_model.get("forms") else None,
-                    former_ids=list(raw_model["former_ids"]) if raw_model.get("former_ids") else None,
+                    aliases=list(raw_model.get("aliases") or []),
+                    forms=list(raw_model.get("forms") or []),
+                    former_ids=list(raw_model.get("former_ids") or []),
                     global_decile=raw_model.get("global_decile"),
+                    mass_decile=raw_model.get("mass_decile"),
+                    registration_years=_years(raw_model.get("registration_years")),
                     availability=list(raw_model.get("availability", [])),
                     regions=list(raw_model.get("regions", [])),
                     raw=raw_model,
@@ -568,6 +679,14 @@ class VehiclesDB:
                     if key:
                         name_index.setdefault(key, []).append(model)
             models_by_make[make.slug] = bucket
+
+        # A merged/renamed make's old slug lands on its successor — after every
+        # real name, alias and slug has claimed its key.
+        for make in makes:
+            for former in make.former_slugs:
+                make_lookup.setdefault(former.lower(), make.slug)
+                if fold(former):
+                    make_keys.setdefault(fold(former), make.slug)
 
         self._makes = makes
         self._makes_by_slug = makes_by_slug
@@ -630,6 +749,8 @@ class VehiclesDB:
             forms=list(record["forms"]) if record.get("forms") else lean.forms,
             former_ids=list(record["former_ids"]) if record.get("former_ids") else lean.former_ids,
             global_decile=popularity.get("global_decile", lean.global_decile),
+            mass_decile=popularity.get("mass_decile", lean.mass_decile),
+            registration_years=_years(record.get("registration_years")) or lean.registration_years,
             popularity=record.get("popularity"),
             # Project the catalog's evidence rows down to bare country codes so
             # `availability` has one type no matter which file answered; the
@@ -682,17 +803,36 @@ def _popularity_key(model: Model) -> Tuple[int, str, str]:
     return (decile, model.name, model.id)
 
 
-def _pick(candidates: Sequence[Model]) -> Model:
-    """Choose one model out of an ambiguous set, deterministically.
+def _kind_rank(kind: str) -> int:
+    return KIND_PRECEDENCE.index(kind) if kind in KIND_PRECEDENCE else len(KIND_PRECEDENCE)
 
-    Ambiguity is real and published, not a bug: Aixam ships a "Mega" as a car,
-    a moped AND a van, and Mercedes-Benz ships a "Sprinter" as a van, a truck
-    and a bus. Rather than guess a kind preference (which would be a heuristic,
-    and this resolver has none), we take the most popular by published decile
-    and break remaining ties on name then id. Pass `kind=` to say what you
-    actually meant.
+
+def pick_collision(candidates: Sequence[Model]) -> Model:
+    """One record out of ONE nameplate published in several kinds.
+
+    Iveco's Daily is a bus, a truck and a van. The tie-break of RESOLUTION.md
+    §3a, identical on every VehiclesDB surface: lowest ``mass_decile``
+    (unranked last), then kind precedence van, car, bus, truck, moped,
+    motorcycle (any other kind after these, ordinal), then the id (ordinal).
+    Pass ``kind=``/``kinds=`` to say what you actually meant.
     """
-    return min(candidates, key=_popularity_key)
+    return min(candidates, key=lambda m: (
+        m.mass_decile if m.mass_decile is not None else _UNRANKED, _kind_rank(m.kind), m.kind, m.id))
+
+
+def _kinds(kinds: Optional[Iterable[str]]) -> Optional[frozenset]:
+    """``kinds`` option: None = every kind, a list = only those ([] = nothing)."""
+    if kinds is None:
+        return None
+    if isinstance(kinds, str):
+        return frozenset([kinds])
+    return frozenset(kinds)
+
+
+def _years(value: Any) -> Optional[Dict[str, Optional[int]]]:
+    if not isinstance(value, dict):
+        return None
+    return {"first": value.get("first"), "last": value.get("last")}
 
 
 def _join_id(parts: Sequence[str]) -> str:
@@ -752,5 +892,7 @@ __all__ = [
     "DATASET_BASE_URL_TEMPLATE",
     "DEFAULT_API_BASE_URL",
     "VehiclesDBError",
+    "KIND_PRECEDENCE",
+    "pick_collision",
     "__version__",
 ]
