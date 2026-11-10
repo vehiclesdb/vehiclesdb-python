@@ -99,7 +99,7 @@ class ResolutionContractTest(unittest.TestCase):
             with self.subTest(case=c):
                 if c.get('min_dataset') and tuple(map(int, DIST['version'].split('.'))) < tuple(map(int, c['min_dataset'].split('.'))):
                     self.skipTest('needs dataset %s' % c['min_dataset'])
-                r = db.model_match(c['make'], c['model'], kind=c.get('kind')) if c['entry'] == 'pair' else db.resolve(c['input'], kind=c.get('kind'))
+                r = db.model_match(c['make'], c['model'], kind=c.get('kind'), kinds=c.get('kinds')) if c['entry'] == 'pair' else db.resolve(c['input'], kind=c.get('kind'), kinds=c.get('kinds'))
                 if c['expect'] == 'ambiguous':
                     self.assertTrue(r.ambiguous)
                     self.assertIsNone(r.match)

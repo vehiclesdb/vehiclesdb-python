@@ -7,10 +7,10 @@ SCHEMA.md it is not an attribute, with the two documented exceptions marked
 
 The absence rule (SCHEMA.md, "The absence rule (binding)") is load-bearing:
 an absent optional key means "not catalogued yet", never "no". So optional
-fields default to None, and `to_dict()` OMITS them rather than emitting
-`"aliases": null` — round-tripping a record through this package must not
-turn "we haven't curated aliases for this model" into "this model has no
-aliases".
+scalar and object fields default to None, and `to_dict()` OMITS them rather
+than emitting `null`. List fields (`aliases`, `forms`, `former_ids`,
+`former_slugs`) are `[]` when the release has none, exactly as in the JS SDK
+and the Ruby gem (since 0.2.0; 0.1.0 used None).
 """
 
 from dataclasses import dataclass, field
@@ -21,7 +21,7 @@ from typing import Any, Dict, List, Optional
 # READ THIS BEFORE USING THE NUMBER: in dataset mode these are *rung labels*
 # rendered as floats so a caller can write `if r.confidence >= 0.9`. They are
 # not probabilities, they are not calibrated against anything, and no model
-# produced them. The graded resolver lives behind `GET /v1/resolve` (see
+# produced them. The graded resolver lives behind `POST /api/v1/resolve` (see
 # CONTRACT.md); when a response comes from there, `confidence` is whatever
 # the API said and this table is not consulted.
 MATCH_CONFIDENCE = {"exact": 1.0, "former_id": .98, "fold": .97, "alias": .93, "form": .92, "cleaned": .90, "fuzzy": .80}
@@ -49,7 +49,10 @@ class Make:
     name: str
     kinds: List[str]
     countries: Optional[List[str]] = None
-    aliases: Optional[List[str]] = None
+    # Arrays are [] when the release has none (never None), as in the JS SDK and the gem.
+    aliases: List[str] = field(default_factory=list)
+    # Slugs of makes merged into this one (dataset `former_slugs`, 2026.11.3+).
+    former_slugs: List[str] = field(default_factory=list)
 
     def to_dict(self) -> Dict[str, Any]:
         return _compact(
@@ -59,7 +62,8 @@ class Make:
                 "name": self.name,
                 "kinds": list(self.kinds),
                 "countries": list(self.countries) if self.countries is not None else None,
-                "aliases": list(self.aliases) if self.aliases is not None else None,
+                "aliases": list(self.aliases),
+                "former_slugs": list(self.former_slugs),
             }
         )
 
@@ -102,10 +106,17 @@ class Model:
     make_name: Optional[str] = None
     body_type: Optional[str] = None
     body_types: Optional[List[str]] = None
-    aliases: Optional[List[str]] = None
-    forms: Optional[List[str]] = None
-    former_ids: Optional[List[str]] = None
+    aliases: List[str] = field(default_factory=list)
+    forms: List[str] = field(default_factory=list)
+    former_ids: List[str] = field(default_factory=list)
     global_decile: Optional[int] = None
+    # Per-kind decile of summed registrations; drives the kind-collision
+    # tie-break (RESOLUTION.md §3a). None = unranked.
+    mass_decile: Optional[int] = None
+    # {"first": 1998, "last": 2026}: first and last first-registration year
+    # seen in the registers. A HINT for a year picker, not production years,
+    # never a validation bound. None until the release publishes it.
+    registration_years: Optional[Dict[str, Optional[int]]] = None
     popularity: Optional[Dict[str, Any]] = None
     # Always bare ISO-3166 alpha-2 codes, from EITHER projection. dist/ already
     # publishes them that way; the catalog publishes objects
@@ -150,10 +161,12 @@ class Model:
                 "kind": self.kind,
                 "body_type": self.body_type,
                 "body_types": list(self.body_types) if self.body_types is not None else None,
-                "aliases": list(self.aliases) if self.aliases is not None else None,
-                "forms": list(self.forms) if self.forms is not None else None,
-                "former_ids": list(self.former_ids) if self.former_ids is not None else None,
+                "aliases": list(self.aliases),
+                "forms": list(self.forms),
+                "former_ids": list(self.former_ids),
                 "global_decile": self.global_decile,
+                "mass_decile": self.mass_decile,
+                "registration_years": dict(self.registration_years) if self.registration_years is not None else None,
                 "popularity": self.popularity,
                 "availability": list(self.availability),
                 "regions": list(self.regions),
@@ -183,6 +196,11 @@ class Resolution:
     record: Optional[Model] = field(default=None, repr=False)
 
     @property
+    def confident(self) -> bool:
+        """Safe to auto-apply to stored data: not ambiguous, not a typo guess."""
+        return not self.ambiguous and self.method != "fuzzy"
+
+    @property
     def matched_on(self):
         """Deprecated: use method."""
         return self.method
@@ -205,6 +223,7 @@ class Resolution:
     def to_dict(self):
         return dict(id=self.id, kind=self.kind, make=self.make, model=self.model,
                     method=self.method, matched_on=self.method, confidence=self.confidence,
+                    confident=self.confident,
                     source=self.source, match=self.match, ambiguous=self.ambiguous,
                     alternates=[m.to_dict() for m in self.alternates],
                     candidates=[m.to_dict() for m in self.candidates],

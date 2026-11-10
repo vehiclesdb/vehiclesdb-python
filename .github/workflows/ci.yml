@@ -16,7 +16,7 @@ permissions:
 env:
   # The dataset release the conformance job runs against. Bump it when a new
   # release changes RESOLUTION.md or conformance/resolve.json.
-  DATASET_TAG: v2026.11.1
+  DATASET_TAG: v2026.11.2
 
 jobs:
   test:

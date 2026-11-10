@@ -106,14 +106,14 @@ class MakesTest(OfflineTestCase):
             [m.slug for m in self.db.makes(kind="motorcycle")], ["bmw", "renault"]
         )
 
-    def test_published_make_aliases_survive_and_absence_is_none(self):
+    def test_published_make_aliases_survive_and_absence_is_empty(self):
         vw = next(m for m in self.db.makes() if m.slug == "volkswagen")
         self.assertEqual(vw.aliases, ["VW", "Vdub"])
-        # Citroën has no curated make aliases: absent means "not curated yet",
-        # never [] (SCHEMA.md, the absence rule).
+        # Citroën has no curated make aliases: list fields are [] in every SDK
+        # (JS and the gem too), since 0.2.0.
         citroen = next(m for m in self.db.makes() if m.slug == "citroen")
-        self.assertIsNone(citroen.aliases)
-        self.assertNotIn("aliases", citroen.to_dict())
+        self.assertEqual(citroen.aliases, [])
+        self.assertEqual(citroen.to_dict()["aliases"], [])
 
     def test_make_id_equals_slug(self):
         # dist/ carries no make id; catalog/{kind}/makes.json does, and there
@@ -333,9 +333,10 @@ class ResolveLadderTest(OfflineTestCase):
             if "Tin Lizzie" in (m.get("aliases") or [])
         ]
         self.assertEqual(published, ["car/ford/model-t", "van/ford/model-t"])
-        self.assertResolves("Tin Lizzie", "car/ford/model-t", "alias")
-        # Narrowing the corpus with kind= selects the requested variant,
-        # while the default uses the SDK tie-break.
+        # Unhinted: the RESOLUTION.md §3a tie-break. These fixtures predate
+        # mass_decile, so the kind precedence decides: van before car.
+        self.assertResolves("Tin Lizzie", "van/ford/model-t", "alias")
+        # Narrowing the corpus with kind= selects the requested variant.
         self.assertResolves("Tin Lizzie", "car/ford/model-t", "alias", kind="car")
 
     def test_rung_3_ambiguity_counts_names_as_well_as_aliases(self):
@@ -533,7 +534,7 @@ class SearchTest(OfflineTestCase):
 
 
 # ---------------------------------------------------------------------------
-# images() — the one live /v1 endpoint
+# images() — GET /api/v1/vehicles/.../images
 # ---------------------------------------------------------------------------
 
 # Transcribed from the endpoint's documented response example
@@ -577,7 +578,7 @@ class ImagesTest(unittest.TestCase):
         stub = StubTransport(200, IMAGE_200)
         payload = self.client(stub).images("car/renault/clio", color="blue")
         url, headers = stub.calls[0]
-        self.assertEqual(url, "%s/v1/vehicles/car/renault/clio/images?color=blue" % API_BASE_URL)
+        self.assertEqual(url, "%s/api/v1/vehicles/car/renault/clio/images?color=blue" % API_BASE_URL)
         self.assertEqual(headers["Authorization"], "Bearer test-key")
         self.assertEqual(headers["Accept"], "application/json")
         self.assertTrue(headers["User-Agent"].startswith("vehiclesdb-python/"))
@@ -589,14 +590,14 @@ class ImagesTest(unittest.TestCase):
     def test_three_arg_addressing_builds_the_same_url(self):
         stub = StubTransport(200, IMAGE_200)
         self.client(stub).images("car", "renault", "clio")
-        self.assertEqual(stub.calls[0][0], "%s/v1/vehicles/car/renault/clio/images" % API_BASE_URL)
+        self.assertEqual(stub.calls[0][0], "%s/api/v1/vehicles/car/renault/clio/images" % API_BASE_URL)
 
     def test_format_is_passed_through(self):
         stub = StubTransport(200, dict(IMAGE_200, format="png"))
         self.client(stub).images("car/renault/clio", color="red", format="png")
         self.assertEqual(
             stub.calls[0][0],
-            "%s/v1/vehicles/car/renault/clio/images?color=red&format=png" % API_BASE_URL,
+            "%s/api/v1/vehicles/car/renault/clio/images?color=red&format=png" % API_BASE_URL,
         )
 
     def test_reserved_and_misspelled_filters_fail_locally(self):
