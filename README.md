@@ -95,7 +95,9 @@ tells you it did. A colour outside the canonical palette is a `422`, never a
 silent guess.
 
 Non-2xx responses raise `VehiclesDBApiError` with `.status`, `.body` and
-`.code` (the body's `error`, e.g. `"no_image"`). The statuses you handle
+`.code` (the body's `error`, e.g. `"no_render"`; an image 404 is
+`unknown_model` when the id is not in the API's dataset, `no_render` when
+the vehicle has no render yet). The statuses you handle
 differently have their own subclasses: `VehiclesDBAuthError` (401/403: missing,
 invalid or revoked key), `VehiclesDBPaymentRequiredError` (402: the wallet is
 empty), `VehiclesDBNotFoundError` (404) and `VehiclesDBRateLimitError` (429,
