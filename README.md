@@ -3,6 +3,8 @@
 [![PyPI](https://img.shields.io/pypi/v/vehiclesdb.svg)](https://pypi.org/project/vehiclesdb/)
 [![CI](https://github.com/vehiclesdb/vehiclesdb-python/actions/workflows/ci.yml/badge.svg)](https://github.com/vehiclesdb/vehiclesdb-python/actions/workflows/ci.yml)
 
+> **Get your free key, the integration guide and the credit snippet at [vehiclesdb.com](https://vehiclesdb.com/users/sign_up?for=app_saas&cta=readme_vehiclesdb_python)**
+
 `vehiclesdb` gives your Python code a real list of vehicle makes and models —
 cars, motorcycles, mopeds, vans, trucks and buses, reconciled from the official
 registers of every country the dataset covers — plus one stable id per nameplate:
