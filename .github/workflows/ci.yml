@@ -101,9 +101,18 @@ jobs:
       - uses: actions/checkout@v4
         with:
           path: vehiclesdb-python
+      # The sibling SDK at the branch of the same name when one exists (a
+      # cross-SDK change lands as a PR pair), else main.
+      - name: Pick the vehiclesdb-js ref
+        id: sibling
+        run: |
+          ref="${GITHUB_HEAD_REF:-main}"
+          git ls-remote --exit-code --heads https://github.com/vehiclesdb/vehiclesdb-js "$ref" >/dev/null || ref=main
+          echo "ref=$ref" >> "$GITHUB_OUTPUT"
       - uses: actions/checkout@v4
         with:
           repository: vehiclesdb/vehiclesdb-js
+          ref: ${{ steps.sibling.outputs.ref }}
           path: vehiclesdb-js
       - uses: actions/checkout@v4
         with:
