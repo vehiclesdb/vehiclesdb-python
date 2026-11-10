@@ -99,7 +99,8 @@ Non-2xx responses raise `VehiclesDBApiError` with `.status`, `.body` and
 differently have their own subclasses: `VehiclesDBAuthError` (401/403: missing,
 invalid or revoked key), `VehiclesDBPaymentRequiredError` (402: the wallet is
 empty), `VehiclesDBNotFoundError` (404) and `VehiclesDBRateLimitError` (429,
-with `.retry_after` in seconds). No response within `timeout` raises
+with `.retry_after` in seconds, read from the body's `retry_after`, which the
+API always sends). No response within `timeout` raises
 `VehiclesDBTimeoutError` (a `TransportError`).
 
 ```python
@@ -360,6 +361,9 @@ to this repo. See [`CONTRACT.md`](./CONTRACT.md).
 - [`@vehiclesdb/client`](https://www.npmjs.com/package/@vehiclesdb/client) —
   the JavaScript SDK ([repo](https://github.com/vehiclesdb/vehiclesdb-js)),
   same contract.
+- [`make-model-dropdown`](https://github.com/vehiclesdb/make-model-dropdown) —
+  the browser make → model picker; same resolution contract, offline dataset
+  mode, a hidden id field, and an ES module for importmaps.
 - [`vehiclesdb/vehiclesdb`](https://github.com/vehiclesdb/vehiclesdb) — the
   open dataset itself (`SCHEMA.md`, `RESOLUTION.md`, `ATTRIBUTION.md`).
 - [`CHANGELOG.md`](./CHANGELOG.md)
