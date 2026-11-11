@@ -44,7 +44,7 @@ Two requirements follow:
   on the first question, and memoized. Only `model()` reads a second file,
   `catalog/{kind}/models.json`, which carries the per-country popularity,
   sources and crosswalks.
-- **API mode** is used only by `images()`. Rendered imagery is not part of the
+- **API mode** is used only by `images()`. Vehicle imagery is not part of the
   open dataset, so there is no local answer to fall back to. Without a key the
   method raises a configuration error naming the missing option. It never
   returns a placeholder.
