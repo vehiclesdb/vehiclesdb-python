@@ -134,7 +134,7 @@ class TypedErrorsTest(unittest.TestCase):
         for status, body, cls in [
             (401, {"error": "invalid_token"}, VehiclesDBAuthError),
             (402, {"error": "insufficient_credits"}, VehiclesDBPaymentRequiredError),
-            (404, {"error": "no_render"}, VehiclesDBNotFoundError),
+            (404, {"error": "no_image"}, VehiclesDBNotFoundError),
             (429, {"error": "rate_limited", "retry_after": 60}, VehiclesDBRateLimitError),
             (422, {"error": "unknown_color"}, VehiclesDBApiError),
         ]:

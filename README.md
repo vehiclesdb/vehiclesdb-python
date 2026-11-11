@@ -80,7 +80,7 @@ constructing a client makes no request at all. Only `model()` pulls a second
 file (`catalog/{kind}/models.json`), because that is where the per-country
 popularity, the source list and the type-approval crosswalks live.
 
-`images()` is the one method that talks to the API, because rendered imagery is
+`images()` is the one method that talks to the API, because vehicle imagery is
 not in the open dataset — there is nothing local to fall back to, so it raises
 `MissingApiKeyError` without a key rather than pretending:
 
@@ -91,15 +91,15 @@ shot["variants"]["lg"]["url"]   # signed and key-free — safe in an <img src>
 shot["color"], shot["requested_color"]   # what you got vs what you asked for
 ```
 
-Colour matching is honest by design: ask for a colour that is rendered and you
+Colour matching is honest by design: ask for a colour that is available and you
 get it; ask for one that is not and the API serves a sensible fallback and
 tells you it did. A colour outside the canonical palette is a `422`, never a
 silent guess.
 
 Non-2xx responses raise `VehiclesDBApiError` with `.status`, `.body` and
-`.code` (the body's `error`, e.g. `"no_render"`; an image 404 is
-`unknown_model` when the id is not in the API's dataset, `no_render` when
-the vehicle has no render yet). The statuses you handle
+`.code` (the body's `error`, e.g. `"no_image"`; an image 404 is
+`unknown_model` when the id is not in the API's dataset, `no_image` when
+the vehicle has no image yet). The statuses you handle
 differently have their own subclasses: `VehiclesDBAuthError` (401/403: missing,
 invalid or revoked key), `VehiclesDBPaymentRequiredError` (402: the wallet is
 empty), `VehiclesDBNotFoundError` (404) and `VehiclesDBRateLimitError` (429,
@@ -113,7 +113,7 @@ from vehiclesdb import VehiclesDBAuthError, VehiclesDBNotFoundError, VehiclesDBP
 try:
     shot = db.images("car/volkswagen/passat")
 except VehiclesDBNotFoundError:
-    shot = None   # no render yet: show your placeholder
+    shot = None   # no image yet: show your placeholder
 except (VehiclesDBAuthError, VehiclesDBPaymentRequiredError):
     raise         # alert someone: every image call fails until the key or wallet is fixed
 ```

@@ -91,7 +91,7 @@ def urllib_transport(timeout: float = 10.0) -> Transport:
     A transport is `transport(url: str, headers: Dict[str, str]) -> (status, bytes)`.
     It returns the status instead of raising for 4xx/5xx, because the API's
     error bodies are documented JSON that callers need to see
-    (`{"error": "no_render", "id": ...}`); only a failure to get any response at
+    (`{"error": "no_image", "id": ...}`); only a failure to get any response at
     all is an exception. That one signature is the whole seam the tests use to
     stay offline.
     """
@@ -103,7 +103,7 @@ def urllib_transport(timeout: float = 10.0) -> Transport:
                 return response.getcode(), response.read()
         except urllib.error.HTTPError as exc:
             # An HTTPError IS a response object. Reading it here is what lets
-            # a 404 surface as VehiclesDBApiError(404, {"error": "no_render"})
+            # a 404 surface as VehiclesDBApiError(404, {"error": "no_image"})
             # instead of an opaque stdlib exception.
             return exc.code, exc.read()
         except urllib.error.URLError as exc:
@@ -485,7 +485,7 @@ class VehiclesDB:
         *parts: str,
         **options: Any
     ) -> Dict[str, Any]:
-        """Rendered imagery for one model. **API only — needs an API key.**
+        """Images for one model. **API only — needs an API key.**
 
         ``db.images("car/renault/clio", color="blue")`` or
         ``db.images("car", "renault", "clio", color="blue")``.
@@ -502,7 +502,7 @@ class VehiclesDB:
         ``<img src>`` without leaking your key into markup.
 
         Colour matching is honest by design: ask for a colour that exists and
-        you get it, ask for one not rendered yet and the API serves a sensible
+        you get it, ask for one not available yet and the API serves a sensible
         fallback — compare ``color`` (served) against ``requested_color``
         (asked). A colour outside the canonical 14-colour palette is a 422.
 
@@ -513,8 +513,8 @@ class VehiclesDB:
             ``.code``; typed subclasses for 401/403 (``VehiclesDBAuthError``),
             402 (``VehiclesDBPaymentRequiredError``), 404
             (``VehiclesDBNotFoundError``: ``.code`` is ``unknown_model`` when
-            the id is not in the API's dataset, ``no_render`` when the vehicle
-            has no render yet) and 429 (``VehiclesDBRateLimitError``,
+            the id is not in the API's dataset, ``no_image`` when the vehicle
+            has no image yet) and 429 (``VehiclesDBRateLimitError``,
             ``.retry_after``). 422 ``unknown_color`` / ``invalid_format`` /
             ``unsupported_filter`` stay plain ``VehiclesDBApiError``.
         :raises VehiclesDBTimeoutError: no response within ``timeout``.
